@@ -1,7 +1,9 @@
 3. https://leetcode.com/problems/next-permutation/
 
-Sol:
+![5 1](https://user-images.githubusercontent.com/37560890/166399395-8da777fc-4558-4c13-a10e-61135b2869cd.jpg)
+![5](https://user-images.githubusercontent.com/37560890/166399413-4fd72127-759c-4495-8da4-d273676345bd.jpg)
 
+``` cpp
 class Solution
 {
 public:
@@ -28,3 +30,4 @@ public:
         }
     }
 };
+```
