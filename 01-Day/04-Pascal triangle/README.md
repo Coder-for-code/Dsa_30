@@ -1,7 +1,8 @@
 4. https://leetcode.com/problems/pascals-triangle/
 
-Sol:
+![6](https://user-images.githubusercontent.com/37560890/166399516-c180e9d3-1c68-4ada-af19-fe48dfee0a1c.jpg)
 
+```cpp
 class Solution 
 {
 public:
@@ -21,3 +22,4 @@ public:
         return r;
     }
 };
+```
