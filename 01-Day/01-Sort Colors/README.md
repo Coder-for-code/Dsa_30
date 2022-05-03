@@ -1,21 +1,30 @@
-2. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+1. https://leetcode.com/problems/sort-colors/
 
-Sol:
-
-class Solution
+![1](https://user-images.githubusercontent.com/37560890/166398729-028b0bbe-e170-4d22-9e5d-b73dd14b35e8.jpg)
+```cpp
+class Solution 
 {
 public:
-    int maxProfit(vector<int>& prices) 
+    void sortColors(vector<int>& a) 
     {
-        int min_p= INT_MAX ;
-        int profit=0;
+        int low=0;
+        int mid=0;
+        int high= a.size()-1;
         
-        for(int i=0;i<prices.size();i++)
+        while(mid<=high)
         {
-            min_p= min(min_p, prices[i]);
-            profit= max(profit, prices[i]- min_p);
+            switch(a[mid])
+            {
+                case 0: 
+                    swap(a[low++],a[mid++]) ; break;
+                        
+                case 1:
+                    mid++; break;
+                    
+                case 2: 
+                    swap(a[mid], a[high--]); break; 
+            }
         }
-        return profit;
-        
     }
 };
+```
