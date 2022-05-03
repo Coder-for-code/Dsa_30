@@ -2,4 +2,5 @@
 
 S.No. | Question Name | Logic Used | Topic | Date |
 ------|---------------|------------|-------|------|
-1 | [Missing and Repeating](https://github.com/vineethm1627/SDE_Sheet_Striver/blob/main/Day-01_Arrays/missing_repeating.cpp) | repeated xor | Bit Manipulation | 02 June 21 |
+Day 01 - Arrays
+1 | [Sort Colors](https://github.com/ajay-nikumbh/30-Days-Dsa/tree/main/01-Day/01-Sort%20Colors) | Dutch national flag | Array | 01 May 2022 |
