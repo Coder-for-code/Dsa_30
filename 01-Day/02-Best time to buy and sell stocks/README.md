@@ -1,22 +1,23 @@
-5. https://leetcode.com/problems/maximum-subarray/
+2. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
-Sol:
+![2](https://user-images.githubusercontent.com/37560890/166399153-bf82e98e-6837-4817-8773-da1a4a5ed64e.jpg)
 
-class Solution {
+```cpp
+class Solution
+{
 public:
-    int maxSubArray(vector<int>& nums)
+    int maxProfit(vector<int>& prices) 
     {
-        int n = nums.size();
-        int maxi = INT_MIN, sum = 0;
+        int min_p= INT_MAX ;
+        int profit=0;
         
-        for(int i=0;i<n;i++)
+        for(int i=0;i<prices.size();i++)
         {
-            sum += nums[i];
-            maxi = max(sum,maxi);
-            
-            if(sum<0) sum = 0;
+            min_p= min(min_p, prices[i]);
+            profit= max(profit, prices[i]- min_p);
         }
+        return profit;
         
-        return maxi;
     }
 };
+```
