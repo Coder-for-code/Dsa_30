@@ -1,8 +1,11 @@
 6. https://leetcode.com/problems/set-matrix-zeroes/
 
-Sol:
+![4](https://user-images.githubusercontent.com/37560890/166398006-19c64719-3c6c-4c22-aa16-a1c1342b6f2e.jpg)
+![4 1](https://user-images.githubusercontent.com/37560890/166398040-8da12d9e-94a2-49a1-924b-0912935564d7.jpg)
 
-class Solution {
+```cpp
+class Solution 
+{
 public:
      void setZeroes(vector<vector<int>>& a) 
      {
@@ -15,17 +18,19 @@ public:
          {
             for(int j=0; j<m; j++)
             {
-					if(a[i][j] == 0)
-                    {   // store rows and cols state in first row and col
-                    if(i==0) firstRow = true;
-                    if(j==0) firstCol = true;
-                    a[i][0] = 0;
-                    a[0][j] = 0;
+		    if(a[i][j] == 0)
+                    { 
+		    	// store rows and cols state in first row and col
+			if(i==0) firstRow = true;
+			if(j==0) firstCol = true;
+			a[i][0] = 0;
+			a[0][j] = 0;
                 }
             }
         }
         // cout<<firstRow<<" "<<firstCol<<endl;
-        for(int i=1; i<n; i++)
+        
+	for(int i=1; i<n; i++)
         {
             for(int j=1; j<m; j++)
             {
@@ -47,3 +52,4 @@ public:
         }
     }
 };
+```
