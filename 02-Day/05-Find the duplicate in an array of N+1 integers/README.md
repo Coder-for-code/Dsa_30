@@ -1,103 +1,117 @@
-1. https://leetcode.com/problems/rotate-image/
+5. https://leetcode.com/problems/find-the-duplicate-number/
 
+
+![5 1](https://user-images.githubusercontent.com/37560890/166862838-d617dd4e-73cd-410c-8273-99311af8ea82.jpg)
+![5](https://user-images.githubusercontent.com/37560890/166862843-6e16d396-c11a-4c13-b2d1-599daf4fd402.jpg)
+
+Solution 1:Using sorting
 
 ```cpp
-Solution 1:Brute force
-
 #include<bits/stdc++.h>
 
 using namespace std;
-vector < vector < int >> rotate(vector < vector < int >> & matrix) {
-  int n = matrix.size();
-  vector < vector < int >> rotated(n, vector < int > (n, 0));
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) {
-      rotated[j][n - i - 1] = matrix[i][j];
-    }
-  }
-  return rotated;
-}
-
-int main()
+int findDuplicate(vector < int > & arr) 
 {
-  vector < vector < int >> arr;
-  arr =  {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-  vector < vector < int >> rotated = rotate(arr);
-  cout << "Rotated Image" << endl;
-  for (int i = 0; i < rotated.size(); i++) {
-    for (int j = 0; j < rotated[0].size(); j++) {
-      cout << rotated[i][j] << " ";
+  int n = arr.size();
+  sort(arr.begin(), arr.end());
+
+  for (int i = 0; i < n - 1; i++) 
+  {
+    if (arr[i] == arr[i + 1]) 
+    {
+      return arr[i];
     }
-    cout << "\n";
   }
-
 }
-Output:
 
-Rotated Image
-7 4 1
-8 5 2
-9 6 3
+int main() 
+{
+  vector < int > arr;
+  arr = {1,3,4,2,2};
+  cout << "The duplicate element is " << findDuplicate(arr) << endl;
+}
+Time Complexity:O(Nlogn + N)
+Reason: NlogN for sorting the array and O(N) for traversing through the array and checking if adjacent elements are equal or not. But this will distort the array.
 
-Time Complexity: O(N*N) to linearly iterate and put it into some other matrix.
-
-Space Complexity: O(N*N) to copy it into some other matrix.
+Space Complexity:O(1)
 ```
 
 
+Solution 2:Using frequency array
+
 ```cpp
-Solution 2: Optimized approach
-
-Intuition: By observation, we see that the first column of the original matrix is the reverse of the first row of the rotated matrix, so that’s why we transpose the matrix and then reverse each row, and since we are making changes in the matrix itself space complexity gets reduced to O(1).
-
-Approach:
-
-Step1: Transpose of the matrix. (transposing means changing columns to rows and rows to columns)
-
-Step2: Reverse each row of the matrix.
-
-Code:
-
 #include<bits/stdc++.h>
 
 using namespace std;
-void rotate(vector < vector < int >> & matrix) {
-  int n = matrix.size();
-  //transposing the matrix
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < i; j++) {
-      swap(matrix[i][j], matrix[j][i]);
+int findDuplicate(vector < int > & arr)
+{
+  int n = arr.size();
+  int freq[n + 1] = 
+  {
+    0
+  };
+  
+  for (int i = 0; i < n; i++) 
+  {
+    if (freq[arr[i]] == 0) 
+    {
+      freq[arr[i]] += 1;
+    }
+    
+    else 
+    {
+      return arr[i];
     }
   }
-  //reversing each row of the matrix
-  for (int i = 0; i < n; i++) {
-    reverse(matrix[i].begin(), matrix[i].end());
-  }
+  return 0;
 }
 
-int main() {
-  vector < vector < int >> arr;
-  arr =  {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-  rotate(arr);
-  cout << "Rotated Image" << endl;
-  for (int i = 0; i < arr.size(); i++) {
-    for (int j = 0; j < arr[0].size(); j++) {
-      cout << arr[i][j] << " ";
-    }
-    cout << "\n";
-  }
-
+int main() 
+{
+  vector < int > arr;
+  arr = {1,3,4,2,3};
+  cout << "The duplicate element is " << findDuplicate(arr) << endl;
 }
-Output:
 
-Rotated Image
-7 4 1
-8 5 2
-9 6 3
 
-Time Complexity: O(N*N) + O(N*N).One O(N*N) for transposing the matrix and the other for reversing the matrix.
+Time Complexity: O(N), as we are traversing through the array only once.
+Space Complexity: O(N), as we are using extra space for frequency array.
 
-Space Complexity: O(1).
+```
 
+Solution 3: Linked List cycle method
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+int findDuplicate(vector < int > & nums) 
+{
+  int slow = nums[0];
+  int fast = nums[0];
+  do 
+  {
+    slow = nums[slow];
+    fast = nums[nums[fast]];
+  } while (slow != fast);
+  
+  fast = nums[0];
+  
+  while (slow != fast) 
+  {
+    slow = nums[slow];
+    fast = nums[fast];
+  }
+  return slow;
+}
+int main() 
+{
+  vector < int > arr;
+  arr = {1,3,4,2,3};
+  cout << "The duplicate element is " << findDuplicate(arr) << endl;
+}
+
+Time complexity: O(N). Since we traversed through the array only once.
+Space complexity: O(1).
 
 ```
