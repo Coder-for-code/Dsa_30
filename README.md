@@ -14,6 +14,10 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
   1 | [Rotate Image by 90 degree](https://github.com/ajay-nikumbh/30-Days-Dsa/tree/main/02-Day/01-Rotate%20Image%20by%2090%20degree) | Transpose and reverse | Array | 02 May 2022 | O(n^2) | O(1) |[Link](https://www.youtube.com/watch?v=M65xBewcqcI&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=7)
- 2 | [Merge two Sorted Arrays Without Extra Space](https://github.com/ajay-nikumbh/30-Days-Dsa/tree/main/02-Day/02-Merge%20two%20Sorted%20Arrays%20Without%20Extra%20Space) | Gap method | Arrays | 02 May 2022 | O(nlogn) | O(1) | [Link]()
+ 2 | [Merge two Sorted Arrays Without Extra Space](https://github.com/ajay-nikumbh/30-Days-Dsa/tree/main/02-Day/02-Merge%20two%20Sorted%20Arrays%20Without%20Extra%20Space) | Gap method | Arrays | 02 May 2022 | O(nlogn) | O(1) | [Link](https://www.youtube.com/watch?v=hVl2b3bLzBw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=4)
+ 3 | [Find the missing and repeating number](https://github.com/ajay-nikumbh/30-Days-Dsa/tree/main/02-Day/03-Find%20the%20repeating%20and%20missing%20numbers) | Bucket method | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=5nMGY4VUoRY&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=3)
+ 4 | [Merge Overlapping Sub-intervals](https://github.com/ajay-nikumbh/30-Days-Dsa/tree/main/02-Day/04-Merge%20Overlapping%20Sub-intervals) | Sort and travel | O(nlogn) + O(n). O(nlogn) | O(n) | [Link](https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6)
+ 5 | [Find the duplicate in an array of N+1 integers](https://github.com/ajay-nikumbh/30-Days-Dsa/tree/main/02-Day/05-Find%20the%20duplicate%20in%20an%20array%20of%20N%2B1%20integers) | Linked list cycle method | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=32Ll35mhWg0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=1)
+ 6 | [Count inversions in an array](https://github.com/ajay-nikumbh/30-Days-Dsa/tree/main/02-Day/06-Count%20inversions%20in%20an%20array) | Merge sort modification | O(nlogn) | O(n) | [Link](https://www.youtube.com/watch?v=kQ1mJlwW-c0)
   
   
