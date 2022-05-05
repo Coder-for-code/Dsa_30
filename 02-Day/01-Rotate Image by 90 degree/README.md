@@ -42,7 +42,6 @@ int main()
 
 }
 Time Complexity: O(N*N) to linearly iterate and put it into some other matrix.
-
 Space Complexity: O(N*N) to copy it into some other matrix.
 ```
 
@@ -90,7 +89,6 @@ int main()
 
 }
 Time Complexity: O(N*N) + O(N*N).One O(N*N) for transposing the matrix and the other for reversing the matrix.
-
 Space Complexity: O(1).
 
 
