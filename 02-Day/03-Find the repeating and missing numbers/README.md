@@ -1,103 +1,150 @@
-1. https://leetcode.com/problems/rotate-image/
+3. https://www.interviewbit.com/problems/repeat-and-missing-number-array/
+
+![3 1](https://user-images.githubusercontent.com/37560890/166860407-ccd6de9b-371e-4c96-84c1-1736ccb06114.jpg)
+![3](https://user-images.githubusercontent.com/37560890/166860414-a6b5538d-16d0-4f24-8bbc-f8abe8c48bb6.jpg)
 
 
+Solution 1: Using Count Sort
 ```cpp
-Solution 1:Brute force
 
-#include<bits/stdc++.h>
 
-using namespace std;
-vector < vector < int >> rotate(vector < vector < int >> & matrix) {
-  int n = matrix.size();
-  vector < vector < int >> rotated(n, vector < int > (n, 0));
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) {
-      rotated[j][n - i - 1] = matrix[i][j];
-    }
-  }
-  return rotated;
-}
-
-int main()
+vector<int> find_missing_repeating(vector<int> array)
 {
-  vector < vector < int >> arr;
-  arr =  {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-  vector < vector < int >> rotated = rotate(arr);
-  cout << "Rotated Image" << endl;
-  for (int i = 0; i < rotated.size(); i++) {
-    for (int j = 0; j < rotated[0].size(); j++) {
-      cout << rotated[i][j] << " ";
+    int n = array.size() + 1;
+
+    vector<int> substitute(n, 0); // initializing the substitute array with 0 of size n+1.
+
+    vector<int> ans;              // initializing the answer  array .
+
+    for (int i = 0; i < array.size(); i++)
+    {
+        substitute[array[i]]++;
     }
-    cout << "\n";
-  }
 
+    for (int i = 1; i <= array.size(); i++)
+    {
+        if (substitute[i] == 0 || substitute[i] > 1)
+        {
+            ans.push_back(i);
+        }
+    }
+
+    return ans;
 }
-Output:
 
-Rotated Image
-7 4 1
-8 5 2
-9 6 3
+Time Complexity: O(N) + O(N) (as we are traversing 2 times )
+Space Complexity: O(N) As we are making new substitute array
 
-Time Complexity: O(N*N) to linearly iterate and put it into some other matrix.
 
-Space Complexity: O(N*N) to copy it into some other matrix.
 ```
 
 
+Solution 2: Using Maths 
 ```cpp
-Solution 2: Optimized approach
 
-Intuition: By observation, we see that the first column of the original matrix is the reverse of the first row of the rotated matrix, so that’s why we transpose the matrix and then reverse each row, and since we are making changes in the matrix itself space complexity gets reduced to O(1).
 
-Approach:
-
-Step1: Transpose of the matrix. (transposing means changing columns to rows and rows to columns)
-
-Step2: Reverse each row of the matrix.
-
-Code:
-
-#include<bits/stdc++.h>
-
-using namespace std;
-void rotate(vector < vector < int >> & matrix) {
-  int n = matrix.size();
-  //transposing the matrix
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < i; j++) {
-      swap(matrix[i][j], matrix[j][i]);
+vector<int>missing_repeated_number(const vector<int> &A) 
+{
+    long long int len = A.size();
+    long long int S = (len * (len+1) ) /2;
+    long long int P = (len * (len +1) *(2*len +1) )/6;
+    long long int missingNumber=0, repeating=0;
+     
+    for(int i=0;i<A.size(); i++)
+    {
+       S -= (long long int)A[i];
+       P -= (long long int)A[i]*(long long int)A[i];
     }
-  }
-  //reversing each row of the matrix
-  for (int i = 0; i < n; i++) {
-    reverse(matrix[i].begin(), matrix[i].end());
-  }
+     
+    missingNumber = (S + P/S)/2;
+    repeating = missingNumber - S;
+
+    vector <int> ans;
+
+    ans.push_back(repeating);
+    ans.push_back(missingNumber);
+
+    return ans;
 }
 
-int main() {
-  vector < vector < int >> arr;
-  arr =  {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-  rotate(arr);
-  cout << "Rotated Image" << endl;
-  for (int i = 0; i < arr.size(); i++) {
-    for (int j = 0; j < arr[0].size(); j++) {
-      cout << arr[i][j] << " ";
+Time Complexity: O(N) 
+Space Complexity: O(1) As we are NOT USING EXTRA SPACE
+
+```
+
+Solution 3: XOR
+```cpp
+
+vector < int >Solution::repeatedNumber (const vector < int >&arr) 
+{
+    /* Will hold xor of all elements and numbers from 1 to n */
+    int xor1;
+
+    /* Will have only single set bit of xor1 */
+    int set_bit_no;
+
+    int i;
+    int x = 0; // missing
+    int y = 0; // repeated
+    int n = arr.size();
+
+    xor1 = arr[0];
+
+    /* Get the xor of all array elements */
+    for (i = 1; i < n; i++)
+        xor1 = xor1 ^ arr[i];
+
+    /* XOR the previous result with numbers from 1 to n */
+    for (i = 1; i <= n; i++)
+        xor1 = xor1 ^ i;
+
+    /* Get the rightmost set bit in set_bit_no */
+    set_bit_no = xor1 & ~(xor1 - 1);
+
+    /* Now divide elements into two sets by comparing a rightmost set bit
+       of xor1 with the bit at the same position in each element.
+       Also, get XORs of two sets. The two XORs are the output elements.
+       The following two for loops serve the purpose */
+
+    for (i = 0; i < n; i++) 
+    {
+        if (arr[i] & set_bit_no)
+            /* arr[i] belongs to first set */
+            x = x ^ arr[i];
+
+        else
+            /* arr[i] belongs to second set */
+            y = y ^ arr[i];
     }
-    cout << "\n";
-  }
 
+    for (i = 1; i <= n; i++) 
+    {
+        if (i & set_bit_no)
+            /* i belongs to first set */
+            x = x ^ i;
+
+        else
+            /* i belongs to second set */
+            y = y ^ i;
+    }
+
+    // NB! numbers can be swapped, maybe do a check ?
+    int x_count = 0;
+    
+    for (int i=0; i<n; i++) 
+    {
+        if (arr[i]==x)
+            x_count++;
+    }
+    
+    if (x_count==0)
+        return {y, x};
+    
+    return {x, y};
 }
-Output:
 
-Rotated Image
-7 4 1
-8 5 2
-9 6 3
+Note: This method doesn’t cause overflow, but it doesn’t tell which one occurs twice and which one is missing. We can add one more step that checks which one is missing and which one is repeating by iterating over the array. This can be easily done in O(N) time.
 
-Time Complexity: O(N*N) + O(N*N).One O(N*N) for transposing the matrix and the other for reversing the matrix.
-
-Space Complexity: O(1).
-
-
+Time Complexity: O(N) 
+Space Complexity: O(1) As we are NOT USING EXTRA SPACE
 ```
