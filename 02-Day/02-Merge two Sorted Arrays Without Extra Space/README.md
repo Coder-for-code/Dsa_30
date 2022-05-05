@@ -1,103 +1,237 @@
-1. https://leetcode.com/problems/rotate-image/
+2. https://leetcode.com/problems/merge-sorted-array/
 
+![2 1](https://user-images.githubusercontent.com/37560890/166862463-4bd38341-183e-49bb-b720-44cfa92960fc.jpg)
+![2](https://user-images.githubusercontent.com/37560890/166862468-3f198572-93da-4579-b5ad-c046056250f7.jpg)
+
+Solution1: Brute Force
 
 ```cpp
-Solution 1:Brute force
 
 #include<bits/stdc++.h>
-
 using namespace std;
-vector < vector < int >> rotate(vector < vector < int >> & matrix) {
-  int n = matrix.size();
-  vector < vector < int >> rotated(n, vector < int > (n, 0));
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) {
-      rotated[j][n - i - 1] = matrix[i][j];
-    }
-  }
-  return rotated;
-}
 
-int main()
+void merge(int arr1[], int arr2[], int n, int m) 
 {
-  vector < vector < int >> arr;
-  arr =  {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-  vector < vector < int >> rotated = rotate(arr);
-  cout << "Rotated Image" << endl;
-  for (int i = 0; i < rotated.size(); i++) {
-    for (int j = 0; j < rotated[0].size(); j++) {
-      cout << rotated[i][j] << " ";
+    int arr3[n+m];
+    int k = 0;
+    for (int i = 0; i < n; i++) 
+    {
+      arr3[k++] = arr1[i];
     }
-    cout << "\n";
+    
+    for (int i = 0; i < m; i++) 
+    {
+      arr3[k++] = arr2[i];
+    }
+    
+    sort(arr3,arr3+m+n);
+    k = 0;
+    
+    for (int i = 0; i < n; i++) 
+    {
+      arr1[i] = arr3[k++];
+    }
+    
+    for (int i = 0; i < m; i++) 
+    {
+      arr2[i] = arr3[k++];
+    }
+
+  }
+int main() 
+{
+    int arr1[] = {1,4,7,8,10};
+  	int arr2[] = {2,3,9};
+    cout<<"Before merge:"<<endl;
+  
+    for (int i = 0; i < 5; i++) 
+    {
+      cout<<arr1[i]<<" ";
+    }
+    
+    cout<<endl;
+    
+    for (int i = 0; i < 3; i++) 
+    {
+      cout<<arr2[i]<<" ";
+    }
+    
+    cout<<endl;
+    merge(arr1, arr2, 5, 3);
+    cout<<"After merge:"<<endl;
+    
+    for (int i = 0; i <5; i++) 
+    {
+      cout<<arr1[i]<<" ";
+    }
+    
+    cout<<endl;
+    
+    for (int i = 0; i < 3; i++) 
+    {
+      cout<<arr2[i]<<" ";
+    }
+
   }
 
-}
-Output:
-
-Rotated Image
-7 4 1
-8 5 2
-9 6 3
-
-Time Complexity: O(N*N) to linearly iterate and put it into some other matrix.
-
-Space Complexity: O(N*N) to copy it into some other matrix.
+Time complexity: O(n*log(n))+O(n)+O(n)
+Space Complexity: O(n) 
 ```
 
+Solution 2: Without using space
 
 ```cpp
-Solution 2: Optimized approach
-
-Intuition: By observation, we see that the first column of the original matrix is the reverse of the first row of the rotated matrix, so that’s why we transpose the matrix and then reverse each row, and since we are making changes in the matrix itself space complexity gets reduced to O(1).
-
-Approach:
-
-Step1: Transpose of the matrix. (transposing means changing columns to rows and rows to columns)
-
-Step2: Reverse each row of the matrix.
-
-Code:
-
 #include<bits/stdc++.h>
 
 using namespace std;
-void rotate(vector < vector < int >> & matrix) {
-  int n = matrix.size();
-  //transposing the matrix
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < i; j++) {
-      swap(matrix[i][j], matrix[j][i]);
+void merge(int arr1[], int arr2[], int n, int m)
+{
+  // code here
+  int i, k;
+  for (i = 0; i < n; i++) 
+  {
+    // take first element from arr1 
+    // compare it with first element of second array
+    // if condition match, then swap
+  
+    if (arr1[i] > arr2[0]) 
+    {
+      int temp = arr1[i];
+      arr1[i] = arr2[0];
+      arr2[0] = temp;
     }
-  }
-  //reversing each row of the matrix
-  for (int i = 0; i < n; i++) {
-    reverse(matrix[i].begin(), matrix[i].end());
+
+    // then sort the second array
+    // put the element in its correct position
+    // so that next cycle can swap elements correctly
+    int first = arr2[0];
+    // insertion sort is used here
+    
+    for (k = 1; k < m && arr2[k] < first; k++) 
+    {
+      arr2[k - 1] = arr2[k];
+    }
+    
+    arr2[k - 1] = first;
   }
 }
+int main() 
+{
+  int arr1[] = {1,4,7,8,10};
+  int arr2[] = {2,3,9};
+  cout << "Before merge:" << endl;
 
-int main() {
-  vector < vector < int >> arr;
-  arr =  {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-  rotate(arr);
-  cout << "Rotated Image" << endl;
-  for (int i = 0; i < arr.size(); i++) {
-    for (int j = 0; j < arr[0].size(); j++) {
-      cout << arr[i][j] << " ";
-    }
-    cout << "\n";
+  for (int i = 0; i < 5; i++) 
+  {
+    cout << arr1[i] << " ";
+  }
+  cout << endl;
+  
+  for (int i = 0; i < 3; i++) 
+  {
+    cout << arr2[i] << " ";
+  }
+  cout << endl;
+  merge(arr1, arr2, 5, 3);
+  cout << "After merge:" << endl;
+  
+  for (int i = 0; i < 5; i++) 
+  {
+    cout << arr1[i] << " ";
+  }
+  cout << endl;
+  
+  for (int i = 0; i < 3; i++) 
+  {
+    cout << arr2[i] << " ";
   }
 
 }
-Output:
 
-Rotated Image
-7 4 1
-8 5 2
-9 6 3
+Time complexity: O(n*m)
+Space Complexity: O(1) 
+```
 
-Time Complexity: O(N*N) + O(N*N).One O(N*N) for transposing the matrix and the other for reversing the matrix.
+Solution 3: Gap method
 
-Space Complexity: O(1).
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+void merge(int ar1[], int ar2[], int n, int m)
+{
+  // code here 
+  int gap = ceil((float)(n + m) / 2);
+  while (gap > 0) 
+  {
+    int i = 0;
+    int j = gap;
+    while (j < (n + m))
+    {
+      
+      if (j < n && ar1[i] > ar1[j]) 
+      {
+        swap(ar1[i], ar1[j]);
+      }
+      
+      else if (j >= n && i < n && ar1[i] > ar2[j - n]) 
+      {
+        swap(ar1[i], ar2[j - n]);
+      }
+      
+      else if (j >= n && i >= n && ar2[i - n] > ar2[j - n]) 
+      {
+        swap(ar2[i - n], ar2[j - n]);
+      }
+      j++;
+      i++;
+    }
+    if (gap == 1) 
+    {
+      gap = 0;
+    } 
+    
+    else 
+    {
+      gap = ceil((float) gap / 2);
+    }
+  }
+}
+int main() 
+{
+  int arr1[] = {1,4,7,8,10};
+  int arr2[] = {2,3,9};
+  cout << "Before merge:" << endl;
+
+  for (int i = 0; i < 5; i++) 
+  {
+    cout << arr1[i] << " ";
+  }
+  cout << endl;
+  
+  for (int i = 0; i < 3; i++) 
+  {
+    cout << arr2[i] << " ";
+  }
+  cout << endl;
+  merge(arr1, arr2, 5, 3);
+  cout << "After merge:" << endl;
+  
+  for (int i = 0; i < 5; i++) 
+  {
+    cout << arr1[i] << " ";
+  }
+  cout << endl;
+  
+  for (int i = 0; i < 3; i++) 
+  {
+    cout << arr2[i] << " ";
+  }
+
+}
+Time complexity: O(logn)
+Space Complexity: O(1)
 
 
 ```
+
