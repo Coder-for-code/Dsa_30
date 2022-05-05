@@ -1,103 +1,118 @@
-1. https://leetcode.com/problems/rotate-image/
+4. https://leetcode.com/problems/merge-intervals/
 
+![4](https://user-images.githubusercontent.com/37560890/166862606-4443240c-4105-489b-8732-0969f2392256.jpg)
+
+Solution 1: Brute force
 
 ```cpp
-Solution 1:Brute force
-
 #include<bits/stdc++.h>
 
 using namespace std;
-vector < vector < int >> rotate(vector < vector < int >> & matrix) {
-  int n = matrix.size();
-  vector < vector < int >> rotated(n, vector < int > (n, 0));
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) {
-      rotated[j][n - i - 1] = matrix[i][j];
-    }
-  }
-  return rotated;
-}
-
-int main()
+vector < pair < int, int >> merge(vector < pair < int, int >> & arr) 
 {
-  vector < vector < int >> arr;
-  arr =  {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-  vector < vector < int >> rotated = rotate(arr);
-  cout << "Rotated Image" << endl;
-  for (int i = 0; i < rotated.size(); i++) {
-    for (int j = 0; j < rotated[0].size(); j++) {
-      cout << rotated[i][j] << " ";
+
+  int n = arr.size();
+  sort(arr.begin(), arr.end());
+  vector < pair < int, int >> ans;
+
+  for (int i = 0; i < n; i++) 
+  {
+    int start = arr[i].first, end = arr[i].second;
+
+    //since the intervals already lies 
+    //in the data structure present we continue
+  
+    if (!ans.empty()) 
+    {
+      if (start <= ans.back().second) 
+      {
+        continue;
+      }
     }
-    cout << "\n";
+
+    for (int j = i + 1; j < n; j++) 
+    {
+      if (arr[j].first <= end) 
+      {
+        end = arr[j].second;
+      }
+    }
+
+    ans.push_back(
+    {
+      start,
+      end
+    });
   }
 
+  return ans;
 }
-Output:
 
-Rotated Image
-7 4 1
-8 5 2
-9 6 3
+int main() 
+{
+  vector < pair < int, int >> arr;
+  arr = {{1,3},{2,4},{2,6},{8,9},{8,10},{9,11},{15,18},{16,17}};
+  vector < pair < int, int >> ans = merge(arr);
 
-Time Complexity: O(N*N) to linearly iterate and put it into some other matrix.
+  cout << "Merged Overlapping Intervals are " << endl;
 
-Space Complexity: O(N*N) to copy it into some other matrix.
+  for (auto it: ans) 
+  {
+    cout << it.first << " " << it.second << "\n";
+  }
+}
+Time Complexity: O(NlogN)+O(N*N). O(NlogN) for sorting the array, and O(N*N) because we are checking to the right for each index which is a nested loop.
+Space Complexity: O(N), as we are using a separate data structure.
 ```
 
+Solution 2: Optimal approach
 
 ```cpp
-Solution 2: Optimized approach
-
-Intuition: By observation, we see that the first column of the original matrix is the reverse of the first row of the rotated matrix, so that’s why we transpose the matrix and then reverse each row, and since we are making changes in the matrix itself space complexity gets reduced to O(1).
-
-Approach:
-
-Step1: Transpose of the matrix. (transposing means changing columns to rows and rows to columns)
-
-Step2: Reverse each row of the matrix.
-
-Code:
-
 #include<bits/stdc++.h>
 
 using namespace std;
-void rotate(vector < vector < int >> & matrix) {
-  int n = matrix.size();
-  //transposing the matrix
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < i; j++) {
-      swap(matrix[i][j], matrix[j][i]);
+vector < vector < int >> merge(vector < vector < int >> & intervals) 
+{
+
+  sort(intervals.begin(), intervals.end());
+  vector < vector < int >> merged;
+
+  for (int i = 0; i < intervals.size(); i++) 
+  {
+    if (merged.empty() || merged.back()[1] < intervals[i][0]) 
+    {
+      vector < int > v = 
+      {
+        intervals[i][0],
+        intervals[i][1]
+      };
+
+      merged.push_back(v);
+    } 
+    else 
+    {
+      merged.back()[1] = max(merged.back()[1], intervals[i][1]);
     }
   }
-  //reversing each row of the matrix
-  for (int i = 0; i < n; i++) {
-    reverse(matrix[i].begin(), matrix[i].end());
-  }
+
+  return merged;
 }
 
-int main() {
+int main() 
+{
   vector < vector < int >> arr;
-  arr =  {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-  rotate(arr);
-  cout << "Rotated Image" << endl;
-  for (int i = 0; i < arr.size(); i++) {
-    for (int j = 0; j < arr[0].size(); j++) {
-      cout << arr[i][j] << " ";
-    }
-    cout << "\n";
+  arr = {{1, 3}, {2, 4}, {2, 6}, {8, 9}, {8, 10}, {9, 11}, {15, 18}, {16, 17}};
+  vector < vector < int >> ans = merge(arr);
+
+  cout << "Merged Overlapping Intervals are " << endl;
+
+  for (auto it: ans) 
+  {
+    cout << it[0] << " " << it[1] << "\n";
   }
-
 }
-Output:
-
-Rotated Image
-7 4 1
-8 5 2
-9 6 3
-
-Time Complexity: O(N*N) + O(N*N).One O(N*N) for transposing the matrix and the other for reversing the matrix.
-
-Space Complexity: O(1).
+Time Complexity: O(NlogN) + O(N). O(NlogN) for sorting and O(N) for traversing through the array.
+Space Complexity: O(N) to return the answer of the merged intervals.
 
 
 ```
