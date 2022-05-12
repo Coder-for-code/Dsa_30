@@ -169,6 +169,5 @@ int main()
 Output: Cycle detected
 
 Time Complexity: O(N) , Reason: In the worst case, all the nodes of the list are visited.
-
 Space Complexity: O(1) , Reason: No extra data structure is used.
 ```
