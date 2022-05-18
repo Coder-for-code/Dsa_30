@@ -153,5 +153,9 @@ int main()
 Time Complexity: O(N)
 Space Complexity: O(N)
 
-NOTE: the complexity of worst-case searching for an unordered_map can go up to O(N), hence it is safer to use ordered_map. But if we use ordered_map then the time complexity will be O(N logN). Space complexity will be the same in both cases.
+NOTE: 
+
+The complexity of worst-case searching for an unordered_map can go up to O(N),
+hence it is safer to use ordered_map. But if we use ordered_map then the time complexity will be O(N logN).
+Space complexity will be the same in both cases.
 ```
