@@ -1,5 +1,9 @@
 4. https://leetcode.com/problems/search-a-2d-matrix/ 
 
+![1](https://user-images.githubusercontent.com/37560890/168951257-12dc6648-243c-4422-9631-3d23dc1acd68.jpg)
+![2](https://user-images.githubusercontent.com/37560890/168951262-77a2a8a7-e16b-4a74-8662-3089cb20a5ed.jpg)
+![3](https://user-images.githubusercontent.com/37560890/168951267-ad2e4e27-4c51-402c-8423-f901e1d5e709.jpg)
+
 ```cpp
 Solution 1: Naive approach
 
