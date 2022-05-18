@@ -7,7 +7,8 @@ Solution 1 (Brute Force):
 
 1. Check the count of occurrences of all elements of the array one by one. 
 2. Start from the first element of the array and count the number of times it occurs in the array. 
-3. If the count is greater than the floor of N/2 then return that element as the answer. If not, proceed with the next element in the array and repeat the process.
+3. If the count is greater than the floor of N/2 then return that element as the answer. 
+4. If not, proceed with the next element in the array and repeat the process.
 
 Time Complexity: O(N2) 
 Space Complexity: O(1)
