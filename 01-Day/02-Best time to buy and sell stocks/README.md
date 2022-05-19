@@ -1,6 +1,7 @@
 2. https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
 ![2](https://user-images.githubusercontent.com/37560890/166399153-bf82e98e-6837-4817-8773-da1a4a5ed64e.jpg)
+![image](https://user-images.githubusercontent.com/37560890/169199346-b6964222-bf78-48df-ad1d-18506ae9fa49.png)
 
 ```cpp
 class Solution
