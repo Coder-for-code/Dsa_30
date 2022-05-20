@@ -71,7 +71,8 @@ int main()
 
 Time Complexity: O(N log N) + O(N*M).
 O(N log N ) for sorting the jobs in decreasing order of profit. O(N*M)
-since we are iterating through all N jobs and for every job we are checking from the last deadline, say M deadlines in the worst case.
+since we are iterating through all N jobs and for every job we are checking
+from the last deadline, say M deadlines in the worst case.
 
 Space Complexity: O(M) for an array that keeps track on which day which job is performed
 if M is the maximum deadline available.
