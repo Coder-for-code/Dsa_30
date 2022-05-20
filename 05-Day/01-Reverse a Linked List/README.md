@@ -104,9 +104,9 @@ public:
 };
 
 Time Complexity:
-
 We move to the end of the list and achieve our reversed list.
 Thus, the time complexity is O(N) where N represents the number of nodes.
+
 Space Complexity:
 Apart from recursion using stack space, no external storage is used. Thus, space complexity is O(1).
 
