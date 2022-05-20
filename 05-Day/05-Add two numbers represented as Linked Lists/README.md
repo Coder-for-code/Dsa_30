@@ -1,50 +1,49 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
+5. https://leetcode.com/problems/add-two-numbers/
 
 ```cpp
-vector<int> findSpiral(Node *root)
+Solution 1: Elementary Math
+
+Intuition: 
+Keep track of the carry using a variable and simulate digits-by-digits 
+sum starting from the head of the list, which contains the least significant digit.
+
+class Solution 
 {
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
+public:
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) 
+    {
+        ListNode *dummy = new ListNode(); 
+        ListNode *temp = dummy; 
+        int carry = 0;
         
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
+	while( (l1 != NULL || l2 != NULL) || carry) 
+	{
+            int sum = 0; 
+            if(l1 != NULL) 
+	    {
+                sum += l1->val; 
+                l1 = l1 -> next; 
+            }
+            
+            if(l2 != NULL) 
+	    {
+                sum += l2 -> val; 
+                l2 = l2 -> next; 
+            }
+            
+            sum += carry; 
+            carry = sum / 10; 
+            ListNode *node = new ListNode(sum % 10); 
+            temp -> next = node; 
+            temp = temp -> next; 
         }
-        level++;
+        return dummy -> next; 
     }
-    return v;
-}
+};
+Time Complexity: O(max(m,n)). Assume that m and n represent the length of l1 and l2 respectively
+the algorithm above iterates at most max(m,n) times.
+
+Space Complexity: O(max(m,n)). The length of the new list is at most max(m,n)+1.
 
 ```
+![image](https://user-images.githubusercontent.com/37560890/169434016-ee33f315-be6b-44b2-8959-ebb681f964bb.png)
