@@ -1,50 +1,68 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
+4. https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1
 
 ```cpp
-vector<int> findSpiral(Node *root)
+
+#include <bits/stdc++.h>
+using namespace std;
+
+struct Item
 {
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
+   int value;
+   int weight;
+};
+
+class Solution 
+{
+   public:
+      bool static comp(Item a, Item b) 
+      {
+         double r1 = (double) a.value / (double) a.weight;
+         double r2 = (double) b.value / (double) b.weight;
+         return r1 > r2;
+      }
+   // function to return fractionalweights
+   double fractionalKnapsack(int W, Item arr[], int n) 
+   {
+
+      sort(arr, arr + n, comp);
+
+      int curWeight = 0;
+      double finalvalue = 0.0;
+
+      for (int i = 0; i < n; i++) 
+      {
+
+         if (curWeight + arr[i].weight <= W) 
+	 {
+            curWeight += arr[i].weight;
+            finalvalue += arr[i].value;
+         }
+	 else 
+	 {
+            int remain = W - curWeight;
+            finalvalue += (arr[i].value / (double) arr[i].weight) * (double) remain;
+            break;
+         }
+      }
+
+      return finalvalue;
+
+   }
+};
+
+int main() 
+{
+   int n = 3, weight = 50;
+   Item arr[n] = { {100,20},{60,10},{120,30} };
+   Solution obj;
+   double ans = obj.fractionalKnapsack(weight, arr, n);
+   cout << "The maximum value is " << setprecision(2) << fixed << ans;
+   return 0;
 }
 
+Time Complexity: O(n log n + n). O(n log n) to sort the items
+and O(n) to iterate through all the items for calculating the answer.
+
+Space Complexity: O(1), no additional data structure has been used.
 ```
+![image](https://user-images.githubusercontent.com/37560890/169435968-edd59df2-ed95-45af-a203-55704298a5d8.png)
