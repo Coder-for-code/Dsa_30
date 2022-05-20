@@ -52,7 +52,7 @@ Space Complexity: O(1).
 ```
 
 ```cpp
-Solution 2:Better solution
+Solution 2: Better solution
 
 Intuition:
 
@@ -107,7 +107,7 @@ Space Complexity:O(N)+O(N) for prefix and suffix arrays.
 ```
 
 ```cpp
-Solution 3:Optimal Solution(Two pointer approach)
+Solution 3: Optimal Solution(Two pointer approach)
 
 Approach: 
 1. Take 2 pointer l(left pointer) and r(right pointer) pointing to 0th and (n-1)th index respectively.
