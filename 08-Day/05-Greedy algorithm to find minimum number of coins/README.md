@@ -1,50 +1,45 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
+5. https://www.geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/
 
 ```cpp
-vector<int> findSpiral(Node *root)
+Solution: Greedy Algorithm
+
+Approach: 
+We will keep a pointer at the end of the array i.
+Now while(V >= coins[i]) we will reduce V by coins[i] and add it to the ans array.
+
+We will also ignore the coins which are greater than V and the coins which are less than V.
+We consider them and reduce the value of V by coins[I].
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
 {
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
+  int V = 49;
+  vector < int > ans;
+  int coins[] = {1, 2, 5, 10, 20, 50, 100, 500, 1000};
+  int n = 9;
+  
+  for (int i = n - 1; i >= 0; i--) 
+  {
+    while (V >= coins[i]) {
+      V -= coins[i];
+      ans.push_back(coins[i]);
     }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
+  }
+  cout<<"The minimum number of coins is "<<ans.size()<<endl;
+  cout<<"The coins are "<<endl;
+  
+  for (int i = 0; i < ans.size(); i++) 
+  {
+    cout << ans[i] << " ";
+  }
+
+  return 0;
 }
+
+Time Complexity:O(V)
+Space Complexity:O(1)
 
 ```
