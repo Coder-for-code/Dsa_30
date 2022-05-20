@@ -1,4 +1,4 @@
-1. https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1
+6. https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1
 
 ```cpp
 #include <bits/stdc++.h>
