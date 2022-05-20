@@ -1,50 +1,197 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
+1. https://leetcode.com/problems/rotate-list/description/
 
 ```cpp
-vector<int> findSpiral(Node *root)
+Solution: Brute Force
+
+Approach:
+
+We have to move the last element to first for each k.
+For each k, find the last element from the list. Move it to the first.
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class node
 {
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
+    public:
+        int num;
+        node* next;
+        node(int a) 
 	{
-        return v;
+            num = a;
+            next = NULL;
+        }
+};
+
+//utility function to insert node at the end of the list
+void insertNode(node* &head,int val) 
+{
+    node* newNode = new node(val);
+    if(head == NULL) 
+    {
+        head = newNode;
+        return;
     }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
+    node* temp = head;
+    while(temp->next != NULL) temp = temp->next;
+    temp->next = newNode;
+    return;
 }
 
+//utility function to rotate list by k times
+node* rotateRight(node* head,int k) 
+{
+    if(head == NULL||head->next == NULL) return head;
+    for(int i=0;i<k;i++) 
+    {
+        node* temp = head;
+        while(temp->next->next != NULL) temp = temp->next;
+        node* end = temp->next;
+        temp->next = NULL;
+        end->next = head;
+        head = end;
+    }
+    return head;
+}
+
+//utility function to print list
+void printList(node* head) 
+{
+    while(head->next != NULL) 
+    {
+        cout<<head->num<<"->";
+        head = head->next;
+    } 
+    cout<<head->num<<endl;
+    return;
+}
+
+int main() 
+{
+    node* head = NULL;
+    //inserting Node
+    insertNode(head,1);
+    insertNode(head,2);
+    insertNode(head,3);
+    insertNode(head,4);
+    insertNode(head,5);
+    
+    cout<<"Original list: ";
+    printList(head);
+    
+    int k = 2;
+    node* newHead = rotateRight(head,k);//calling function for rotating right of 
+    the nodes by k times
+    
+    cout<<"After "<<k<<" iterations: ";
+    printList(newHead);//list after rotating nodes
+    return 0;
+}
+
+Time Complexity: O(Number of nodes present in the list*k)
+Reason: For k times, we are iterating through the entire list to get the last element and move it to first.
+
+Space Complexity: O(1)
+Reason: No extra data structures is used for computations
+```
+
+
+```cpp
+Solution: Optimal Solution
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class node 
+{
+    public:
+        int num;
+        node* next;
+        node(int a) 
+	{
+            num = a;
+            next = NULL;
+        }
+};
+
+//utility function to insert node at the end of the list
+void insertNode(node* &head,int val) 
+{
+    node* newNode = new node(val);
+    if(head == NULL) 
+    {
+        head = newNode;
+        return;
+    }
+    node* temp = head;
+    while(temp->next != NULL) temp = temp->next;
+    
+    temp->next = newNode;
+    return;
+}
+
+//utility function to rotate list by k times
+node* rotateRight(node* head,int k) 
+{
+    if(head == NULL||head->next == NULL||k == 0) return head;
+    //calculating length
+    node* temp = head;
+    int length = 1;
+    
+    while(temp->next != NULL) 
+    {
+        ++length;
+        temp = temp->next;
+    }
+    //link last node to first node
+    temp->next = head;
+    k = k%length; //when k is more than length of list
+    int end = length-k; //to get end of the list
+    while(end--) temp = temp->next;
+    //breaking last node link and pointing to NULL
+    head = temp->next;
+    temp->next = NULL;
+        
+    return head;
+}
+
+//utility function to print list
+void printList(node* head) 
+{
+    while(head->next != NULL) 
+    {
+        cout<<head->num<<"->";
+        head = head->next;
+    } 
+    cout<<head->num<<endl;
+    return;
+}
+
+int main() 
+{
+    node* head = NULL;
+    //inserting Node
+    insertNode(head,1);
+    insertNode(head,2);
+    insertNode(head,3);
+    insertNode(head,4);
+    insertNode(head,5);
+    
+    cout<<"Original list: ";
+    printList(head);
+    
+    int k = 2;
+    node* newHead = rotateRight(head,k);//calling function for rotating right of the nodes by k times
+    
+    cout<<"After "<<k<<" iterations: ";
+    printList(newHead);//list after rotating nodes
+    return 0;
+}
+
+Time Complexity: O(length of list) + O(length of list – (length of list%k))
+Reason: O(length of the list) for calculating the length of the list.
+O(length of the list – (length of list%k)) for breaking link.
+
+Space Complexity: O(1)
+Reason: No extra data structure is used for computation.
 ```
