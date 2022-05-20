@@ -1,7 +1,7 @@
 1. https://leetcode.com/problems/reverse-linked-list/
 
 ```cpp
-#### Solution: Reverse Linked List : Iterative
+Solution: Reverse Linked List : Iterative
 
 We will use three-pointers to traverse through the entire list and interchange links between nodes. 
 One pointer to keep track of the current node in the list. 
@@ -49,7 +49,7 @@ So, space complexity is O(1).
 
 ```cpp
 
-#### Solution 2: Reverse a Linked List : Recursive
+Solution 2: Reverse a Linked List : Recursive
 
 Intuition: 
 
@@ -79,7 +79,7 @@ public:
 
 
 ```cpp
-#### Solution 3: Using Recursion
+Solution 3: Using Recursion
 
 We traverse to the end of the list recursively.
 As we reach the end of the list, we make the end node the head. 
