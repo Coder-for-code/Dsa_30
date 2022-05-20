@@ -1,50 +1,44 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
+6. https://leetcode.com/problems/max-consecutive-ones/
 
 ```cpp
-vector<int> findSpiral(Node *root)
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
 {
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
+  public:
+    int findMaxConsecutiveOnes(vector < int > & nums) 
+    {
+      int cnt = 0;
+      int maxi = 0;
+      for (int i = 0; i < nums.size(); i++) 
+      {
+        if (nums[i] == 1) 
 	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
+          cnt++;
+        }
+	else 
 	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
+          cnt = 0;
         }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
+
+        maxi = max(maxi, cnt);
+      }
+      return maxi;
     }
-    return v;
+};
+
+int main() 
+{
+  vector < int > nums = { 1, 1, 0, 1, 1, 1 };
+  Solution obj;
+  int ans = obj.findMaxConsecutiveOnes(nums);
+  cout << "The maximum  consecutive 1's are " << ans;
+  return 0;
 }
 
+Time Complexity: O(N) since the solution involves only a single pass.
+Space Complexity: O(1) because no extra space is used.
 ```
+
+![image](https://user-images.githubusercontent.com/37560890/169438769-d777e312-6b7c-43cb-b792-4ab679022aba.png)
