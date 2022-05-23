@@ -1,50 +1,16 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0095](https://user-images.githubusercontent.com/37560890/169859421-a889af83-3a21-49f2-bd0e-444429ee211a.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0096](https://user-images.githubusercontent.com/37560890/169859446-bcd18fdb-098f-4533-aee8-cde1defac4c5.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0097](https://user-images.githubusercontent.com/37560890/169859464-3efbe07f-5ff2-462e-8409-3d5c5ee6a62a.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0098](https://user-images.githubusercontent.com/37560890/169859639-d9c07c20-1d79-451c-8ff9-025d5f0afcde.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0099](https://user-images.githubusercontent.com/37560890/169859654-2d912999-2221-465f-a65a-8c0d834e4711.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0100](https://user-images.githubusercontent.com/37560890/169859493-c3ae2159-4647-402f-be28-f552d0229b44.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0101](https://user-images.githubusercontent.com/37560890/169859684-ab1c2679-3be3-4c8a-b2cf-d4edba79dc0a.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0102](https://user-images.githubusercontent.com/37560890/169859697-f33c4c9e-c560-4747-9a1d-ab863e37a655.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0103](https://user-images.githubusercontent.com/37560890/169859720-fc711e07-3c5e-43c3-8311-c37a38d574e6.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0104](https://user-images.githubusercontent.com/37560890/169859735-10cccfb7-4c66-45e2-8e95-a78e25ab71c7.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0105](https://user-images.githubusercontent.com/37560890/169859832-765ad7e1-d8d5-40a8-8f73-c1bcb0814140.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0106](https://user-images.githubusercontent.com/37560890/169859845-a17fead4-da8a-4f7d-92dc-a6d52eeeed4d.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0107](https://user-images.githubusercontent.com/37560890/169859854-93652140-656b-4568-8a12-b6b75bc7b4f3.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0108](https://user-images.githubusercontent.com/37560890/169859864-b479f21d-33c8-4699-860b-5f6977d16438.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0109](https://user-images.githubusercontent.com/37560890/169859880-3f6dda69-535f-4a1d-85d8-83304d85a6a3.jpg)
 
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
