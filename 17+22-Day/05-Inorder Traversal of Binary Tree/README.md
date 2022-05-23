@@ -1,50 +1,8 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0047](https://user-images.githubusercontent.com/37560890/169856769-da77ed31-8ca5-40bf-926e-f60aa94223b5.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0048](https://user-images.githubusercontent.com/37560890/169856783-5ec31864-b98d-4089-a34f-702daa25a4d0.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0049](https://user-images.githubusercontent.com/37560890/169856831-a571ad2e-e878-4a65-a106-203ae8fd2eae.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0050](https://user-images.githubusercontent.com/37560890/169856839-34210ac9-21e5-4476-9221-764f18337147.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0051](https://user-images.githubusercontent.com/37560890/169856848-52907ad4-d790-436e-b0a3-b0e2cfd3574b.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0052](https://user-images.githubusercontent.com/37560890/169856866-dd1b3652-540e-42f9-a8d7-1364290384b9.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0053](https://user-images.githubusercontent.com/37560890/169857093-356a07a1-e9df-4ec4-ae0d-70b2be272812.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0054](https://user-images.githubusercontent.com/37560890/169856896-4ffe342a-1a54-4351-b8a8-a267ce56573f.jpg)
