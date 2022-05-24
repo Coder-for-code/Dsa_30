@@ -20,7 +20,18 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
  5 | [Find the duplicate in an array of N+1 integers](https://github.com/ajay-nikumbh/30-Days-Dsa/tree/main/02-Day/05-Find%20the%20duplicate%20in%20an%20array%20of%20N%2B1%20integers) | Linked list cycle method |Arrays | 02 May 2022 |  O(n) | O(1) | [Link](https://www.youtube.com/watch?v=32Ll35mhWg0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=1)
  6 | [Count inversions in an array](https://github.com/ajay-nikumbh/30-Days-Dsa/tree/main/02-Day/06-Count%20inversions%20in%20an%20array) | Merge sort modification | Arrays | 02 May 2022 | O(nlogn) | O(n) | [Link](https://www.youtube.com/watch?v=kQ1mJlwW-c0)
   
-  
+
+### Day 03 - [Arrays Part-III]
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Searchin a 2d matrix](https://github.com/ajay-nikumbh/Dsa_30/tree/main/03-Day/01-Search%20in%20a%202d%20matrix) | Binary search | Array | 03 May 2022 | O(log(m*n)) | O(1) | [Link](https://www.youtube.com/watch?v=ZYpYur0znng&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=14)
+2 | [Power of (x,n)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/03-Day/02-Power%20of%20(x%2Cn)) | Using Binary Exponentiation | Array | 03 May 2022 | O(logn) | O(1) | [Link](https://www.youtube.com/watch?v=l0YC3876qxg&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=15)
+3 | [Find the Majority Element that occurs more than N by 2 times](https://github.com/ajay-nikumbh/Dsa_30/tree/main/03-Day/03-Find%20the%20Majority%20Element%20that%20occurs%20more%20than%20N%20by%202%20times) | Moore’s Voting Algorithm | Array | 03 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=AoX3BPWNnoE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=16)
+4 | [Majority Elements N by 3 times](https://github.com/ajay-nikumbh/Dsa_30/tree/main/03-Day/04-Majority%20Elements%20N%20by%203%20times) | Extended Boyer Moore’s Voting Algorithm | Array | 03 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=yDbkQd9t2ig&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=17)
+5 | [Grid Unique Paths](https://github.com/ajay-nikumbh/Dsa_30/tree/main/03-Day/05-Grid%20Unique%20Paths) | Combinatorics Solution | Array | 03 May 2022 |  O(n-1) or  O(m-1) | O(1) | [Link](https://www.youtube.com/watch?v=t_f0nwwdg5o)
+6 | [Count Reverse Pairs](https://github.com/ajay-nikumbh/Dsa_30/tree/main/03-Day/06-Count%20Reverse%20Pairs) | Merge Sort Algorithm | Array | 03 May 2022 | O(nlogn)+O(n)+O (n) | O(n) | [Link](https://www.youtube.com/watch?v=S6rsAlj_iB4&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=20)  
+
+
 ### Day 17-22 - [Trees and Binary Trees]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
