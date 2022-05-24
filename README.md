@@ -21,3 +21,8 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
  6 | [Count inversions in an array](https://github.com/ajay-nikumbh/30-Days-Dsa/tree/main/02-Day/06-Count%20inversions%20in%20an%20array) | Merge sort modification | Arrays | 02 May 2022 | O(nlogn) | O(n) | [Link](https://www.youtube.com/watch?v=kQ1mJlwW-c0)
   
   
+### Day 17-22 - [Trees and Binary Trees]
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Introduction](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/01-Introduction%20to%20Trees) | Simple introduction | Trees | 21 May  2022 | O(1) | O(1) | [Link](https://www.youtube.com/watch?v=_ANrF3FJm7I&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=2)  
+2 | [Binart tree representation in c++](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/02-Binary%20Tree%20Representation%20in%20C%2B%2B) | Simple explanation | Trees | 
