@@ -76,6 +76,16 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 6 | [Max consecutive ones](https://github.com/ajay-nikumbh/Dsa_30/tree/main/07-Day/06-Max%20consecutive%20ones) | maxi = max(maxi, cnt) | Array | 07 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=Mo33MjjMlyA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=44)
 
 
+### Day 08 - [Linked List and Arrays]
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [N meetings in one room](https://github.com/ajay-nikumbh/Dsa_30/tree/main/08-Day/01-N%20meetings%20in%20one%20room) | Sort and condition checking | Greedy | 08 May 2022 | O(nlogn) | O(n) | [Link](https://www.youtube.com/watch?v=II6ziNnub1Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=45)
+2 | [Minimum number of platforms required for a railway](https://github.com/ajay-nikumbh/Dsa_30/tree/main/08-Day/02-Minimum%20number%20of%20platforms%20required%20for%20a%20railway) | Sorting | Greedy | 08 May 2022 | O(nlogn) | O(1) | [Link](https://www.youtube.com/watch?v=dxVcMDI7vyI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=46)
+3 | [Job sequencing Problem](https://github.com/ajay-nikumbh/Dsa_30/tree/main/08-Day/03-Job%20sequencing%20Problem) | Sorting | Greedy | 08 May 2022 | O(nlogn) + O(n*m) | O(m) | [Link](https://www.youtube.com/watch?v=LjPx4wQaRIs&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=47)
+4 | [Fractional Knapsack Problem](https://github.com/ajay-nikumbh/Dsa_30/tree/main/08-Day/04-Fractional%20Knapsack%20Problem) | Sorting | Greedy | 08 May 2022 | O(n log n + n). O(n log n)  | O(1) | [Link](https://www.youtube.com/watch?v=F_DDzYnxO14&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=49) 
+5 | [Greedy algorithm to find minimum number of coins](https://github.com/ajay-nikumbh/Dsa_30/tree/main/08-Day/05-Greedy%20algorithm%20to%20find%20minimum%20number%20of%20coins) | Greedy approach | Greedy | 08 May 2022 | O(v) | O(1) | [Link](https://www.youtube.com/watch?v=mVg9CfJvayM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=48)
+6 | [Activity Selection](https://github.com/ajay-nikumbh/Dsa_30/tree/main/08-Day/06-Activity%20Selection%20(it%20is%20the%20same%20as%20N%20meeting%20in%20one%20room)) | Sort and condition checking | Greedy | 08 May 2022 | O(nlogn) | O(n) | [Link](https://www.youtube.com/watch?v=II6ziNnub1Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=45)
+
 ### Day 17-22 - [Trees and Binary Trees]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
