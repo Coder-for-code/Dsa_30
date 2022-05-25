@@ -54,13 +54,13 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 6 | [Delete given node in a Linked List O(1) approach](https://github.com/ajay-nikumbh/Dsa_30/tree/main/05-Day/06-Delete%20given%20node%20in%20a%20Linked%20List%20%20O(1)%20approach) | Simple modifications | Linked list | 05 May 2022 | O(1) | O(1) | [Link](https://www.youtube.com/watch?v=icnp4FJdZ_c&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=32)
 
 
-### Day 05 - [Linked List]
+### Day 06 - [Linked List]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
 1 | [Find intersection of Two Linked Lists](https://github.com/ajay-nikumbh/Dsa_30/tree/main/06-Day/01-Find%20intersection%20of%20Two%20Linked%20Lists) | 2 pointer | Linked list | 06 May 2022 | O(m*n) | O(1) | [Link](https://www.youtube.com/watch?v=u4FWXfgS8jw&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=33)
 2 | [Detect a Cycle in a Linked List](https://github.com/ajay-nikumbh/Dsa_30/tree/main/06-Day/02-Detect%20a%20Cycle%20in%20a%20Linked%20List) |  Slow and Faster Pointer | Linked list | 06 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=354J83hX7RI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=34)
 3 | [Reverse Linked List in groups of Size K](https://github.com/ajay-nikumbh/Dsa_30/tree/main/06-Day/03-Reverse%20Linked%20List%20in%20groups%20of%20Size%20K) | Dummy head | Linked list | 06 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=Of0HPkk3JgI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=34)
-4 | [Check if given Linked List is Plaindrome](https://github.com/ajay-nikumbh/Dsa_30/tree/main/06-Day/04-Check%20if%20given%20Linked%20List%20is%20Plaindrome) | Slow and fast pointer | Linked list | 06 May 2022 | [Link](https://www.youtube.com/watch?v=-DtNInqFUXs&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=36)
+4 | [Check if given Linked List is Plaindrome](https://github.com/ajay-nikumbh/Dsa_30/tree/main/06-Day/04-Check%20if%20given%20Linked%20List%20is%20Plaindrome) | Slow and fast pointer | Linked list | 06 May 2022 | O(n) | O(1) |  [Link](https://www.youtube.com/watch?v=-DtNInqFUXs&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=36)
 5 | [Starting point of loop in a Linked List](https://github.com/ajay-nikumbh/Dsa_30/tree/main/06-Day/05-Starting%20point%20of%20loop%20in%20a%20Linked%20List) | Slow and Fast Pointer | Linked list | 06 May 2022 | O(n) | O(1) | [Link](https://github.com/ajay-nikumbh/Dsa_30/tree/main/06-Day/05-Starting%20point%20of%20loop%20in%20a%20Linked%20List)
 6 | [Flattening a Linked List](https://github.com/ajay-nikumbh/Dsa_30/tree/main/06-Day/06-Flattening%20a%20Linked%20List) | Merge algorithm | Linked list | 06 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=ysytSSXpAI0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=38)
 
