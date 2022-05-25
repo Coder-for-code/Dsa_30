@@ -42,6 +42,19 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 6 | [Length of Longest Substring without any Repeating Character](https://github.com/ajay-nikumbh/Dsa_30/tree/main/04-Day/06-Length%20of%20Longest%20Substring%20without%20any%20Repeating%20Character) | Hashing | Array | 04 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=qtVh-XEpsJo&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=26)
 
 
+
+### Day 05 - [Linked List]
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Reverse a linked list](https://github.com/ajay-nikumbh/Dsa_30/tree/main/05-Day/01-Reverse%20a%20Linked%20List) | 3 pointer's | Linked list | 05 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=iRtLEoL-r-g&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=27)
+2 | [Find middle element in a Linked List](https://github.com/ajay-nikumbh/Dsa_30/tree/main/05-Day/02-Find%20middle%20element%20in%20a%20Linked%20List) | Tortoise-Hare-Approach | Linked list | 05 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=sGdwSH8RK-o&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=28)
+3 | [Merge two sorted Linked Lists](https://github.com/ajay-nikumbh/Dsa_30/tree/main/05-Day/03-Merge%20two%20sorted%20Linked%20Lists) | 2 pointer's | Linked list | 05 May 2022 | O(n+m) | O(1) | [Link](https://www.youtube.com/watch?v=Xb4slcp1U38&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=29)
+4 | [Remove N-th node from the end of a Linked List](https://github.com/ajay-nikumbh/Dsa_30/tree/main/05-Day/04-Remove%20N-th%20node%20from%20the%20end%20of%20a%20Linked%20List) | 2 pointer method | Linked list | 05 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=Lhu3MsXZy-Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=30)
+5 | [Add two numbers represented as Linked Lists](https://github.com/ajay-nikumbh/Dsa_30/tree/main/05-Day/05-Add%20two%20numbers%20represented%20as%20Linked%20Lists) 
+| Elementary Math | Linked list | 05 May 2022 | O(max(m,n)) | O(max(m,n)) | [Link](https://www.youtube.com/watch?v=LBVsXSMOIk4&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=32)
+6 | [Delete given node in a Linked List O(1) approach](https://github.com/ajay-nikumbh/Dsa_30/tree/main/05-Day/06-Delete%20given%20node%20in%20a%20Linked%20List%20%20O(1)%20approach) | Simple modifications | Linked list | 05 May 2022 | O(1) | O(1) | [Link](https://www.youtube.com/watch?v=icnp4FJdZ_c&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=32)
+
+
 ### Day 17-22 - [Trees and Binary Trees]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
