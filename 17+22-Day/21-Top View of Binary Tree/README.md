@@ -1,50 +1,9 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![img333](https://user-images.githubusercontent.com/37560890/170311582-9a8bdf95-334a-4d79-adff-be8812475058.jpg)
+![img335](https://user-images.githubusercontent.com/37560890/170311593-adef4872-5237-4cf6-96ff-39de0f67b1c4.jpg)
+![img337](https://user-images.githubusercontent.com/37560890/170311598-5e41ca7e-811d-4bc1-bcd0-3471b6d96db7.jpg)
+![img339](https://user-images.githubusercontent.com/37560890/170311602-00f2fdae-6d9f-4080-9133-943425fb170a.jpg)
+![img341](https://user-images.githubusercontent.com/37560890/170311606-6ccf5f55-1d5c-48ad-8a74-7ecaab576563.jpg)
+![img343](https://user-images.githubusercontent.com/37560890/170311612-a726d2b9-41ba-44b8-aa63-abccd6cb160b.jpg)
+![img345](https://user-images.githubusercontent.com/37560890/170311616-0ec82e3f-b4be-42d7-b5e7-8f4fab795ee9.jpg)
+![img349](https://user-images.githubusercontent.com/37560890/170311746-93c12e2c-52a7-47a5-a5b2-1cdf9cc4a49e.jpg)
+![img351](https://user-images.githubusercontent.com/37560890/170311917-e256b3fc-366b-4648-b680-7e6acb552c01.jpg)
