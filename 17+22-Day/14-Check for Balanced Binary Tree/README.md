@@ -1,50 +1,17 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0117](https://user-images.githubusercontent.com/106215989/170275897-3c894315-fc15-4865-b328-2197cbeb8641.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0118](https://user-images.githubusercontent.com/106215989/170275905-792238c9-822d-4e8d-9922-f5a15618e0b6.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0119](https://user-images.githubusercontent.com/106215989/170275913-5476a82a-93ef-497b-b378-90bff21db383.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0120](https://user-images.githubusercontent.com/106215989/170275917-b9286ad0-b8c1-4f6f-8b60-7d36d42b9843.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0121](https://user-images.githubusercontent.com/106215989/170275922-cc584043-1c52-48e6-8240-aa9df7066ecc.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0122](https://user-images.githubusercontent.com/106215989/170275926-446c9c25-b150-403b-8fae-90e9ee839690.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0123](https://user-images.githubusercontent.com/106215989/170275929-05e98cbc-376e-4cbc-8a35-293dd2d5d933.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0124](https://user-images.githubusercontent.com/106215989/170275933-aa7a1911-dd0a-4b2c-9dcb-509af8d35e0e.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0125](https://user-images.githubusercontent.com/106215989/170275935-0616d84d-4ea9-4524-a652-dee9e0327e5d.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0126](https://user-images.githubusercontent.com/106215989/170275937-f00f1260-16d6-4002-ac91-fb964451f5a1.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0127](https://user-images.githubusercontent.com/106215989/170275939-869046f9-4eb8-4d69-870f-9fa090153565.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0128](https://user-images.githubusercontent.com/106215989/170275944-31d2f5f7-2374-430f-844a-d65c656bf5ae.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0129](https://user-images.githubusercontent.com/106215989/170275949-4d34f30c-0dec-41cc-a924-382e5887f95c.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0130](https://user-images.githubusercontent.com/106215989/170275954-077887e4-72fe-431a-a182-3479cf906856.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0131](https://user-images.githubusercontent.com/106215989/170275957-11db777f-681a-4a7a-9a2a-04f31846fc0f.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0132](https://user-images.githubusercontent.com/106215989/170275960-c99f1631-3618-4ecc-9d92-542bc4f855dc.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0133](https://user-images.githubusercontent.com/106215989/170275964-db85230c-133c-41a7-8235-94f92db064c2.jpg)
