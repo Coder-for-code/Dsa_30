@@ -65,6 +65,17 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 6 | [Flattening a Linked List](https://github.com/ajay-nikumbh/Dsa_30/tree/main/06-Day/06-Flattening%20a%20Linked%20List) | Merge algorithm | Linked list | 06 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=ysytSSXpAI0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=38)
 
 
+### Day 07 - [Linked List and Arrays]
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Rotate a LinkedList](https://github.com/ajay-nikumbh/Dsa_30/tree/main/07-Day/01-Rotate%20a%20LinkedList) | Len % k | Linked list | 07 May 2022 | O(length of the list – (length of list%k)) | O(1) | [Link](https://www.youtube.com/watch?v=9VPm6nEbVPA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=39) 
+2 | [Clone a Linked List with random and next pointer](https://github.com/ajay-nikumbh/Dsa_30/tree/main/07-Day/02-Clone%20a%20Linked%20List%20with%20random%20and%20next%20pointer) | Make a new linked list | Linked list | 07 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=VNf6VynfpdM) 
+3 | [3 sum](https://github.com/ajay-nikumbh/Dsa_30/tree/main/07-Day/03-3%20sum) | 3 pointer's | Array | 07 May 2022 | O(n^3) | O(1) | [Link](https://www.youtube.com/watch?v=onLoX6Nhvmg&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=41)
+4 | [Trapping rainwater](https://github.com/ajay-nikumbh/Dsa_30/tree/main/07-Day/04-Trapping%20rainwater) | 2 pointer approach | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=m18Hntz4go8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=42)
+5 | [Remove Duplicate from Sorted array](https://github.com/ajay-nikumbh/Dsa_30/tree/main/07-Day/05-Remove%20Duplicate%20from%20Sorted%20array) | 2 pointer approach | Linked list | 07 May 2022 | [Link](https://www.youtube.com/watch?v=Fm_p9lJ4Z_8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=43) 
+6 | [Max consecutive ones](https://github.com/ajay-nikumbh/Dsa_30/tree/main/07-Day/06-Max%20consecutive%20ones) | maxi = max(maxi, cnt) | Array | 07 May 2022 | [Link](https://www.youtube.com/watch?v=Mo33MjjMlyA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=44)
+
+
 ### Day 17-22 - [Trees and Binary Trees]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
