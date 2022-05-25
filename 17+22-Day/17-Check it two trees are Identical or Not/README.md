@@ -1,50 +1,6 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0180](https://user-images.githubusercontent.com/106215989/170277583-156f6865-f5c7-4ef5-ac1b-4e903faadcee.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0181](https://user-images.githubusercontent.com/106215989/170277592-ad2b70a0-ed83-41bb-bcc7-c07eba4a5881.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0182](https://user-images.githubusercontent.com/106215989/170277627-29d52d38-8072-4945-9b18-7e139cfce6f6.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0183](https://user-images.githubusercontent.com/106215989/170277658-fc2671fb-6f27-42db-8005-09b0def6994f.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0184](https://user-images.githubusercontent.com/106215989/170277662-561b551d-d619-42c3-b51f-e1aa57b9ecd8.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0185](https://user-images.githubusercontent.com/106215989/170277668-a93d5ca4-062a-4f31-81f6-4043f6c1d484.jpg)
