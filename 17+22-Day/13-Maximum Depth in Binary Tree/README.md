@@ -1,50 +1,7 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0110](https://user-images.githubusercontent.com/37560890/170274974-5915ed4d-9558-4104-b493-02948c37ae56.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0111](https://user-images.githubusercontent.com/37560890/170274995-11cd0bef-4752-4303-b9bf-e909bed9b954.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0112](https://user-images.githubusercontent.com/37560890/170275008-a91bbd83-8c96-4a23-bdd6-9f1e35214e39.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0113](https://user-images.githubusercontent.com/37560890/170275019-c453874f-672c-4543-9f74-5e1ac3f8cef5.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0114](https://user-images.githubusercontent.com/37560890/170275028-5128c98d-5814-4918-98e9-c6e9c06facf4.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0115](https://user-images.githubusercontent.com/37560890/170275041-e600f590-07ae-4390-8da7-ec92b0ca679f.jpg)
+![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0116](https://user-images.githubusercontent.com/37560890/170275062-6a0f16ac-7f40-4cb2-9a42-bf55d1887d6d.jpg)
