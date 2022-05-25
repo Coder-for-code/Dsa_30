@@ -31,6 +31,16 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 5 | [Grid Unique Paths](https://github.com/ajay-nikumbh/Dsa_30/tree/main/03-Day/05-Grid%20Unique%20Paths) | Combinatorics Solution | Array | 03 May 2022 |  O(n-1) or  O(m-1) | O(1) | [Link](https://www.youtube.com/watch?v=t_f0nwwdg5o)
 6 | [Count Reverse Pairs](https://github.com/ajay-nikumbh/Dsa_30/tree/main/03-Day/06-Count%20Reverse%20Pairs) | Merge Sort Algorithm | Array | 03 May 2022 | O(nlogn)+O(n)+O (n) | O(n) | [Link](https://www.youtube.com/watch?v=S6rsAlj_iB4&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=20)  
 
+### Day 04 - [Arrays Part-IV]
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Two sum](https://github.com/ajay-nikumbh/Dsa_30/tree/main/04-Day/01-Two%20Sum) | Hashing | Array | 04 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=dRUpbt8vHpo&list=PLgUwDviBIf0rVwua0kKYlsS_ik_1lyVK_&index=2)
+2 | [Four sum](https://github.com/ajay-nikumbh/Dsa_30/tree/main/04-Day/02-4%20Sum) | target – (nums[i] + nums[j]) | Array | 04 May 2022 | O(n^3) | O(1) | [Link](https://www.youtube.com/watch?v=4ggF3tXIAp0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=21)
+3| [Longest Consecutive Sequence in an Array](https://github.com/ajay-nikumbh/Dsa_30/tree/main/04-Day/03-Longest%20Consecutive%20Sequence%20in%20an%20Array) | Hashing | Array | 04 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=qgizvmgeyUM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=22)
+4 | [Length of the longest subarray with zero Sum](https://github.com/ajay-nikumbh/Dsa_30/tree/main/04-Day/04-Length%20of%20the%20longest%20subarray%20with%20zero%20Sum) | Hashing | Array | 04 May 2022 | O(nlogn) | O(n) | [Link](https://www.youtube.com/watch?v=xmguZ6GbatA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=23)
+5 | [Count the number of subarrays with given xor K](https://github.com/ajay-nikumbh/Dsa_30/tree/main/04-Day/05-Count%20the%20number%20of%20subarrays%20with%20given%20xor%20K) | Prefix xor and map | Arrray | 04 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=lO9R5CaGRPY&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=25)
+6 | [Length of Longest Substring without any Repeating Character](https://github.com/ajay-nikumbh/Dsa_30/tree/main/04-Day/06-Length%20of%20Longest%20Substring%20without%20any%20Repeating%20Character) | Hashing | Array | 04 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=qtVh-XEpsJo&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=26)
+
 
 ### Day 17-22 - [Trees and Binary Trees]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
