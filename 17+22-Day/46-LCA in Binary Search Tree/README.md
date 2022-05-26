@@ -1,50 +1,10 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![img535](https://user-images.githubusercontent.com/37560890/170562036-02692ffe-2df7-4dcf-b592-f6e564a63811.jpg)
+![img537](https://user-images.githubusercontent.com/37560890/170562042-28a81dd1-1d15-460e-a8af-48fff65b67ed.jpg)
+![img539](https://user-images.githubusercontent.com/37560890/170562047-e099def1-5dcc-4f33-895c-c00afffd0827.jpg)
+![img541](https://user-images.githubusercontent.com/37560890/170562050-1502f630-d854-46de-8c6d-e9e586b9aca5.jpg)
+![img543](https://user-images.githubusercontent.com/37560890/170562052-c427c491-71af-4734-9302-0c62c4f614e6.jpg)
+![img545](https://user-images.githubusercontent.com/37560890/170562055-c6d99888-132f-4075-aafc-15fd59b87071.jpg)
+![img547](https://user-images.githubusercontent.com/37560890/170562057-405158e4-263d-402c-ab1b-408bfda3a838.jpg)
+![img549](https://user-images.githubusercontent.com/37560890/170562059-aed5f965-2a19-4bb1-8ea4-5bc4852334a4.jpg)
+![img551](https://user-images.githubusercontent.com/37560890/170562064-9c9e90c7-36dd-4316-9108-06ddf1d061d6.jpg)
+![img553](https://user-images.githubusercontent.com/37560890/170562066-71c44fa3-e458-48d1-a8de-fe8b7499068b.jpg)
