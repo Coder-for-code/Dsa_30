@@ -1,50 +1,27 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![img235](https://user-images.githubusercontent.com/37560890/170553831-faefc3ab-14ed-4413-ade8-fb170422e2c8.jpg)
+![img237](https://user-images.githubusercontent.com/37560890/170553840-0679c1c8-9390-4c72-be17-a9813ffeebb9.jpg)
+![img239](https://user-images.githubusercontent.com/37560890/170553843-1a0d7881-303b-43df-8f28-b9bf21bc92fa.jpg)
+![img241](https://user-images.githubusercontent.com/37560890/170553846-7a4b44b9-7423-47c2-a32c-cd4ee2aeea3b.jpg)
+![img243](https://user-images.githubusercontent.com/37560890/170553849-bfc455b8-3fe2-4e20-a83c-44a1de2f1341.jpg)
+![img245](https://user-images.githubusercontent.com/37560890/170553851-300e61a1-67de-4541-b05f-cd39e5399e8e.jpg)
+![img247](https://user-images.githubusercontent.com/37560890/170553853-6b0187da-f409-4a19-b894-79ff39c03183.jpg)
+![img249](https://user-images.githubusercontent.com/37560890/170553854-a3178f6b-1600-4714-a76a-91e1cb0db77d.jpg)
+![img251](https://user-images.githubusercontent.com/37560890/170553857-6b57867e-cc72-4622-a1ea-cb62f1107c31.jpg)
+![img253](https://user-images.githubusercontent.com/37560890/170553861-742786c7-7a99-47dd-9b16-4ba43b512553.jpg)
+![img255](https://user-images.githubusercontent.com/37560890/170553864-da166afe-4f12-446c-a758-5c653655b3b7.jpg)
+![img257](https://user-images.githubusercontent.com/37560890/170553866-de9afdc7-46f2-4617-8262-7c8fabfbd1c9.jpg)
+![img259](https://user-images.githubusercontent.com/37560890/170553868-9a08214a-143a-40ee-b583-9ce5dd9539e5.jpg)
+![img261](https://user-images.githubusercontent.com/37560890/170553871-901c1693-716c-4242-9ebc-d9dafb097617.jpg)
+![img263](https://user-images.githubusercontent.com/37560890/170553872-f2639051-b328-49df-8f3a-83720fd8428b.jpg)
+![img265](https://user-images.githubusercontent.com/37560890/170553875-cf1a6ac2-18ad-4a90-8118-82fd6553fbd1.jpg)
+![img267](https://user-images.githubusercontent.com/37560890/170553880-61f65f5d-a552-4f43-a4ea-14a3be0fac69.jpg)
+![img269](https://user-images.githubusercontent.com/37560890/170553882-e265eb0f-b503-4512-b2ea-e72f630faf7d.jpg)
+![img271](https://user-images.githubusercontent.com/37560890/170553885-73d7c71f-5db3-4f92-a84b-7e92d97edcce.jpg)
+![img273](https://user-images.githubusercontent.com/37560890/170553889-085eb2d3-6343-472e-a9f4-d485ef1d4fd5.jpg)
+![img275](https://user-images.githubusercontent.com/37560890/170553894-86f22318-ce72-42d2-8f33-449d5c2aea17.jpg)
+![img277](https://user-images.githubusercontent.com/37560890/170553897-51f2d800-6a94-48d2-af8a-37a029285ab5.jpg)
+![img279](https://user-images.githubusercontent.com/37560890/170553899-2e6dc8ed-e4f9-47e9-acb0-de5b7da59d05.jpg)
+![img281](https://user-images.githubusercontent.com/37560890/170553901-411218c4-8454-4c6c-8663-023eae6c8091.jpg)
+![img283](https://user-images.githubusercontent.com/37560890/170553906-6fdf51ee-bc4a-4c4d-83dd-4e50e7eb47a5.jpg)
+![img285](https://user-images.githubusercontent.com/37560890/170553908-091f44f6-43cc-4864-a1f2-2fcd31fc6c15.jpg)
+![img287](https://user-images.githubusercontent.com/37560890/170553910-8fc478ec-9232-4f45-af6a-d34efbb82e7b.jpg)
