@@ -1,50 +1,13 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
+![img635](https://user-images.githubusercontent.com/106215989/170564905-fd7257a8-c7dd-49b7-9d8f-141d9ea859ac.jpg)
+![img637](https://user-images.githubusercontent.com/106215989/170564910-4a5c5fe8-a797-43e1-abcc-c7e55afa9098.jpg)
+![img639](https://user-images.githubusercontent.com/106215989/170564914-aed8ec23-dc45-4b3c-8983-2a1e3a92b4ac.jpg)
+![img641](https://user-images.githubusercontent.com/106215989/170564916-a1ecdcd8-590a-4aa0-85e9-43819b39553e.jpg)
+![img643](https://user-images.githubusercontent.com/106215989/170564923-2945469b-c8b3-4197-b3aa-4bf7598946f0.jpg)
+![img645](https://user-images.githubusercontent.com/106215989/170564924-b021a76c-ec4d-4928-b213-65ea4b7842f3.jpg)
+![img647](https://user-images.githubusercontent.com/106215989/170564926-72990d79-d74f-4a93-acc1-ded7d42a5dfa.jpg)
+![img649](https://user-images.githubusercontent.com/106215989/170564930-27502d0f-aee2-48e8-bd17-efce2aafd797.jpg)
+![img651](https://user-images.githubusercontent.com/106215989/170564933-2df3a466-90f3-487d-b4a3-00d60636d401.jpg)
+![img653](https://user-images.githubusercontent.com/106215989/170564936-98c88bbf-71f3-4e14-8f29-6eb9f360d356.jpg)
+![img655](https://user-images.githubusercontent.com/106215989/170564937-7a7ea915-cb3e-4aac-9dba-035ffa37cb39.jpg)
+![img108](https://user-images.githubusercontent.com/106215989/170565010-0dc41b64-30b8-427e-a9c6-3800b1a60ab7.jpg)
 
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
