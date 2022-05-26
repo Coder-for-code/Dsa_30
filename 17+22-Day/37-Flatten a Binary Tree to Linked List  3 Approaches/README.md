@@ -1,50 +1,27 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![img357](https://user-images.githubusercontent.com/106215989/170553358-cd5450bf-3f04-4f8e-958c-e90486f96b46.jpg)
+![img359](https://user-images.githubusercontent.com/106215989/170553360-9b28de87-8f51-4c8a-a565-dfac166b1d84.jpg)
+![img361](https://user-images.githubusercontent.com/106215989/170553363-84277ba9-9aaf-4ce7-bfae-6520b1b45f8a.jpg)
+![img363](https://user-images.githubusercontent.com/106215989/170553365-456f6e65-2fb2-4e72-a0b7-09d27efb9010.jpg)
+![img365](https://user-images.githubusercontent.com/106215989/170553369-feb8a42a-2848-4b84-b37f-188e0a498d42.jpg)
+![img367](https://user-images.githubusercontent.com/106215989/170553373-0d5c4147-3169-4873-b942-3c002b71209c.jpg)
+![img369](https://user-images.githubusercontent.com/106215989/170553376-66e94bb1-e200-4d99-8bda-e790a1800528.jpg)
+![img371](https://user-images.githubusercontent.com/106215989/170553378-18df3c60-2f03-469d-bf51-fb8df1d79708.jpg)
+![img373](https://user-images.githubusercontent.com/106215989/170553381-ab216922-fdd8-4b60-b116-8e157a6a0875.jpg)
+![img375](https://user-images.githubusercontent.com/106215989/170553383-e7356598-09e2-466c-8561-83e6149082e5.jpg)
+![img377](https://user-images.githubusercontent.com/106215989/170553386-0c57c400-9d2d-4e2a-ad2a-12ed93562c95.jpg)
+![img379](https://user-images.githubusercontent.com/106215989/170553391-1fc5e402-3932-4727-93e1-3b103f730f36.jpg)
+![img381](https://user-images.githubusercontent.com/106215989/170553394-37bfba76-b005-4872-92e7-b853dfc09410.jpg)
+![img383](https://user-images.githubusercontent.com/106215989/170553398-31bc3f6e-54e0-4497-9eb2-ee69b099bb84.jpg)
+![img385](https://user-images.githubusercontent.com/106215989/170553401-da37d0d4-e40a-41f4-9384-6a5ff043d74b.jpg)
+![img387](https://user-images.githubusercontent.com/106215989/170553405-beb5f7bb-482c-40e8-8d5c-969a0b19ca75.jpg)
+![img389](https://user-images.githubusercontent.com/106215989/170553408-c1b799bb-c306-4508-8498-3951f72d15a1.jpg)
+![img391](https://user-images.githubusercontent.com/106215989/170553409-cf5ec693-cc19-4e2a-8858-92d9dad0c07d.jpg)
+![img393](https://user-images.githubusercontent.com/106215989/170553413-2d1a9f1b-c9a8-44d9-8556-8ecfef23043c.jpg)
+![img395](https://user-images.githubusercontent.com/106215989/170553415-75b2b6ec-b3b4-40df-944e-8a33f29ea806.jpg)
+![img397](https://user-images.githubusercontent.com/106215989/170553417-f4314fc1-9227-4e72-9f3e-61b35f80abd0.jpg)
+![img399](https://user-images.githubusercontent.com/106215989/170553419-2f9fb82e-c869-44c7-9b4b-71e09dde36c1.jpg)
+![img401](https://user-images.githubusercontent.com/106215989/170553422-4715af82-8116-45bf-86e2-7edeb21b4981.jpg)
+![img403](https://user-images.githubusercontent.com/106215989/170553425-7e0c4f6e-a50d-4361-adaa-90e8ec54dd16.jpg)
+![img405](https://user-images.githubusercontent.com/106215989/170553428-acc14f9f-5a64-446b-82ea-39654620960a.jpg)
+![img407](https://user-images.githubusercontent.com/106215989/170553429-c5f84451-d381-4a9d-b5cc-b0e9a80bf697.jpg)
+![img409](https://user-images.githubusercontent.com/106215989/170553434-9e7bb6b4-493e-438f-a755-7cadfb375a07.jpg)
