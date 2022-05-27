@@ -1,50 +1,29 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![img782](https://user-images.githubusercontent.com/106215989/170769317-2c5e25d4-c1a1-441d-a5db-52cdfca133d3.jpg)
+![img784](https://user-images.githubusercontent.com/106215989/170769321-8c7c9ee6-0f83-438d-906c-00ad808fb74a.jpg)
+![img786](https://user-images.githubusercontent.com/106215989/170769325-a311f143-e6d0-434e-9727-a962fa8911d9.jpg)
+![img788](https://user-images.githubusercontent.com/106215989/170769327-77c165f0-c8b1-4a4a-8b97-f0033896d188.jpg)
+![img790](https://user-images.githubusercontent.com/106215989/170769331-df749251-25dd-4534-bf5c-8c06f8baffac.jpg)
+![img792](https://user-images.githubusercontent.com/106215989/170769334-a596118a-dab8-4b88-9aa8-64c25ccd4fec.jpg)
+![img794](https://user-images.githubusercontent.com/106215989/170769336-7efabaa6-93f8-451d-a5f7-595d0be9e17e.jpg)
+![img796](https://user-images.githubusercontent.com/106215989/170769339-4e49fe70-7b8c-4678-b1a0-91f0449aec0f.jpg)
+![img798](https://user-images.githubusercontent.com/106215989/170769343-aab14661-93c9-4639-915e-1d4c036dd695.jpg)
+![img800](https://user-images.githubusercontent.com/106215989/170769347-53ebdfdc-b339-4c38-bd39-6bd6dd9d4c21.jpg)
+![img802](https://user-images.githubusercontent.com/106215989/170769350-cae4e77a-7d94-41ae-9ae5-efcba78ae39c.jpg)
+![img804](https://user-images.githubusercontent.com/106215989/170769354-54557656-b8e3-445e-9976-bf8a172e1f28.jpg)
+![img806](https://user-images.githubusercontent.com/106215989/170769355-c8b6fbb5-b610-4131-8964-97964d49965f.jpg)
+![img808](https://user-images.githubusercontent.com/106215989/170769359-d5fb7931-d892-43c2-9ee7-97ea1df987fa.jpg)
+![img810](https://user-images.githubusercontent.com/106215989/170769360-9dc82029-5a49-4aee-b191-1e7c434d2e19.jpg)
+![img812](https://user-images.githubusercontent.com/106215989/170769362-5a6c40ed-2b5d-489d-8853-9bbe246f6a8d.jpg)
+![img814](https://user-images.githubusercontent.com/106215989/170769363-44a6c5fb-f00a-4709-a78d-dd6974fb34bc.jpg)
+![img816](https://user-images.githubusercontent.com/106215989/170769369-35fab06e-5962-4da3-9148-7006889b838c.jpg)
+![img818](https://user-images.githubusercontent.com/106215989/170769372-d8762b67-6f3c-4f1b-bea0-9fb7796c9bb2.jpg)
+![img820](https://user-images.githubusercontent.com/106215989/170769374-cef4109d-3d58-4695-bf25-79231038e2eb.jpg)
+![img822](https://user-images.githubusercontent.com/106215989/170769378-ff14569f-512f-46e0-90c2-32e85902ec71.jpg)
+![img824](https://user-images.githubusercontent.com/106215989/170769381-37d78f81-fb9e-4ded-ab57-0ed02f81a5bc.jpg)
+![img826](https://user-images.githubusercontent.com/106215989/170769384-9a8efd81-49e0-420c-819f-a42ecd99bcca.jpg)
+![img828](https://user-images.githubusercontent.com/106215989/170769390-8b70de6e-11b9-47f8-9072-57d0d0530c1d.jpg)
+![img830](https://user-images.githubusercontent.com/106215989/170769391-f15d3d8a-5a9d-476a-91de-5eeb1479c1a6.jpg)
+![img832](https://user-images.githubusercontent.com/106215989/170769393-280fc8fb-f9ca-41b6-b6b1-192a447cdfb6.jpg)
+![img834](https://user-images.githubusercontent.com/106215989/170769395-1a6e3b2a-87d2-4d2a-aaab-85dbd3c2e885.jpg)
+![img836](https://user-images.githubusercontent.com/106215989/170769398-0db49d3b-f12b-4d61-80dc-9b1e0ad8ebbc.jpg)
+![img838](https://user-images.githubusercontent.com/106215989/170769401-cfe8d7d4-4f4e-4c48-b855-da4f92104062.jpg)
