@@ -1,50 +1,20 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![img120](https://user-images.githubusercontent.com/37560890/170701743-7d51a6bc-289e-452e-9713-389ad05636f8.jpg)
+![img123](https://user-images.githubusercontent.com/37560890/170701750-b49be65e-0e40-41a4-9899-45f581570168.jpg)
+![img126](https://user-images.githubusercontent.com/37560890/170701754-8a9ee2df-41c7-45d4-bc4b-9d0eb358084d.jpg)
+![img129](https://user-images.githubusercontent.com/37560890/170701755-aedc0940-bb3a-4f93-b471-2542b66ec6e5.jpg)
+![img132](https://user-images.githubusercontent.com/37560890/170701758-7e5905b2-4c59-4375-a774-5532dbb72309.jpg)
+![img136](https://user-images.githubusercontent.com/37560890/170701761-560e4148-d2aa-4dc7-9b4d-1561b6098058.jpg)
+![img139](https://user-images.githubusercontent.com/37560890/170701764-3f9fb1cf-4d0c-4e3d-87db-3af9da043ebb.jpg)
+![img142](https://user-images.githubusercontent.com/37560890/170701768-a9e136c4-2407-45cd-b15c-de572ce679db.jpg)
+![img145](https://user-images.githubusercontent.com/37560890/170701770-e8a32517-cb74-4d63-b575-97e61807f183.jpg)
+![img148](https://user-images.githubusercontent.com/37560890/170701771-6a5c584f-7d2f-4018-98c0-af1746332a7a.jpg)
+![img151](https://user-images.githubusercontent.com/37560890/170701774-867386e7-995e-4a9c-b783-421c3aaea2a5.jpg)
+![img155](https://user-images.githubusercontent.com/37560890/170701776-ed9f3166-f76f-46d0-bd3b-a03631924692.jpg)
+![img158](https://user-images.githubusercontent.com/37560890/170701780-d0be71e6-1fe8-43a6-9da4-78ec72053343.jpg)
+![img161](https://user-images.githubusercontent.com/37560890/170701782-26fd4468-47e8-4082-8942-9232feb6bbe0.jpg)
+![img164](https://user-images.githubusercontent.com/37560890/170701784-d3982b48-97bc-4fe0-94b2-19bea5b7ad0e.jpg)
+![img167](https://user-images.githubusercontent.com/37560890/170701789-98510f25-202e-4585-90eb-7fd6ecf4d089.jpg)
+![img170](https://user-images.githubusercontent.com/37560890/170701794-8869e2ff-d5bd-49fe-9b4a-b9aab3f882db.jpg)
+![img174](https://user-images.githubusercontent.com/37560890/170701795-9656c51b-293e-404c-bba7-df488cd6f1cc.jpg)
+![img177](https://user-images.githubusercontent.com/37560890/170701798-bf3cc17a-f52f-492d-a149-ce5b111c4081.jpg)
+![img180](https://user-images.githubusercontent.com/37560890/170701799-077e558a-47d9-4ffc-b322-97a003450653.jpg)
