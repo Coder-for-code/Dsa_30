@@ -1,50 +1,27 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![img349](https://user-images.githubusercontent.com/37560890/170768189-7dd0a7fa-bbc0-4c1d-a706-0cd97d150e23.jpg)
+![img351](https://user-images.githubusercontent.com/37560890/170768195-dd9e0945-714c-44fe-a62c-e32e4619f1f4.jpg)
+![img353](https://user-images.githubusercontent.com/37560890/170768196-20a88fbd-6c68-4f07-8235-1c14ba7b8d2f.jpg)
+![img355](https://user-images.githubusercontent.com/37560890/170768197-ea16d14c-e394-4614-8967-cf9bf1f34c08.jpg)
+![img357](https://user-images.githubusercontent.com/37560890/170768199-14f78f80-9a19-427d-81c1-c74a174565d1.jpg)
+![img359](https://user-images.githubusercontent.com/37560890/170768201-acee0807-85f1-41df-bfe0-4139bcf1e3b9.jpg)
+![img361](https://user-images.githubusercontent.com/37560890/170768204-ada1111c-291a-4900-bd13-2168a71d3163.jpg)
+![img363](https://user-images.githubusercontent.com/37560890/170768205-75920a58-4fab-4745-82d5-e7ab4e33dd23.jpg)
+![img365](https://user-images.githubusercontent.com/37560890/170768208-0a1b49cb-46a5-41fe-91bd-a5df4b81c8b1.jpg)
+![img367](https://user-images.githubusercontent.com/37560890/170768211-44a711db-caba-4f24-84d8-dd70aabf0c88.jpg)
+![img369](https://user-images.githubusercontent.com/37560890/170768212-283bb3d6-e0b8-4c1a-a505-dd2653f5ba18.jpg)
+![img371](https://user-images.githubusercontent.com/37560890/170768214-87e2603f-f068-4fce-a3b4-1e54893a7083.jpg)
+![img373](https://user-images.githubusercontent.com/37560890/170768216-26be4220-4481-48c2-a408-c020c0acbc0d.jpg)
+![img375](https://user-images.githubusercontent.com/37560890/170768218-30b202a9-04ea-4bff-8de2-39930186685b.jpg)
+![img377](https://user-images.githubusercontent.com/37560890/170768220-36ad4b9d-08f7-4f35-9726-5be1fd2edbe0.jpg)
+![img379](https://user-images.githubusercontent.com/37560890/170768221-6522c957-19a6-4ba5-be55-f11a326a7ece.jpg)
+![img381](https://user-images.githubusercontent.com/37560890/170768224-2869da13-6865-4ea0-87c1-65b34bbd74f8.jpg)
+![img383](https://user-images.githubusercontent.com/37560890/170768228-e49a68e9-a04c-4e98-8b74-9d62e0afdeda.jpg)
+![img385](https://user-images.githubusercontent.com/37560890/170768232-74c49d81-8a13-4f58-9620-7b4087422ae7.jpg)
+![img387](https://user-images.githubusercontent.com/37560890/170768234-a474d1f1-1c75-4daa-9680-55253ecddb16.jpg)
+![img389](https://user-images.githubusercontent.com/37560890/170768236-229132e9-a264-462b-b90d-a344ce6866bb.jpg)
+![img391](https://user-images.githubusercontent.com/37560890/170768239-d4709d0d-c20f-4063-869e-09174349b657.jpg)
+![img393](https://user-images.githubusercontent.com/37560890/170768242-38691743-b312-4195-a874-eb9c488d1f8f.jpg)
+![img395](https://user-images.githubusercontent.com/37560890/170768244-fd0d05f0-cc5e-4e07-9841-344fa6385b0c.jpg)
+![img397](https://user-images.githubusercontent.com/37560890/170768247-44416506-9e14-48b3-bdd3-5c0ff0f626bd.jpg)
+![img399](https://user-images.githubusercontent.com/37560890/170768249-17897d24-af3a-4df5-a861-00a1ea3c5014.jpg)
+![img401](https://user-images.githubusercontent.com/37560890/170768250-f865a411-7cd1-4a30-b6c5-0f0d6d637bb2.jpg)
