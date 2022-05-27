@@ -100,6 +100,27 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 8 | [Allocate Minimum Number of Pages](https://github.com/ajay-nikumbh/Dsa_30/tree/main/11-Day/08-Allocate%20Minimum%20Number%20of%20Pages) | Binary search | Binary search |  11 May 2022 | O(logn*n) | O(1) | [Link](https://www.youtube.com/watch?v=gYmWHvRHu-s&list=PLgUwDviBIf0qYbL4TBaEWgb-ljVdhkM7R&index=8)
 9 | [Aggressive Cows](https://github.com/ajay-nikumbh/Dsa_30/tree/main/11-Day/09-Aggressive%20Cows) | Binary search | Binary search | 11 May 2022 | O(logn) | O(1) | [Link](https://www.youtube.com/watch?v=wSOfYesTBRk&list=PLgUwDviBIf0qYbL4TBaEWgb-ljVdhkM7R&index=9)
 
+### Day 13+14 - [Stack And Queues]
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Implement Stack Using Arrays](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/01-Implement%20Stack%20Using%20Arrays) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=GYptUgnIM_I&list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj)
+2 | [Implement Queue Using Arrays](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/02-Implement%20Queue%20Using%20Arrays) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=M6GnoUDpqEE&list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj&index=2)
+3 | [Implement Stack using Queue (using single queue)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/03-Implement%20Stack%20using%20Queue%20(using%20single%20queue)) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=jDZQKzEtbYQ&list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj&index=3) 
+4 | [Implement Queue using Stack (0(1) amortized method)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/04Implement%20Queue%20using%20Stack%20(0(1)%20amortized%20method)) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=3Et9MrMc02A&list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj&index=4)
+5 | [Check for balanced parentheses](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/05-Check%20for%20balanced%20parentheses) | Stack | Stack | 13 May 2022 | O(n) | O(n)  |[Link](https://www.youtube.com/watch?v=wkDfsKijrZ8&list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj&index=5)
+6 | [Next Greater Element](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/06-Next%20Greater%20Element) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=Du881K7Jtk8&list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj&index=6)
+7 | [Sort a Stack](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/07-Sort%20a%20Stack) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=PIwrEAaOrkk)
+8 | [Next Smaller Element](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/08-Next%20Smaller%20Element) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=Du881K7Jtk8&t=218s)
+9 | [LRU cache (IMPORTANT)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/09-LRU%20cache%20(IMPORTANT)) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=xDEuM5qa0zg&list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj&index=7)
+10 | [LFU Cache](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/10-LFU%20Cache) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=0PSB9y8ehbk&list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj&index=9)
+11 | [Largest rectangle in a histogram](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/11-Largest%20rectangle%20in%20a%20histogram) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=X0X6G-eWgQ8&list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj&index=11)
+12 | [Sliding Window maximum](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/12-Sliding%20Window%20maximum) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=CZQGRp93K4k&list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj&index=13)
+13 | [Implement Min Stack](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/13-Implement%20Min%20Stack) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=V09NfaGf2ao)
+14 | [Rotten Orange (Using BFS)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/14-Rotten%20Orange%20(Using%20BFS)) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=pUAPcVlHLKA&list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj&index=14)
+15 | [Stock Span Problem](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/15-Stock%20Span%20Problem) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=-IFmgue8sF0&t=28s)
+16 | [Find the maximum of minimums of every window size](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/16-Find%20the%20maximum%20of%20minimums%20of%20every%20window%20size) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=yRagSKdQgsc)
+17 | [The Celebrity Problem](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/17-The%20Celebrity%20Problem) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=CiiXBvrX-5A)
+
 
 ### Day 17-22 - [Trees and Binary Trees]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
