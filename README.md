@@ -155,3 +155,32 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 28 | [Children Sum Property in Binary Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/28-Children%20Sum%20Property%20in%20Binary%20Tree) | Simple cond check | Trees | 17 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=fnmisPM6cVo&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=30) 
 29 | [Print all the Nodes at a distance of K in Binary Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/29-Print%20all%20the%20Nodes%20at%20a%20distance%20of%20K%20in%20Binary%20Tree) | Map | Trees | 17 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=i9ORlEy6EsI&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=31)
 30 | [Minimum time taken to BURN the Binary Tree from a Node](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/30-Minimum%20time%20taken%20to%20BURN%20the%20Binary%20Tree%20from%20a%20Node) | Bfs | Trees | 17 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=2r5wLmQfD6g&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=32)
+
+
+
+### Day 23 -24 - [Graph's]
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Introduction to Graph Types of Graph](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/01-Introduction%20to%20Graph%20%20Types%20of%20Graph) | Introduction | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=LCrovIMurxY&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=2)
+2 | [Graph Representation in C++](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/02-Graph%20Representation%20in%20C%2B%2B) | C++ representation | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=bTtm2ky7I3Y&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=3)
+3 | [Connected Components in Graphs](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/03-Connected%20Components%20in%20Graphs) | Dfs/Bfs | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=I6v0itcISSY&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=5)
+4 | [Breadth-First Search (BFS)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/04-Breadth-First%20Search%20(BFS)%20%20Traversal%20Technique%20in%20Graphs) | Bfs | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=UeE67iCK2lQ&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=6)
+5 | [Depth-First Dearch (DFS)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/05-Depth-First%20Dearch%20(DFS)%20%20Traversal%20Technique%20in%20Graph) | Dfs | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=uDWljP2PGmU&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=7)
+6 | [Cycle Detection in Undirected Graph using BFS](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/06-Cycle%20Detection%20in%20Undirected%20Graph%20using%20BFS) | Bfs | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=A8ko93TyOns&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=8)
+7 | [Cycle Detection in Undirected Graph using DFS](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/07-Cycle%20Detection%20in%20Undirected%20Graph%20using%20DFS) | Dfs | Graphs | 23 May 2022 | O(v+e) | O(v+e)| [Link](https://www.youtube.com/watch?v=Y9NFqI6Pzd4&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=9)
+8 | [Bipartite Graph (BFS) Graph Coloring](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/08-Bipartite%20Graph%20(BFS)%20%20Graph%20Coloring) | Bfs | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=nbgaEu-pvkU&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=10)
+9 | [Bipartite Graph (DFS) Graph Coloring](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/09-Bipartite%20Graph%20(DFS)%20%20Graph%20Coloring) | Dfs | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=uC884ske2uQ&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=11)
+10 | [Cycle Detection in Directed Graph using DFS](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/10-Cycle%20Detection%20in%20Directed%20Graph%20using%20DFS) | Dfs | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=uzVUw90ZFIg&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=12)
+11 | [Topological Sort (DFS)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/11-Topological%20Sort%20(DFS)) | Dfs | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=Yh6EFazXipA&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=13) 
+12 | [Topological Sort (BFS) Kahn's Algorithm](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/12-Topological%20Sort%20(BFS)%20%20Kahn's%20Algorithm) | Bfs  | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=rZv_jHZva34&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=14)
+13 | [Cycle Detection in Directed Graph using BFS(Kahn's Algorithm)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/13-Cycle%20Detection%20in%20Directed%20Graph%20using%20BFS(Kahn's%20Algorithm)) | Kahn's algorithm | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=V6GxfKDyLBM&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=15)
+14 | [Shortest Path in Undirected Graph with Unit Weights](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/14-Shortest%20Path%20in%20Undirected%20Graph%20with%20Unit%20Weights) | 
+
+
+
+
+
+
+
+
+
