@@ -167,6 +167,9 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 28 | [Children Sum Property in Binary Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/28-Children%20Sum%20Property%20in%20Binary%20Tree) | Simple cond check | Trees | 17 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=fnmisPM6cVo&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=30) 
 29 | [Print all the Nodes at a distance of K in Binary Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/29-Print%20all%20the%20Nodes%20at%20a%20distance%20of%20K%20in%20Binary%20Tree) | Map | Trees | 17 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=i9ORlEy6EsI&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=31)
 30 | [Minimum time taken to BURN the Binary Tree from a Node](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/30-Minimum%20time%20taken%20to%20BURN%20the%20Binary%20Tree%20from%20a%20Node) | Bfs | Trees | 17 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=2r5wLmQfD6g&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=32)
+31 | [Count total Nodes in a COMPLETE Binary Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/31-Count%20total%20Nodes%20in%20a%20COMPLETE%20Binary%20Tree) | 2 Recursive calls | Trees | 17 May 2022 | O(logn)^2 | O(logn) | [Link](https://www.youtube.com/watch?v=u-yWemKGWO0&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=33)
+32 | [Requirements needed to construct a Unique Binary Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/32-Requirements%20needed%20to%20construct%20a%20Unique%20Binary%20Tree) | Concept | Trees | 17 May 2022 | O(1) | O(1) | [Link](https://www.youtube.com/watch?v=9GMECGQgWrQ&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=34)
+33 | []
 
 
 
