@@ -174,7 +174,23 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 11 | [Topological Sort (DFS)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/11-Topological%20Sort%20(DFS)) | Dfs | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=Yh6EFazXipA&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=13) 
 12 | [Topological Sort (BFS) Kahn's Algorithm](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/12-Topological%20Sort%20(BFS)%20%20Kahn's%20Algorithm) | Bfs  | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=rZv_jHZva34&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=14)
 13 | [Cycle Detection in Directed Graph using BFS(Kahn's Algorithm)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/13-Cycle%20Detection%20in%20Directed%20Graph%20using%20BFS(Kahn's%20Algorithm)) | Kahn's algorithm | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=V6GxfKDyLBM&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=15)
-14 | [Shortest Path in Undirected Graph with Unit Weights](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/14-Shortest%20Path%20in%20Undirected%20Graph%20with%20Unit%20Weights) | 
+14 | [Shortest Path in Undirected Graph with Unit Weights](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/14-Shortest%20Path%20in%20Undirected%20Graph%20with%20Unit%20Weights) | Dfs | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=hwCWi7-bRfI&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=16)
+15 | [Shortest Path in Directed Acyclic Graph (DAG)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/15-Shortest%20Path%20in%20Directed%20Acyclic%20Graph%20(DAG)) | Dfs |Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=CrxG4WJotgg&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=17)
+16 | [Dijkstra's Algorithm Shortest Path in Undirected Graphs](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/16-Dijkstra's%20Algorithm%20%20Shortest%20Path%20in%20Undirected%20Graphs) | Dijkstra's algorithm | Graphs | 23 May 2022 | O(vloge) | O(v) | [Link](https://www.youtube.com/watch?v=jbhuqIASjoM&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=18)
+17 | [Minimum Spanning Tree Explanation](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/17-Minimum%20Spanning%20Tree%20Explanation) | Mst explanation | Graphs | 23 May 2022 | O(1) | O(1) | [Link](https://www.youtube.com/watch?v=xsM8i0jVF1w&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=19)
+18 | [Prims Algorithm Minimum Spanning Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/18-Prims%20Algorithm%20%20Minimum%20Spanning%20Tree) | Prims algorithm | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=HnD676J56ak&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=20)
+19 | [Disjoint Set Union By Rank and Path Compression](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/20-Disjoint%20Set%20%20Union%20By%20Rank%20and%20Path%20Compression) | Dsu algorithm | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=3gbO7FDYNFQ&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=23)
+20 | [Kruskal's Algorithm](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/21-Kruskal's%20Algorithm) | Kruskal's algorithm | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=1KRmCzBl_mQ&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=24)
+21 | [Bridges in Graph Cut Edge](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/22-Bridges%20in%20Graph%20%20Cut%20Edge) | Dfs | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=2rjZH0-2lhk&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=25)
+22 | [Articulation Point Cut Vertex](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/23-Articulation%20Point%20%20Cut%20Vertex) | Dfs | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=3t3JHswP7mw&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=26) 
+23 | [Kosaraju's Algorithm for (SCC)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/24-Kosaraju's%20Algorithm%20for%20Strongly%20Connected%20Components%20(SCC)) | Kosaraju's algorithm | Graphs | 23 May 2022 | O(v+e) | O(v+e) | [Link](https://www.youtube.com/watch?v=V8qIqJxCioo&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=27)
+24 | [Bellman Ford Algorithm](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/25-Bellman%20Ford%20Algorithm%20%20Detect%20Negative%20Weight%20Cycle%20in%20Graphs) | Bellman ford algorithm | Graphs | 23 May 2022 | O(v^3) | O(v+e) | [Link](https://www.youtube.com/watch?v=75yC1vbS8S8&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=28)
+
+
+
+
+
+
 
 
 
