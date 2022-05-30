@@ -100,6 +100,18 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 8 | [Allocate Minimum Number of Pages](https://github.com/ajay-nikumbh/Dsa_30/tree/main/11-Day/08-Allocate%20Minimum%20Number%20of%20Pages) | Binary search | Binary search |  11 May 2022 | O(logn*n) | O(1) | [Link](https://www.youtube.com/watch?v=gYmWHvRHu-s&list=PLgUwDviBIf0qYbL4TBaEWgb-ljVdhkM7R&index=8)
 9 | [Aggressive Cows](https://github.com/ajay-nikumbh/Dsa_30/tree/main/11-Day/09-Aggressive%20Cows) | Binary search | Binary search | 11 May 2022 | O(logn) | O(1) | [Link](https://www.youtube.com/watch?v=wSOfYesTBRk&list=PLgUwDviBIf0qYbL4TBaEWgb-ljVdhkM7R&index=9)
 
+### Day 12 - [Trie's]
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Implement TRIE INSERT SEARCH STARTSWITH](https://github.com/ajay-nikumbh/Dsa_30/tree/main/12-Day/01-Implement%20TRIE%20%20INSERT%20%20SEARCH%20%20STARTSWITH) | Trie's | Trie's | 12 May 2022 | O(len) | O(Can determined) | [Link](https://www.youtube.com/watch?v=dBGUmUQhjaM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp)
+2 | [Implement Trie-2 INSERT countWordsEqualTo() countWordsStartingWith()](https://github.com/ajay-nikumbh/Dsa_30/tree/main/12-Day/02-Implement%20Trie-2%20%20INSERT%20%20countWordsEqualTo()%20%20countWordsStartingWith()) | Trie's | Trie's | 12 May 2022 | [Link](https://www.youtube.com/watch?v=K5pcpkEMCN0&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=2)
+3 | [Longest Word With All Prefixes](https://github.com/ajay-nikumbh/Dsa_30/tree/main/12-Day/03-Longest%20Word%20With%20All%20Prefixes) | Trie's | Trie's | 12 May 2022 | [Link](https://www.youtube.com/watch?v=AWnBa91lThI&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=3)
+4 | [Number of Distinct Substrings in a String](https://github.com/ajay-nikumbh/Dsa_30/tree/main/12-Day/04-Number%20of%20Distinct%20Substrings%20in%20a%20String) | Trie's | Trie's | 12 May 2022 | [Link](https://www.youtube.com/watch?v=RV0QeTyHZxo&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=4)
+5 | [Bit PreRequisites for TRIE Problems](https://github.com/ajay-nikumbh/Dsa_30/tree/main/12-Day/05-Bit%20PreRequisites%20for%20TRIE%20Problems) | Trie's | Trie's | 12 May 2022 | [Link](https://www.youtube.com/watch?v=5iyuU4hQFrw&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=5)
+6 | [Maximum XOR of Two Numbers in an Array](https://github.com/ajay-nikumbh/Dsa_30/tree/main/12-Day/06-Maximum%20XOR%20of%20Two%20Numbers%20in%20an%20Array) | Trie's | Trie's | 12 May 2022 | [Link](https://www.youtube.com/watch?v=EIhAwfHubE8&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=6)
+7 | [Maximum XOR With an Element From Array](https://github.com/ajay-nikumbh/Dsa_30/tree/main/12-Day/07-Maximum%20XOR%20With%20an%20Element%20From%20Array) | Trie's | Trie's | 12 May 2022 | [Link](https://www.youtube.com/watch?v=Q8LhG9Pi5KM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=7)
+
+
 ### Day 13+14 - [Stack And Queues]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
