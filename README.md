@@ -221,6 +221,39 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 24 | [Bellman Ford Algorithm](https://github.com/ajay-nikumbh/Dsa_30/tree/main/23%2B24-Day/25-Bellman%20Ford%20Algorithm%20%20Detect%20Negative%20Weight%20Cycle%20in%20Graphs) | Bellman ford algorithm | Graphs | 23 May 2022 | O(v^3) | O(v+e) | [Link](https://www.youtube.com/watch?v=75yC1vbS8S8&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=28)
 
 
+### Day 25 - 26 - [Dynamic Programming]
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Introduction to Dynamic Programming](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/01-One%20dimensional%20dp/01-Introduction%20to%20Dynamic%20Programming) | Introduction | Dp | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=tyB0ztf0DNY&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
