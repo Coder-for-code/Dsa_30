@@ -242,7 +242,8 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 8 | [Grid Unique Paths](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/02-Two%20dimensional%20dp/02-Grid%20Unique%20Paths) | 2d dp | 2d dp | 25 May 2022 | O(n^2) | O(1) | [Link](https://www.youtube.com/watch?v=sdE0A2Oxofw&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=9)
 9 | [Unique Paths 2](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/02-Two%20dimensional%20dp/03-Unique%20Paths%202) | 2d dp | 2d dp | 25 May 2022 | O(n^2) | O(1) | [Link](https://www.youtube.com/watch?v=TmhpgXScLyY&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=10)
 10 | [Minimum Path Sum in Grid](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/02-Two%20dimensional%20dp/04-Minimum%20Path%20Sum%20in%20Grid) | 2d dp | 2d dp | 25 May 2022 | O(n^2) | O(1) | [Link](https://www.youtube.com/watch?v=_rgTlyky1uQ&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=11)
-
+11 | [Triangle Fixed Starting Point and Variable Ending Point](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/02-Two%20dimensional%20dp/05-Triangle%20%20Fixed%20Starting%20Point%20and%20Variable%20Ending%20Point) | 2d dp | 2d dp | 25 May 2022 | O(n^2) | O(1) | [Link](https://www.youtube.com/watch?v=SrP-PiLSYC0&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=12)
+12 | [MinimumMaximum Falling Path Sum Variable Starting and Ending Points](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/02-Two%20dimensional%20dp/06-MinimumMaximum%20Falling%20Path%20Sum%20Variable%20Starting%20and%20Ending%20Points) | 2d dp | 2d dp | 25 May 2022 | O(n^2) | O(1) | [Link](https://www.youtube.com/watch?v=N_aJ5qQbYA0&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=13)
 
 
 
