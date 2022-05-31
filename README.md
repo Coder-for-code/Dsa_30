@@ -224,6 +224,7 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 ### Day 25 - 26 - [Dynamic Programming]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
+One Dimensional Dynamic Programming
 1 | [Introduction to Dynamic Programming](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/01-One%20dimensional%20dp/01-Introduction%20to%20Dynamic%20Programming) | Fibonacci dp | Dp | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=tyB0ztf0DNY&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=2)
 2 | [Climbing Stairs Learn How to Write 1D Recurrence Relations](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/01-One%20dimensional%20dp/02-Climbing%20Stairs%20%20Learn%20How%20to%20Write%201D%20Recurrence%20Relations) | Fibonacci dp | Dp | 25 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=mLfjzJsN8us&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=3)
 3 | [Frog Jump](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/01-One%20dimensional%20dp/03-Frog%20Jump) | Dp | Dp | 25 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=EgG3jsGoPvQ&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=4)
