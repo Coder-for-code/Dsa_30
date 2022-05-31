@@ -224,13 +224,13 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 ### Day 25 - 26 - [Dynamic Programming]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
-One Dimensional Dynamic Programming
 1 | [Introduction to Dynamic Programming](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/01-One%20dimensional%20dp/01-Introduction%20to%20Dynamic%20Programming) | Fibonacci dp | Dp | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=tyB0ztf0DNY&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=2)
 2 | [Climbing Stairs Learn How to Write 1D Recurrence Relations](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/01-One%20dimensional%20dp/02-Climbing%20Stairs%20%20Learn%20How%20to%20Write%201D%20Recurrence%20Relations) | Fibonacci dp | Dp | 25 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=mLfjzJsN8us&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=3)
 3 | [Frog Jump](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/01-One%20dimensional%20dp/03-Frog%20Jump) | Dp | Dp | 25 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=EgG3jsGoPvQ&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=4)
 4 | [Frog Jump with K Distance](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/01-One%20dimensional%20dp/04-Frog%20Jump%20with%20K%20Distance) | Dp | Dp | 25 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=Kmh3rhyEtB8&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=5)
 5 | [Maximum Sum of Non-Adjacent Elements House Robber 1-D](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/01-One%20dimensional%20dp/05-Maximum%20Sum%20of%20Non-Adjacent%20Elements%20%20House%20Robber%20%201-D%20%20DP%20on%20Subsequences) | Dp | Dp | 25 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=GrMBfJNk_NY&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=6)
 6 | [House Robber 2 1D DP DP on Subsequences](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/01-One%20dimensional%20dp/06-House%20Robber%202%20%201D%20DP%20%20DP%20on%20Subsequences) | Dp | Dp | 25 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=3WaxQMELSkw&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=7)
+7 | [Ninja's Training MUST WATCH for 2D CONCEPTS](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/02-Two%20dimensional%20dp/01-Ninja's%20Training%20%20MUST%20WATCH%20for%202D%20CONCEPTS) | 2d dp | 2d dp | 25 May 2022 | O(n^2) | O(1) | [Link](https://www.youtube.com/watch?v=sdE0A2Oxofw&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=9) 
 
 
 
