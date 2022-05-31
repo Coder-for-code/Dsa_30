@@ -187,6 +187,8 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 48 | [Inorder SuccessorPredecessor in BST 3 Methods](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/48-Inorder%20SuccessorPredecessor%20in%20BST%20%203%20Methods) | 2 recursive calls | Trees | 17 May 2022 | O(h) | O(1) | [Link](https://www.youtube.com/watch?v=SXKAD2svfmI&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=50)
 49 | [Binary Search Tree Iterator BST O(H) Space](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/49-Binary%20Search%20Tree%20Iterator%20%20BST%20%20O(H)%20Space) | 2 recursive calls | Trees | 17 May 2022 | O(h) | O(1) | [Link](https://www.youtube.com/watch?v=D2jMcmxU4bs&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=51)
 50 | [Two Sum In BST Check if there exists a pair with Sum K](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/50-Two%20Sum%20In%20BST%20%20Check%20if%20there%20exists%20a%20pair%20with%20Sum%20K)  | Stack | Trees | 17 May 2022 | O(h) | O(1) | [Link](https://www.youtube.com/watch?v=ssL3sHwPeb4&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=52) 
+51 | [Recover BST Correct BST with two nodes swapped](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/51-Recover%20BST%20%20Correct%20BST%20with%20two%20nodes%20swapped) | Inorder traversal | Trees | 17 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=ZWGW7FminDM&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=53) 
+52 | [Largest BST in Binary Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/52-Largest%20BST%20in%20Binary%20Tree) | 2 recursive calls | Trees | 17 May 2022 | O(n) | O(1) | [Link](https://www.youtube.com/watch?v=X0oXMdtUDwo&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=54)
 
 
 
