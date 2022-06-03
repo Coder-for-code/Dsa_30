@@ -249,7 +249,19 @@ C. Three dimensional Dp
 
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
-1 | [Cherry Pickup II 3D DP](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/03-Three%20dimesional%20dp/01-Cherry%20Pickup%20II%20%203D%20DP%20Made%20Easy) | 3d dp | 3d dp | O(n^3) | O(n) | [Link](https://www.youtube.com/watch?v=QGfn7JeXK54&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=14)
+1 | [Cherry Pickup II 3D DP](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/03-Three%20dimesional%20dp/01-Cherry%20Pickup%20II%20%203D%20DP%20Made%20Easy) | 3d dp | 3d dp | 24 May 2022  |O(n^3) | O(n) | [Link](https://www.youtube.com/watch?v=QGfn7JeXK54&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=14)
+
+D. Dp on subsequences
+
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Subset Sum Equals to Target](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/04-Dp%20on%20subsequences/01-Subset%20Sum%20Equals%20to%20Target) | Subsequence | Subsequence | 24 May 2022 | O(nk) | O(nk) | [Link](https://www.youtube.com/watch?v=fWX9xDmIzRI&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=15)
+2 | [Partition Equal Subset Sum](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/04-Dp%20on%20subsequences/02-Partition%20Equal%20Subset%20Sum) | Subsequence | Subsequence | 24 May 2022 | O(nk) | O(nk) | [Link](https://www.youtube.com/watch?v=7win3dcgo3k&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=16)
+3 | [Partition A Set Into Two Subsets With Minimum Absolute Sum Difference](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/04-Dp%20on%20subsequences/03-Partition%20A%20Set%20Into%20Two%20Subsets%20With%20Minimum%20Absolute%20Sum%20Difference) | Subsequence | Subsequence | 24 May 2022 | O(nk) | O(nk) | [Link](https://www.youtube.com/watch?v=GS_OqZb2CWc&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=17)
+4 | [Counts Subsets with Sum K](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/04-Dp%20on%20subsequences/04-Counts%20Subsets%20with%20Sum%20K) | Subsequence | Subsequence | 24 May 2022 | O(nk) | O(nk) | [Link](https://www.youtube.com/watch?v=ZHyb-A2Mte4&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=18)
+5 | [Count Partitions With Given Difference](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/04-Dp%20on%20subsequences/05-Count%20Partitions%20With%20Given%20Difference) | Subsequence | Subsequence | 24 May 2022 | O(nk) | O(nk) | [Link](https://www.youtube.com/watch?v=zoilQD1kYSg&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=19)
+6 | [0/1 Knapsack Recursion to Single Array Space Optimised Approach](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/04-Dp%20on%20subsequences/06-01%20Knapsack%20%20Recursion%20to%20Single%20Array%20Space%20Optimised%20Approach) | Subsequence | Subsequence | 24 May 2022 | O(nk) | O(nk) | [Link](https://www.youtube.com/watch?v=GqOmJHQZivw&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=20)
+7 | [Minimum Coins](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/04-Dp%20on%20subsequences/07-Minimum%20Coins) | Subsequence | Subsequence | 24 May 2022 | O(nk) | O(nk) | [Link](https://www.youtube.com/watch?v=myPeWb3Y68A&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=21)
 
 
 
