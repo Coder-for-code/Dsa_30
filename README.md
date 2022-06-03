@@ -245,6 +245,14 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 11 | [Triangle Fixed Starting Point and Variable Ending Point](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/02-Two%20dimensional%20dp/05-Triangle%20%20Fixed%20Starting%20Point%20and%20Variable%20Ending%20Point) | 2d dp | 2d dp | 25 May 2022 | O(n^2) | O(1) | [Link](https://www.youtube.com/watch?v=SrP-PiLSYC0&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=12)
 12 | [MinimumMaximum Falling Path Sum Variable Starting and Ending Points](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/02-Two%20dimensional%20dp/06-MinimumMaximum%20Falling%20Path%20Sum%20Variable%20Starting%20and%20Ending%20Points) | 2d dp | 2d dp | 25 May 2022 | O(n^2) | O(1) | [Link](https://www.youtube.com/watch?v=N_aJ5qQbYA0&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=13)
 
+C. Three dimensional Dp
+
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Cherry Pickup II 3D DP](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/03-Three%20dimesional%20dp/01-Cherry%20Pickup%20II%20%203D%20DP%20Made%20Easy) | 3d dp | 3d dp | O(n^3) | O(n) | [Link](https://www.youtube.com/watch?v=QGfn7JeXK54&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=14)
+
+
+
 
 
 
