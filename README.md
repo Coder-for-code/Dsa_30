@@ -161,6 +161,25 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 17 | [The Celebrity Problem](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/17-The%20Celebrity%20Problem) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=CiiXBvrX-5A)
 
 
+### Day 15-16 - [String's]
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Reverse Words in a String](https://github.com/ajay-nikumbh/Dsa_30/tree/main/15%2B16-Day/01-Reverse%20Words%20in%20a%20String) | Strings | Strings | 15 May 2022  |O(n) | O(n) | [Link](https://www.youtube.com/watch?v=vhnRAaJybpA)
+2 | [Longest Palindrome in a string](https://github.com/ajay-nikumbh/Dsa_30/tree/main/15%2B16-Day/02-Longest%20Palindrome%20in%20a%20string) | Strings | Strings | 15 May 2022  |O(n) | O(n) | [Link](https://www.youtube.com/watch?v=jCOJk4UyO8w)
+3 | [Roman Number to Integer and vice versa](https://github.com/ajay-nikumbh/Dsa_30/tree/main/15%2B16-Day/03-Roman%20Number%20to%20Integer%20and%20vice%20versa) | Strings | Strings | 15 May 2022  |O(n) | O(n) | [Link](https://www.youtube.com/watch?v=dlATMslQ6Uc)
+4 | [Implement ATOI/STRSTR](https://github.com/ajay-nikumbh/Dsa_30/tree/main/15%2B16-Day/04-Implement%20ATOISTRSTR) | Strings | Strings | 15 May 2022  |O(n) | O(n) | [Link](https://www.youtube.com/watch?v=2I9XO8jwZCA)
+5 | [Longest Common Prefix](https://github.com/ajay-nikumbh/Dsa_30/tree/main/15%2B16-Day/05-Longest%20Common%20Prefix) | Strings | Strings | 15 May 2022  |O(n) | O(n) | [Link](https://www.youtube.com/watch?v=fhyIORFDD0k)
+6  | [Rabin Karp](https://github.com/ajay-nikumbh/Dsa_30/tree/main/15%2B16-Day/06-Rabin%20Karp) | Strings | Strings | 15 May 2022  |O(n) | O(n) | [Link](https://www.youtube.com/watch?v=qQ8vS2btsxI)
+7 | [Z-Function](https://github.com/ajay-nikumbh/Dsa_30/tree/main/15%2B16-Day/07-Z-Function) | Strings | Strings | 15 May 2022  |O(n) | O(n) | [Link](https://www.youtube.com/watch?v=mcYxvSmNDlY)
+8 | [KMP algo LPS(pi) array](https://github.com/ajay-nikumbh/Dsa_30/tree/main/15%2B16-Day/08-KMP%20algo%20%20LPS(pi)%20array) | Strings | Strings | 15 May 2022  |O(n) | O(n) | [Link](https://www.youtube.com/watch?v=V5-7GzOfADQ)
+9 | [Minimum characters needed to be inserted in the beginning to make it palindromic](https://github.com/ajay-nikumbh/Dsa_30/tree/main/15%2B16-Day/09-Minimum%20characters%20needed%20to%20be%20inserted%20in%20the%20beginning%20to%20make%20it%20palindromic) | Strings | Strings | 15 May 2022  |O(n) | O(n) | [Link](https://www.youtube.com/watch?v=xPBLEj41rFU&t=89s)
+10 | [Check for Anagrams](https://github.com/ajay-nikumbh/Dsa_30/tree/main/15%2B16-Day/10-Check%20for%20Anagrams) | Strings | Strings | 15 May 2022  |O(n) | O(n) | [Link](https://www.youtube.com/watch?v=QZmh8-Auqo8)
+11 | [Count and Say](https://github.com/ajay-nikumbh/Dsa_30/tree/main/15%2B16-Day/11-Count%20and%20Say) |  Strings | Strings | 15 May 2022  |O(n) | O(n) | [Link](https://www.youtube.com/watch?v=9fI_26Dl1IA)
+12 | [Compare version numbers](https://github.com/ajay-nikumbh/Dsa_30/tree/main/15%2B16-Day/12-Compare%20version%20numbers) | Strings | Strings | 15 May 2022  |O(n) | O(n) | [Link](https://www.youtube.com/watch?v=Z4Af1_t7wzk)
+
+
+
+
 ### Day 17-22 - [Trees and Binary Trees]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
