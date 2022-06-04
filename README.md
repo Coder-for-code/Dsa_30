@@ -87,6 +87,33 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 6 | [Activity Selection](https://github.com/ajay-nikumbh/Dsa_30/tree/main/08-Day/06-Activity%20Selection%20(it%20is%20the%20same%20as%20N%20meeting%20in%20one%20room)) | Sort and condition checking | Greedy | 08 May 2022 | O(nlogn) | O(n) | [Link](https://www.youtube.com/watch?v=II6ziNnub1Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=45)
 
 
+### Day 09-10  - [Recursion + Backtracking]
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Introduction to Recursion](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/01-Introduction%20to%20Recursion) | Introduction | Recursion | 9 May 2022 | O(1) | O(1) | [Link](https://www.youtube.com/watch?v=yVdKa8dnKiE&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9)
+2 | [Problems on Recursion](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/02-Problems%20on%20Recursion) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=un6PLygfXrA&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=2)
+3 | [Parameterised and Functional Recursion](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/03-Parameterised%20and%20Functional%20Recursion) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=69ZCDFy-OUo&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=3)
+4 | [Problems on Functional Recursion](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/04-Problems%20on%20Functional%20Recursion) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=twuC1F6gLI8&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=4)
+5 | [Multiple Recursion Calls](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/05-Multiple%20Recursion%20Calls) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=kvRjNm4rVBE&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=5)
+6 | [Recursion on Subsequences](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/06-Recursion%20on%20Subsequences) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=AxNNVECce8c&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=6) 
+7 | [All Kind of Patterns in Recursion](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/07-All%20Kind%20of%20Patterns%20in%20Recursion) |  Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=eQCS_v3bw0Q&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=7)
+8 | [Combination Sum](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/08-Combination%20Sum) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=OyZFFqQtu98&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=8)
+9 | [Combination Sum II](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/09-Combination%20Sum%20II) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=G1fRTGRxXU8&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=9)
+10 | [Subset Sum I](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/10-Subset%20Sum%20I) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=rYkfBRtMJr8&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=10)
+11 | [Subset Sum II](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/11-Subset%20Sum%20II) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=RIn3gOkbhQE&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=11)
+12 | [Print all Permutations of a StringArray](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/12-Print%20all%20Permutations%20of%20a%20StringArray) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=YK78FU5Ffjw&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=12) 
+13 | [Print all Permutations of a StringArray II](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/13-Print%20all%20Permutations%20of%20a%20StringArray%20II) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=f2ic2Rsc9pU&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=13)
+14 | [N-Queens](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/14-N-Queens) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=i05Ju7AftcM&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=14)
+15 | [Sudoko Solver](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/15-Sudoko%20Solver) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=FWAIf_EVUKE&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=15)
+16 | [M-Coloring Problem](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/16-M-Coloring%20Problem) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=wuVwUK25Rfc&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=16)
+17 | [Palindrome Partitioning](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/17-Palindrome%20Partitioning) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=WBgsABoClE0&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=17)
+18 | [Rat in A Maze](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/18-Rat%20in%20A%20Maze) |  Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=bLGZhJlt4y0&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=18)
+19 | [K-th Permutation Sequence](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/19-K-th%20Permutation%20Sequence) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=wT7gcXLYoao&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=19)
+20 | [Word Break (print all ways)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/20-Word%20Break%20(print%20all%20ways)) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link]
+
+
+
+
 ### Day 11 - [Binary Search]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
@@ -112,7 +139,7 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 7 | [Maximum XOR With an Element From Array](https://github.com/ajay-nikumbh/Dsa_30/tree/main/12-Day/07-Maximum%20XOR%20With%20an%20Element%20From%20Array) | Trie's | Trie's | 12 May 2022 | O(len) | O(Can determined) | [Link](https://www.youtube.com/watch?v=Q8LhG9Pi5KM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=7)
 
 
-### Day 13+14 - [Stack And Queues]
+### Day 13-14 - [Stack And Queues]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
 1 | [Implement Stack Using Arrays](https://github.com/ajay-nikumbh/Dsa_30/tree/main/13%2B14-Day/01-Implement%20Stack%20Using%20Arrays) | Stack | Stack | 13 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=GYptUgnIM_I&list=PLgUwDviBIf0oSO572kQ7KCSvCUh1AdILj)
