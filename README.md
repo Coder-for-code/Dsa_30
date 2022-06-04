@@ -109,7 +109,7 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 17 | [Palindrome Partitioning](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/17-Palindrome%20Partitioning) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=WBgsABoClE0&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=17)
 18 | [Rat in A Maze](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/18-Rat%20in%20A%20Maze) |  Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=bLGZhJlt4y0&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=18)
 19 | [K-th Permutation Sequence](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/19-K-th%20Permutation%20Sequence) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=wT7gcXLYoao&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=19)
-20 | [Word Break (print all ways)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/20-Word%20Break%20(print%20all%20ways)) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link]
+20 | [Word Break (print all ways)](https://github.com/ajay-nikumbh/Dsa_30/tree/main/09%2B10-Day/20-Word%20Break%20(print%20all%20ways)) | Problems | Recursion | 9 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=th4OnoGasMU)
 
 
 
