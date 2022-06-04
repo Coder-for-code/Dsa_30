@@ -318,9 +318,12 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 54 | [Palindrome Partitioning - II Front Partition](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/08-Matrix%20the%20Partition%20dp/06-Palindrome%20Partitioning%20-%20II%20Front%20Partition) | Matrix dp | Matrix dp | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=PhWWJmaKfMc&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=55)
 55 | [Partition Array for Maximum Sum Front Partition](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/08-Matrix%20the%20Partition%20dp/07-Partition%20Array%20for%20Maximum%20Sum%20Front%20Partition) | Matrix dp | Matrix dp | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=PhWWJmaKfMc&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=55)
 
+I. Dp on rectangles
 
-
-
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+1 | [Maximum Rectangle Area with all 1's](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/09-Dp%20on%20rectangles/01-Maximum%20Rectangle%20Area%20with%20all%201's) | Dp on rect | Dp on rect | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=tOylVCugy9k&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=56)
+2 | [Count Square Submatrices with All Ones](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/09-Dp%20on%20rectangles/02-Count%20Square%20Submatrices%20with%20All%20Ones) |  Dp on rect | Dp on rect | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=auS1fynpnjo&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=57)
 
 
 
