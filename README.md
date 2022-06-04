@@ -293,6 +293,18 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 39 | [Buy and Sell Stocks With Cooldown](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/06-Dp%20on%20stocks/05-Buy%20and%20Sell%20Stocks%20With%20Cooldown) | Stocks dp | Stocks dp | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=IGIe46xw3YY&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=40)
 40 | [Buy and Sell Stocks With Transaction Fee](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/06-Dp%20on%20stocks/06-Buy%20and%20Sell%20Stocks%20With%20Transaction%20Fee) | Stocks dp | Stocks dp | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=k4eK-vEmnKg&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=41)
 
+G. Dp on LIS
+
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+41 | [Longest Increasing Subsequence](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/07-Dp%20on%20LIS/01-Longest%20Increasing%20Subsequence) | Lis | Lis | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=ekcwMsSIzVc&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=42)
+42 | [Printing Longest Increasing Subsequence](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/07-Dp%20on%20LIS/02-Printing%20Longest%20Increasing%20Subsequence) | Lis | Lis | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=IFfYfonAFGc&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=43)
+43 | [Longest Increasing Subsequence Binary Search Intuition](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/07-Dp%20on%20LIS/03-Longest%20Increasing%20Subsequence%20%20Binary%20Search%20%20Intuition) | Lis | Lis | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=on2hvxBXJH4&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=44)
+44 | [Largest Divisible Subset](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/07-Dp%20on%20LIS/04-Largest%20Divisible%20Subset) | Lis | Lis | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=gDuZwBW9VvM&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=45)
+45 | [Longest String Chain](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/07-Dp%20on%20LIS/05-Longest%20String%20Chain) | Lis | Lis | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=YY8iBaYcc4g&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=46)
+46 | [Longest Bitonic Subsequence](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/07-Dp%20on%20LIS/06-Longest%20Bitonic%20Subsequence) | Lis | Lis | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=y4vN0WNdrlg&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=47)
+47 | [Number of Longest Increasing Subsequences](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/07-Dp%20on%20LIS/07-Number%20of%20Longest%20Increasing%20Subsequences) | Lis | Lis | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=cKVl1TFdNXg&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=48)
+
 
 
 
