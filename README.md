@@ -305,7 +305,18 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 46 | [Longest Bitonic Subsequence](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/07-Dp%20on%20LIS/06-Longest%20Bitonic%20Subsequence) | Lis | Lis | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=y4vN0WNdrlg&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=47)
 47 | [Number of Longest Increasing Subsequences](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/07-Dp%20on%20LIS/07-Number%20of%20Longest%20Increasing%20Subsequences) | Lis | Lis | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=cKVl1TFdNXg&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=48)
 
+H. Matrix the Partition dp
 
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+48 | [Matrix Chain Multiplication](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/08-Matrix%20the%20Partition%20dp/01-Matrix%20Chain%20Multiplication) | Matrix dp | Matrix dp | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=vRVfmbCFW7Y&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=49)
+49 | [Matrix Chain Multiplication Bottom-Up tabulation](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/08-Matrix%20the%20Partition%20dp/02-Matrix%20Chain%20Multiplication%20Bottom-Up%20tabulation) | Matrix dp | Matrix dp | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=pDCXsbAw5Cg&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=50)
+50 | [Minimum Cost to Cut the Stick](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/08-Matrix%20the%20Partition%20dp/03-Minimum%20Cost%20to%20Cut%20the%20Stick) |  Matrix dp | Matrix dp | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=xwomavsC86c&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=51)
+51 | [Burst Balloons](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/08-Matrix%20the%20Partition%20dp/04-Burst%20Balloons) |  Matrix dp | Matrix dp | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=Yz4LlDSlkns&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=52)
+52 | [Evaluate Boolean Expression to True](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/08-Matrix%20the%20Partition%20dp/05-Evaluate%20Boolean%20Expression%20to%20True) | Matrix dp | Matrix dp | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=MM7fXopgyjw&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=53)
+53 | [Palindrome Partitioning - II Front Partition](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/08-Matrix%20the%20Partition%20dp/06-Palindrome%20Partitioning%20-%20II%20Front%20Partition) | Matrix dp | Matrix dp | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=_H8V5hJUGd0&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=54)
+54 | [Palindrome Partitioning - II Front Partition](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/08-Matrix%20the%20Partition%20dp/06-Palindrome%20Partitioning%20-%20II%20Front%20Partition) | Matrix dp | Matrix dp | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=PhWWJmaKfMc&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=55)
+55 | [Partition Array for Maximum Sum Front Partition](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/08-Matrix%20the%20Partition%20dp/07-Partition%20Array%20for%20Maximum%20Sum%20Front%20Partition) | Matrix dp | Matrix dp | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=PhWWJmaKfMc&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=55)
 
 
 
