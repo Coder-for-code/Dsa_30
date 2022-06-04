@@ -282,6 +282,17 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 33 | [Edit Distance Recursive to 1D Array Optimised Solution](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/05-Dp%20on%20strings/09-Edit%20Distance%20%20Recursive%20to%201D%20Array%20Optimised%20Solution) | Lcs | Lcs | 25 May 2022 | O(nk) | O(nk) | [Link](https://www.youtube.com/watch?v=fJaKO8FbDdo&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=34)
 34 | [Wildcard Matching Recursive to 1D Array Optimisation](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/05-Dp%20on%20strings/10-Wildcard%20Matching%20%20Recursive%20to%201D%20Array%20Optimisation) | Lcs | Lcs | 25 May 2022 | O(nk) | O(nk) | [Link](https://www.youtube.com/watch?v=ZmlQ3vgAOMo&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=35)
 
+F. Dp on stocks
+
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
+35 | [Best Time to Buy and Sell Stock](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/06-Dp%20on%20stocks/01-Best%20Time%20to%20Buy%20and%20Sell%20Stock) | Stocks dp | Stocks dp | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=excAOvwF_Wk&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=36)
+36 | [Buy and Sell Stock - II](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/06-Dp%20on%20stocks/02-Buy%20and%20Sell%20Stock%20-%20II) | Stocks dp | Stocks dp | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=nGJmxkUJQGs&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=37)
+37 | [Buy and Sell Stocks III](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/06-Dp%20on%20stocks/03-Buy%20and%20Sell%20Stocks%20III) | Stocks dp | Stocks dp | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=-uQGzhYj8BQ&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=38)
+38 | [Buy and Stock Sell IV](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/06-Dp%20on%20stocks/04-Buy%20and%20Stock%20Sell%20IV) | Stocks dp | Stocks dp | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=IV1dHbk5CDc&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=39)
+39 | [Buy and Sell Stocks With Cooldown](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/06-Dp%20on%20stocks/05-Buy%20and%20Sell%20Stocks%20With%20Cooldown) | Stocks dp | Stocks dp | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=IGIe46xw3YY&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=40)
+40 | [Buy and Sell Stocks With Transaction Fee](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/06-Dp%20on%20stocks/06-Buy%20and%20Sell%20Stocks%20With%20Transaction%20Fee) | Stocks dp | Stocks dp | 25 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=k4eK-vEmnKg&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=41)
+
 
 
 
