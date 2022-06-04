@@ -322,39 +322,8 @@ I. Dp on rectangles
 
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
-1 | [Maximum Rectangle Area with all 1's](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/09-Dp%20on%20rectangles/01-Maximum%20Rectangle%20Area%20with%20all%201's) | Dp on rect | Dp on rect | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=tOylVCugy9k&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=56)
-2 | [Count Square Submatrices with All Ones](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/09-Dp%20on%20rectangles/02-Count%20Square%20Submatrices%20with%20All%20Ones) |  Dp on rect | Dp on rect | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=auS1fynpnjo&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=57)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+56 | [Maximum Rectangle Area with all 1's](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/09-Dp%20on%20rectangles/01-Maximum%20Rectangle%20Area%20with%20all%201's) | Dp on rect | Dp on rect | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=tOylVCugy9k&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=56)
+57 | [Count Square Submatrices with All Ones](https://github.com/ajay-nikumbh/Dsa_30/tree/main/25%2B26-Day/09-Dp%20on%20rectangles/02-Count%20Square%20Submatrices%20with%20All%20Ones) |  Dp on rect | Dp on rect | 25 May 2022 | O(n^2) | O(n^2) | [Link](https://www.youtube.com/watch?v=auS1fynpnjo&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=57)
 
 
 
