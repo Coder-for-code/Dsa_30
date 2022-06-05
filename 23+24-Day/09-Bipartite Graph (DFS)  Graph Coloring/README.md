@@ -37,6 +37,17 @@ You don't need to read or print anything. Your task is to complete the function&
  <p></p>
             </div>
 	
+![vlcsnap-2022-06-06-00h22m30s837](https://user-images.githubusercontent.com/106215989/172066588-0ecaa419-04da-4c9c-bf59-ef9ff1af133f.png)
+![vlcsnap-2022-06-06-00h30m17s936](https://user-images.githubusercontent.com/106215989/172066590-bb5723c0-7f04-4e66-94c0-7c7141691147.png)
+![vlcsnap-2022-06-06-00h30m30s667](https://user-images.githubusercontent.com/106215989/172066591-2d229663-705e-44b9-9f36-39a08b97df0f.png)
+![vlcsnap-2022-06-06-00h30m36s487](https://user-images.githubusercontent.com/106215989/172066592-c8c0228c-ce8e-4c83-bfb5-e5505f5f7386.png)
+![vlcsnap-2022-06-06-00h31m34s682](https://user-images.githubusercontent.com/106215989/172066594-f0da8260-9598-4def-b0de-3079ea821040.png)
+![vlcsnap-2022-06-06-00h34m06s003](https://user-images.githubusercontent.com/106215989/172066595-9e51c53f-334a-401f-8935-60146992f963.png)
+![vlcsnap-2022-06-06-00h34m42s393](https://user-images.githubusercontent.com/106215989/172066596-8613fcce-1d3c-40dd-ab83-7752955417d8.png)
+![vlcsnap-2022-06-06-00h36m01s558](https://user-images.githubusercontent.com/106215989/172066597-60feb4a8-4585-4349-b6ed-492efb4ffe7d.png)
+![vlcsnap-2022-06-06-00h36m18s047](https://user-images.githubusercontent.com/106215989/172066599-4fbc201f-3a19-40b9-b4f4-d307b3c8639f.png)
+![vlcsnap-2022-06-06-00h36m42s615](https://user-images.githubusercontent.com/106215989/172066600-165844e2-c105-4df7-bda1-e94f4f2e2288.png)
+![vlcsnap-2022-06-06-00h37m27s986](https://user-images.githubusercontent.com/106215989/172066603-7d5346bd-97da-48d3-86fc-5b9b80d87a69.png)
 	
 	
 ```cpp
