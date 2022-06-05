@@ -1,50 +1,6 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![vlcsnap-2022-06-05-14h12m55s225](https://user-images.githubusercontent.com/106215989/172042813-ec6b4e97-56a9-4ef6-a1bf-7189170fcffd.png)
+![vlcsnap-2022-06-05-14h15m08s209](https://user-images.githubusercontent.com/106215989/172042814-7f37bda3-7b6a-45bc-b5f8-29dfc2fe6daf.png)
+![vlcsnap-2022-06-05-14h15m10s819](https://user-images.githubusercontent.com/106215989/172042815-b9ed6073-d79d-4cfd-bb09-61b84ded952c.png)
+![vlcsnap-2022-06-05-14h15m50s099](https://user-images.githubusercontent.com/106215989/172042816-704ff7e3-7df7-487e-b000-b4b29f46f085.png)
+![vlcsnap-2022-06-05-14h15m55s497](https://user-images.githubusercontent.com/106215989/172042818-3ebbd6f4-f193-497a-a318-0801a7f31fd8.png)
+![vlcsnap-2022-06-05-14h16m16s154](https://user-images.githubusercontent.com/106215989/172042820-48ee16ec-4442-4ffe-87f9-3ab0c6be30d6.png)
