@@ -50,7 +50,20 @@ You dont need to read input or print anything. Your task is to complete the func
  <p></p>
             </div>
 	    
-	    
+
+![vlcsnap-2022-06-05-14h44m39s791](https://user-images.githubusercontent.com/37560890/172056556-3869f2e5-df7c-4225-96d9-9a74ddabb41e.png)
+![vlcsnap-2022-06-05-18h33m25s771](https://user-images.githubusercontent.com/37560890/172056557-42636c9e-4b3d-4485-82f5-b1be35aa24f0.png)
+![vlcsnap-2022-06-05-18h34m04s996](https://user-images.githubusercontent.com/37560890/172056558-514a3bcc-a5bf-496c-b4fb-e2b239015d3f.png)
+![vlcsnap-2022-06-05-18h41m02s692](https://user-images.githubusercontent.com/37560890/172056559-b6237263-5535-42d1-a106-ba395261468c.png)
+![vlcsnap-2022-06-05-18h53m30s824](https://user-images.githubusercontent.com/37560890/172056562-2af92594-36ba-412d-95d5-40f4b5e90797.png)
+![vlcsnap-2022-06-05-18h57m01s044](https://user-images.githubusercontent.com/37560890/172056563-79c51d2d-807f-4a3f-bc8c-cd035b4352e9.png)
+![vlcsnap-2022-06-05-18h58m16s603](https://user-images.githubusercontent.com/37560890/172056565-d3b54e74-b97c-41e1-8405-707dab0b05b5.png)
+![vlcsnap-2022-06-05-18h58m26s653](https://user-images.githubusercontent.com/37560890/172056566-444bad52-b965-427b-b21e-53fa7b49dd05.png)
+![vlcsnap-2022-06-05-18h59m47s776](https://user-images.githubusercontent.com/37560890/172056568-d4d0022d-5553-4fe2-b812-6ba85ed72edf.png)
+![vlcsnap-2022-06-05-19h00m06s178](https://user-images.githubusercontent.com/37560890/172056569-b3f6c45b-505b-42b6-a5e3-58bdff15e479.png)
+![vlcsnap-2022-06-05-19h01m35s149](https://user-images.githubusercontent.com/37560890/172056571-1dde267f-4f7a-4971-baff-6e9ca2f7db1c.png)
+
+
 ```cpp
 class Solution 
 {
