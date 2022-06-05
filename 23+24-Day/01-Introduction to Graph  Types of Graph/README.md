@@ -1,50 +1,9 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![vlcsnap-2022-06-05-11h00m40s392](https://user-images.githubusercontent.com/106215989/172038091-287b7743-43cc-4817-89ed-7edf30bf76ec.png)
+![vlcsnap-2022-06-05-11h01m09s131](https://user-images.githubusercontent.com/106215989/172038097-91672012-af6c-40be-bbb4-2bb7ca69ef88.png)
+![vlcsnap-2022-06-05-11h16m21s888](https://user-images.githubusercontent.com/106215989/172038098-6bce14db-0a7f-41f6-a96e-a938534014ca.png)
+![vlcsnap-2022-06-05-11h17m18s875](https://user-images.githubusercontent.com/106215989/172038099-43bf87f9-04d1-4c16-b9cb-c8b9a634c9e4.png)
+![vlcsnap-2022-06-05-11h17m23s167](https://user-images.githubusercontent.com/106215989/172038100-b1932c86-c2b6-4365-8fe4-af60e11497cd.png)
+![vlcsnap-2022-06-05-11h36m41s641](https://user-images.githubusercontent.com/106215989/172038101-1e162e53-28d7-40eb-9918-0036eb971e99.png)
+![vlcsnap-2022-06-05-11h37m08s985](https://user-images.githubusercontent.com/106215989/172038102-7326c143-e7b6-49a2-b85c-9e56a9286e35.png)
+![vlcsnap-2022-06-05-11h37m34s991](https://user-images.githubusercontent.com/106215989/172038104-6278803c-eb46-46a0-b326-22ce786cea86.png)
+![vlcsnap-2022-06-05-11h49m13s790](https://user-images.githubusercontent.com/106215989/172038105-440c14ef-0834-4f57-988b-df26ab9cfdea.png)
