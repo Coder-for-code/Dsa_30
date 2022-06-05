@@ -1,4 +1,4 @@
-## [Bipartite Graph using BFS](https://practice.geeksforgeeks.org/problems/bipartite-graph/1/?page=2&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&difficulty[]=1&curated[]=5&sortBy=submissions)
+## 08-[Bipartite Graph using BFS](https://practice.geeksforgeeks.org/problems/bipartite-graph/1/?page=2&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&difficulty[]=1&curated[]=5&sortBy=submissions)
 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given an adjacency list&nbsp;of a graph<strong> adj&nbsp; </strong>of V no. of vertices having 0 based index. Check whether the graph is bipartite or not.</span><br>
