@@ -1,4 +1,4 @@
-## [DFS of Graph](https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1/?page=1&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&curated[]=5&sortBy=submissions#)
+## 05-[DFS of Graph](https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1/?page=1&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&curated[]=5&sortBy=submissions#)
 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Given a connected undirected graph. Perform a Depth First Traversal of the graph.</span><br>
