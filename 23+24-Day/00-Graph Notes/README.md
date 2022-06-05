@@ -1,50 +1,38 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![4  Graph Theroy_page-0001](https://user-images.githubusercontent.com/37560890/172038200-014dbce7-f22c-4f61-ace1-27ca09bfef52.jpg)
+![4  Graph Theroy_page-0002](https://user-images.githubusercontent.com/37560890/172038202-5babe8f7-a486-4029-9504-4ef7b21de8f4.jpg)
+![4  Graph Theroy_page-0003](https://user-images.githubusercontent.com/37560890/172038203-3193239d-8f7e-4ad2-bf9c-745b8bcb4e61.jpg)
+![4  Graph Theroy_page-0004](https://user-images.githubusercontent.com/37560890/172038204-8511f9e8-4808-4861-a5dd-e0bf0cc244a5.jpg)
+![4  Graph Theroy_page-0005](https://user-images.githubusercontent.com/37560890/172038206-295eff5e-af63-4e16-b130-06b435e1f9b4.jpg)
+![4  Graph Theroy_page-0006](https://user-images.githubusercontent.com/37560890/172038207-3d45bf4c-3e6c-407a-b946-2c6110f4f55b.jpg)
+![4  Graph Theroy_page-0007](https://user-images.githubusercontent.com/37560890/172038208-ea1cfcd8-b080-4294-87c8-cd504a491f55.jpg)
+![4  Graph Theroy_page-0008](https://user-images.githubusercontent.com/37560890/172038209-bc8428b3-618f-4fe4-83fc-9500ff4c93d0.jpg)
+![4  Graph Theroy_page-0009](https://user-images.githubusercontent.com/37560890/172038210-6ce9f5f8-5df8-4029-b724-10204f59c2a9.jpg)
+![4  Graph Theroy_page-0010](https://user-images.githubusercontent.com/37560890/172038211-5ffa11d2-3d5d-48af-a31c-3a905b074326.jpg)
+![4  Graph Theroy_page-0011](https://user-images.githubusercontent.com/37560890/172038213-641d0801-876f-4e70-be66-f8f6f8b10b47.jpg)
+![4  Graph Theroy_page-0012](https://user-images.githubusercontent.com/37560890/172038215-84297c11-cc2b-43cc-92eb-07c248d5ef64.jpg)
+![4  Graph Theroy_page-0013](https://user-images.githubusercontent.com/37560890/172038217-b2c5a3ae-8015-463b-998b-f33f6fddd291.jpg)
+![4  Graph Theroy_page-0014](https://user-images.githubusercontent.com/37560890/172038220-761fd998-e436-4a78-9429-550e74980505.jpg)
+![4  Graph Theroy_page-0015](https://user-images.githubusercontent.com/37560890/172038221-6e6fabdf-ef4e-43cc-b56f-4081bd4fec86.jpg)
+![4  Graph Theroy_page-0016](https://user-images.githubusercontent.com/37560890/172038222-88011610-4904-48bf-98b1-7c50e4e24f7c.jpg)
+![4  Graph Theroy_page-0017](https://user-images.githubusercontent.com/37560890/172038223-5bb52af8-44d5-423a-85be-5f02ad2f906e.jpg)
+![4  Graph Theroy_page-0018](https://user-images.githubusercontent.com/37560890/172038224-91197b7b-5023-4c0a-b543-c3a31e6e01c5.jpg)
+![4  Graph Theroy_page-0019](https://user-images.githubusercontent.com/37560890/172038227-000d8ae7-2ffb-44ca-a060-b9a58210f39b.jpg)
+![4  Graph Theroy_page-0020](https://user-images.githubusercontent.com/37560890/172038228-09afcb1a-c253-4400-bfb8-fc561332837f.jpg)
+![4  Graph Theroy_page-0021](https://user-images.githubusercontent.com/37560890/172038229-0a79f5e1-32df-4817-8d9f-069c3ba81518.jpg)
+![4  Graph Theroy_page-0022](https://user-images.githubusercontent.com/37560890/172038230-a8130198-bfe1-4992-9c7f-3b83c4666a9d.jpg)
+![4  Graph Theroy_page-0023](https://user-images.githubusercontent.com/37560890/172038232-e54bbe3a-52b0-4cf9-b21f-7d81afa9421c.jpg)
+![4  Graph Theroy_page-0024](https://user-images.githubusercontent.com/37560890/172038233-31321b02-44a0-4023-855e-0339aa52fac3.jpg)
+![4  Graph Theroy_page-0025](https://user-images.githubusercontent.com/37560890/172038234-0c660cc0-5084-409d-8ed2-ee48653fff01.jpg)
+![4  Graph Theroy_page-0026](https://user-images.githubusercontent.com/37560890/172038235-c822b4f8-70f9-480a-ade6-f039a81e9c63.jpg)
+![4  Graph Theroy_page-0027](https://user-images.githubusercontent.com/37560890/172038236-f76d5837-6fa3-48a6-8338-55af1127dfdc.jpg)
+![4  Graph Theroy_page-0028](https://user-images.githubusercontent.com/37560890/172038237-75251a1c-33d2-4838-9540-67e113edf9b0.jpg)
+![4  Graph Theroy_page-0029](https://user-images.githubusercontent.com/37560890/172038239-451666a7-29ab-4227-8e9e-003d37b47bf2.jpg)
+![4  Graph Theroy_page-0030](https://user-images.githubusercontent.com/37560890/172038240-f70ec880-6d46-4fc1-afb4-1444c7d4e80f.jpg)
+![4  Graph Theroy_page-0031](https://user-images.githubusercontent.com/37560890/172038241-019f7683-2fb7-4e8e-a4c8-a2aea50b8e23.jpg)
+![4  Graph Theroy_page-0032](https://user-images.githubusercontent.com/37560890/172038242-e41b691d-0b6c-47c0-9215-5a7f6ff8c793.jpg)
+![4  Graph Theroy_page-0033](https://user-images.githubusercontent.com/37560890/172038244-0b6a0dd6-1632-440a-b84d-ffd464106204.jpg)
+![4  Graph Theroy_page-0034](https://user-images.githubusercontent.com/37560890/172038245-4812a922-b3ac-41e9-b439-1ef52120ee1d.jpg)
+![4  Graph Theroy_page-0035](https://user-images.githubusercontent.com/37560890/172038247-01edaaf8-2a2f-4964-a56b-7982fc97bbc9.jpg)
+![4  Graph Theroy_page-0036](https://user-images.githubusercontent.com/37560890/172038249-679a59b6-8a4f-44ad-ac8c-f3765553430a.jpg)
+![4  Graph Theroy_page-0037](https://user-images.githubusercontent.com/37560890/172038250-4a0a1634-a015-4422-a0f2-2f9177419bad.jpg)
+![4  Graph Theroy_page-0038](https://user-images.githubusercontent.com/37560890/172038251-de5c25d9-cca2-4095-aee0-1c968253d499.jpg)
