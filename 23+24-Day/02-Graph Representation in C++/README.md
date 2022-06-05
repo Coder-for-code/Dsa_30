@@ -1,50 +1,11 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![vlcsnap-2022-06-05-12h06m22s000](https://user-images.githubusercontent.com/37560890/172038892-31f14ab1-a31d-4987-99a1-a883b34b8d79.png)
+![vlcsnap-2022-06-05-12h07m35s432](https://user-images.githubusercontent.com/37560890/172038894-36cdb3ba-35d7-4b4e-866d-4a5ad64fbfcb.png)
+![vlcsnap-2022-06-05-12h07m37s691](https://user-images.githubusercontent.com/37560890/172038896-61470e4e-e5ae-4ed7-a71e-26ac349a3d0c.png)
+![vlcsnap-2022-06-05-12h10m46s713](https://user-images.githubusercontent.com/37560890/172038897-2bfe8b1d-3ef0-4abb-b441-abf330106beb.png)
+![vlcsnap-2022-06-05-12h11m56s046](https://user-images.githubusercontent.com/37560890/172038900-4dfdaced-6e53-4981-8720-1f8685b699af.png)
+![vlcsnap-2022-06-05-12h12m04s421](https://user-images.githubusercontent.com/37560890/172038901-7a7b0b4d-92f7-46fe-974b-ea53c93458ca.png)
+![vlcsnap-2022-06-05-12h12m26s966](https://user-images.githubusercontent.com/37560890/172038902-aa552459-8151-42ad-ad91-0a285497f962.png)
+![vlcsnap-2022-06-05-12h12m33s115](https://user-images.githubusercontent.com/37560890/172038904-73851dc3-75dd-406c-9f52-3306b96965cb.png)
+![vlcsnap-2022-06-05-12h12m56s586](https://user-images.githubusercontent.com/37560890/172038905-d172d767-cfab-4e66-947d-f31732422c80.png)
+![vlcsnap-2022-06-05-12h12m58s361](https://user-images.githubusercontent.com/37560890/172038907-9f5e59da-6397-43f5-aa39-b6858b63c884.png)
+![vlcsnap-2022-06-05-12h13m23s516](https://user-images.githubusercontent.com/37560890/172038908-9b39f911-f8f8-4666-a502-c8b4e689c4af.png)
