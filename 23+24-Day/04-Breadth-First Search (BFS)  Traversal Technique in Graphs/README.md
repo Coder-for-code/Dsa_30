@@ -1,50 +1,8 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![vlcsnap-2022-06-05-14h30m46s481](https://user-images.githubusercontent.com/106215989/172043594-a49e61bc-748a-4627-8123-1da91af56918.png)
+![vlcsnap-2022-06-05-14h31m47s768](https://user-images.githubusercontent.com/106215989/172043595-93fccb86-0a91-443a-9f8c-7ca40ed514eb.png)
+![vlcsnap-2022-06-05-14h34m52s300](https://user-images.githubusercontent.com/106215989/172043596-a639a5ee-030c-4aa0-a2b7-b9282fce6900.png)
+![vlcsnap-2022-06-05-14h36m18s214](https://user-images.githubusercontent.com/106215989/172043597-d2a09867-2e2f-4a45-b6f7-e75597b67825.png)
+![vlcsnap-2022-06-05-14h37m45s721](https://user-images.githubusercontent.com/106215989/172043598-95dafcb0-7f9e-4ba9-b7b9-e1d7f578bf08.png)
+![vlcsnap-2022-06-05-14h37m54s527](https://user-images.githubusercontent.com/106215989/172043600-4db46f6f-68c4-4c0f-9b65-7aaed2a473e3.png)
+![vlcsnap-2022-06-05-14h37m59s837](https://user-images.githubusercontent.com/106215989/172043601-d5a3e9e9-7c2c-442c-bc95-a3840d6d75ba.png)
+![vlcsnap-2022-06-05-14h39m05s407](https://user-images.githubusercontent.com/106215989/172043602-ba77d7a4-2329-4474-bc40-d1c579056510.png)
