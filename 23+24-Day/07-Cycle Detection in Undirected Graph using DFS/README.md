@@ -43,22 +43,6 @@ You don't need to read or print anything. Your task is to complete the function 
 	    
 
 
-![vlcsnap-2022-06-05-19h32m34s238](https://user-images.githubusercontent.com/106215989/172056794-2c5f6b37-1c78-4cc4-aa2a-486d8d2cbbf9.png)
-![vlcsnap-2022-06-05-19h33m41s108](https://user-images.githubusercontent.com/106215989/172056796-b96f32e2-d6d6-473b-8c44-a15e2acfa1d3.png)
-![vlcsnap-2022-06-05-19h34m20s673](https://user-images.githubusercontent.com/106215989/172056798-62d1afb1-5d0b-4e3f-971f-53141e29c4f5.png)
-![vlcsnap-2022-06-05-19h35m18s613](https://user-images.githubusercontent.com/106215989/172056799-48e384e5-cd38-4c31-8ace-4d32fa0e3bd0.png)
-![vlcsnap-2022-06-05-19h35m30s045](https://user-images.githubusercontent.com/106215989/172056800-8183e2a4-fa29-4842-a095-96a4334b63d2.png)
-![vlcsnap-2022-06-05-19h36m08s420](https://user-images.githubusercontent.com/106215989/172056801-5cdc423a-0fc7-4580-b1b0-2eb31ec74e07.png)
-![vlcsnap-2022-06-05-19h36m42s126](https://user-images.githubusercontent.com/106215989/172056802-6c307cbc-4165-45ca-b3b4-1ff19e2cd758.png)
-![vlcsnap-2022-06-05-19h37m03s708](https://user-images.githubusercontent.com/106215989/172056803-bf284535-f870-4001-a517-213b5976665d.png)
-![vlcsnap-2022-06-05-19h37m14s608](https://user-images.githubusercontent.com/106215989/172056804-67cf34c3-3394-45cc-8d8c-3243a825ef0a.png)
-![vlcsnap-2022-06-05-19h39m51s982](https://user-images.githubusercontent.com/106215989/172056805-acc4c2d3-62ea-4254-b3db-e8141b7e4f35.png)
-![vlcsnap-2022-06-05-19h40m22s151](https://user-images.githubusercontent.com/106215989/172056808-981a58ae-30a2-4e2f-aff6-711f3b442c4c.png)
-![vlcsnap-2022-06-05-19h40m43s696](https://user-images.githubusercontent.com/106215989/172056809-fb6d8ec2-5a4b-486d-8cc2-019dd6446a63.png)
-![vlcsnap-2022-06-05-19h41m08s368](https://user-images.githubusercontent.com/106215989/172056810-91246554-3f99-4320-8abb-131e7f365517.png)
-![vlcsnap-2022-06-05-19h41m30s716](https://user-images.githubusercontent.com/106215989/172056811-bdbda559-7246-46d8-b16e-9910313c8a84.png)
-
-
 
 
 
