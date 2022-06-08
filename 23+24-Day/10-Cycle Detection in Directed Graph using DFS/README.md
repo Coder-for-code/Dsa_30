@@ -35,6 +35,20 @@
  <p></p>
  </div>
  
+ ## Video Notes
+ 
+![vlcsnap-2022-06-08-18h07m41s578](https://user-images.githubusercontent.com/37560890/172640821-4dac4f11-b522-44b9-8658-c3da8071e8fb.png)
+![vlcsnap-2022-06-08-18h09m19s835](https://user-images.githubusercontent.com/37560890/172640832-0271c1e4-d383-4132-80b3-392f416f4678.png)
+![vlcsnap-2022-06-08-18h12m24s263](https://user-images.githubusercontent.com/37560890/172640836-489e78a3-5a26-40d2-b3ef-6f115fc1776f.png)
+![vlcsnap-2022-06-08-18h16m01s742](https://user-images.githubusercontent.com/37560890/172640842-19d6ec99-0c70-4c24-bbd1-870e72ffd364.png)
+![vlcsnap-2022-06-08-18h16m03s388](https://user-images.githubusercontent.com/37560890/172640846-9b0108aa-6615-4fe0-b1bf-4e1787cad29d.png)
+![vlcsnap-2022-06-08-18h17m49s362](https://user-images.githubusercontent.com/37560890/172640852-1f91bbb5-c31c-470e-9e5e-29d6d39ca61d.png)
+![vlcsnap-2022-06-08-18h20m56s145](https://user-images.githubusercontent.com/37560890/172640858-cd09ba62-98de-409b-8309-018f4f3b03b1.png)
+![vlcsnap-2022-06-08-18h53m30s043](https://user-images.githubusercontent.com/37560890/172640863-e7db67e9-727b-438c-bfbf-46867fdefdf7.png)
+![vlcsnap-2022-06-08-18h54m08s938](https://user-images.githubusercontent.com/37560890/172640866-11a742df-bb96-4cd0-a229-7913174277ff.png)
+![vlcsnap-2022-06-08-18h56m56s195](https://user-images.githubusercontent.com/37560890/172640872-fe7c2227-da43-4174-a6c6-bbf7de49b2bd.png)
+![vlcsnap-2022-06-08-18h57m05s497](https://user-images.githubusercontent.com/37560890/172640878-5dc4d169-760b-4acf-a982-eaf84906993e.png)
+
  
  ```cpp
  class Solution 
