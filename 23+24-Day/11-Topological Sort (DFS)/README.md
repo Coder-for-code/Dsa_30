@@ -46,63 +46,72 @@ You don't need to read input or print anything. Your task is to complete the fun
 	    
 ## Video Notes
 
-![vlcsnap-2022-06-08-19h59m23s211](https://user-images.githubusercontent.com/37560890/172690088-15be8037-3978-48e8-bf7a-bab4f5f7656f.png)
-![vlcsnap-2022-06-08-20h43m14s747](https://user-images.githubusercontent.com/37560890/172690094-764d7e01-7ce5-4db2-a54d-66675396746e.png)
-![vlcsnap-2022-06-08-20h45m07s226](https://user-images.githubusercontent.com/37560890/172690097-e3521fca-b776-4334-b4ef-01cff60126e3.png)
-![vlcsnap-2022-06-08-23h43m01s847](https://user-images.githubusercontent.com/37560890/172690101-bd67c0a3-ddfd-4b8a-b4bc-725f50d048ab.png)
-![vlcsnap-2022-06-08-23h44m43s224](https://user-images.githubusercontent.com/37560890/172690102-a0e19919-115c-4ac3-a358-155d064e7770.png)
-![vlcsnap-2022-06-08-23h52m34s684](https://user-images.githubusercontent.com/37560890/172690103-5169d900-f66a-4847-a66e-1b6713f88f77.png)
+
+![vlcsnap-2022-06-09-11h34m44s014](https://user-images.githubusercontent.com/37560890/172779390-16de48d3-bc52-4b38-a4ff-a537691a3389.png)
+![vlcsnap-2022-06-09-11h38m11s994](https://user-images.githubusercontent.com/37560890/172779394-a7a3f5b6-8433-4ef0-a4a5-6a44a81b7ec6.png)
+![vlcsnap-2022-06-09-11h39m43s950](https://user-images.githubusercontent.com/37560890/172779397-224fd58d-d5ad-4c2b-8147-3e9d4a6f5396.png)
+![vlcsnap-2022-06-09-11h46m45s432](https://user-images.githubusercontent.com/37560890/172779401-ac1017e5-a2c3-417b-9a1c-7ed491c06037.png)
+![vlcsnap-2022-06-09-11h47m47s344](https://user-images.githubusercontent.com/37560890/172779403-3a030fb0-3845-4884-be8c-c34cf05c4d7e.png)
+![vlcsnap-2022-06-09-11h48m08s301](https://user-images.githubusercontent.com/37560890/172779406-a3f27d9c-5692-42f9-b84f-b9ab686d56a7.png)
+
+
+
 
 ```cpp
-
 class Solution
 {
 	public:
+	
+	// Helper method
+	void find_topo_sort(int node,vector<int> &visited,stack<int> &s, vector<int> adj[])
+	{
+	    // Mark the visited node as true
+	    visited[node]=1;
+	    
+	    // Visit it's adjacent nbrs
+	    for(auto nbrs: adj[node])
+	    {
+	        if(!visited[nbrs])
+	        {
+	            find_topo_sort(nbrs,visited,s,adj);
+	        }
+	    }
+	    
+	    // Finally push the node into the stack
+	    s.push(node);
+	}
+	
 	//Function to return list containing vertices in Topological order. 
 	vector<int> topoSort(int n, vector<int> adj[]) 
 	{
-       queue<int> q;
-       vector<int> indegree(n,0);
-       
-       // Compute the indegree
-       for(int i=0;i<n;i++)
-       {
-           for(auto it: adj[i])
-           {
-               indegree[it]++;
-           }
-       }
-       
-       // Check if the indegree is 0 then push into queue
-       for(int i=0;i<n;i++)
-       {
-           if(indegree[i]==0)
-           {
-               q.push(i);
-           }
-       }
-       
-       // If indegree is not 0 then
-       vector<int> topo;
-       while(!q.empty())
-       {
-           int node= q.front();
-           q.pop();
-           topo.push_back(node);
-           
-           for(auto it: adj[node])
-           {
-               indegree[it]--;
-               
-               if(indegree[it]==0)
-               {
-                   q.push(it);
-               }
-           }
-       }
-       return topo;
+	    // Define the stack 
+	    stack<int> st;
+	    
+	    // Define the visited array and make initial val to be 0
+	    vector<int> visited(n,0);
+	    
+	    // Travel for each components
+	    for(int i=0;i<n;i++)
+	    {
+	        // If not visited then call the find topo sort
+	        if(!visited[i])
+	        {
+	            find_topo_sort(i,visited,st,adj);
+	        }
+	    }
+	    
+	    // Define the ans vector topo
+	    vector<int> topo;
+	    
+	    // Finally pop all the element's from the stack and push into topo vector
+	    while(!st.empty())
+	    {
+	       topo.push_back(st.top()); 
+	       st.pop();
+	    }
+	    
+	    // Finally return the ans vector
+	    return topo;
 	}
-	
 };
-
 ```
