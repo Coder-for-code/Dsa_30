@@ -1,50 +1,50 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
-
 ```cpp
-vector<int> findSpiral(Node *root)
+
+#include <iostream>
+using namespace std;
+
+void bfs(std::vector<int> adj[], int n , int src)
 {
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
+    // Create a distance array
+    int dist[n];
     
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
+    // Initialize the dist array as an infinity
+    for(int i=0;i<n;i++)
+    {
+        dist[i] = INT_MAX;
     }
-    return v;
+    
+    // Create a queue
+    queue<int> q;
+    
+    // Mark the src distance as 0
+    dist[src] =0;
+    
+    // Iterate till queue not empty
+    while(!q.empty())
+    {
+        int node= q.front();
+        q.pop();
+        
+        // Explore it's nbrs
+        for(auto nbrs: adj[node])
+        {
+            // Update the distance's accordingly
+            if(dist[node]+1 < dist[nbrs])
+            {
+                dist[nbrs]= dist[node] + 1;
+                q.push(nbrs);
+            }
+        }
+    }
+    
+    // Print the distance array
+    for(auto i=0;i<n;i++)
+    {
+        cout<<dist[i]<<" ";
+    }
+    
+    
 }
 
 ```
