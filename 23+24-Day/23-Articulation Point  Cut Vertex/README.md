@@ -22,3 +22,114 @@
 ![vlcsnap-2022-06-11-16h30m53s503](https://user-images.githubusercontent.com/106215989/173185785-d790f051-9da8-45d2-813c-48e27848ddea.png)
 ![vlcsnap-2022-06-11-16h31m33s984](https://user-images.githubusercontent.com/106215989/173185786-d525b7e9-b4bb-4a7e-9f2f-f9941e38e155.png)
 ![vlcsnap-2022-06-11-16h32m08s974](https://user-images.githubusercontent.com/106215989/173185787-0628d7b1-7c8a-4115-9be5-e776e112679f.png)
+
+```cpp
+
+#include <iostream>
+using namespace std;
+
+
+
+void dfs(int node,int parent,vector<int>&visited,vector<int>&time_to_insert,vector<int>&lowest_time,
+int &timer,vector<int> adj[],vector<int> &is_articulation)
+{
+    // Make the first node as a visited
+    visited[node]=1;
+    
+    // Assign a timer to each and every node
+    time_to_insert[node]=lowest_time[node]=timer++;
+    
+    // Assign the child var
+    int child=0;
+    
+    // Travel and explore it's nbrs
+    for(auto it: adj[node])
+    {
+        // If it's a backward then don't do anything
+        if(it==parent) continue;
+        
+        // If not visited then call dfs
+        if(!visited[it])
+        {
+            // This call will reach to the end 
+            dfs(it,node,visited,time_to_insert,lowest_time,timer,adj,is_articulation);
+            
+            // After end backtracking the call
+            // After coming back we always update the lowest_time
+            lowest_time[node]= min(lowest_time[node],lowest_time[it]);
+            
+            // Now check can it be an edge bridge
+            if(lowest_time[it]>=time_to_insert[node] and parent!= -1)
+            {
+                is_articulation[node]=1;
+            }
+        }
+        
+        // If the node is previously visited
+        // So just compare time and update the lowest_time
+        else
+        {
+            lowest_time[node]= min(lowest_time[node],time_to_insert[it]);
+        }
+        
+    }
+    
+    // Edge case checking
+    if(parent == -1 and child>1)
+    {
+        is_articulation[node]=1;
+    }
+    
+}
+
+
+int main()
+{
+    // n= No of nodes and m = No of edges
+    int n,m;
+    cin>>n>>m;
+    
+    // Adj list declaration
+    std::vector<int> adj[n] ;
+    
+    // Take the input as a graph
+    for(int i=0;i<m;i++)
+    {
+        // Add the edges
+        int u,v;
+        cin>>u>>v;
+        
+        // Since it's a undirected add the bidirectional edge
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+    }
+    
+    // Make the 3 array's
+    vector<int> time_to_insert(n,-1);
+    vector<int> lowest_time(n,-1);
+    vector<int> visited(n,0);
+    vector<int> is_articulation(n,0);
+    
+    // Timer var
+    int timer= 0;
+    
+    // For every component make a dfs call
+    for(int i=0;i<n;i++)
+    {
+        if(!visited[i])
+        {
+            dfs(i,-1,visited,time_to_insert,lowest_time,timer,adj,is_articulation);
+        }
+    }
+    
+    
+    for(int i=0;i<n;i++)
+    {
+        if(is_articulation[i]==1) cout<<i<<endl;
+    }
+    
+    return 0;
+}
+
+
+```
