@@ -1,50 +1,24 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
+## Video Notes
 
-```cpp
-vector<int> findSpiral(Node *root)
-{
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
-    
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
-}
-
-```
+![vlcsnap-2022-06-11-12h27m59s491](https://user-images.githubusercontent.com/37560890/173185741-0a5491d7-a725-4b6b-bedb-62e6702c934d.png)
+![vlcsnap-2022-06-11-12h40m33s713](https://user-images.githubusercontent.com/37560890/173185744-adf5b97f-ca96-443b-ad91-2f616b4b2e11.png)
+![vlcsnap-2022-06-11-12h41m17s146](https://user-images.githubusercontent.com/37560890/173185745-04004e9f-87b1-488b-9fc4-0e9aa4ef3bc0.png)
+![vlcsnap-2022-06-11-12h42m49s544](https://user-images.githubusercontent.com/37560890/173185746-6dc956af-b8d5-4776-a389-862db8e10246.png)
+![vlcsnap-2022-06-11-12h43m49s941](https://user-images.githubusercontent.com/37560890/173185748-bf4b9a15-7c12-4e77-b439-5fabc063781e.png)
+![vlcsnap-2022-06-11-12h44m20s748](https://user-images.githubusercontent.com/37560890/173185749-9f11643b-1981-4069-aea4-7f7f4dded3ae.png)
+![vlcsnap-2022-06-11-12h45m48s921](https://user-images.githubusercontent.com/37560890/173185750-0e1acadc-2854-4dcc-9251-25f88b905900.png)
+![vlcsnap-2022-06-11-12h47m25s394](https://user-images.githubusercontent.com/37560890/173185751-675660a2-abc3-4170-bcda-f951a2643b3a.png)
+![vlcsnap-2022-06-11-12h48m20s862](https://user-images.githubusercontent.com/37560890/173185752-e6e0e55e-7d68-4f32-9f89-7c0385f9ad82.png)
+![vlcsnap-2022-06-11-12h49m35s578](https://user-images.githubusercontent.com/37560890/173185754-3d21ca34-a299-4321-a1b6-a3d9f7e4680c.png)
+![vlcsnap-2022-06-11-12h50m14s163](https://user-images.githubusercontent.com/37560890/173185755-78becf19-4cfc-46bb-8c13-c66e35f71396.png)
+![vlcsnap-2022-06-11-12h50m46s057](https://user-images.githubusercontent.com/37560890/173185756-3e6a7367-a68f-4013-b7d0-c2627675670c.png)
+![vlcsnap-2022-06-11-12h52m18s000](https://user-images.githubusercontent.com/37560890/173185758-b5f4b561-3c72-4618-84bd-fb9cbe6d568b.png)
+![vlcsnap-2022-06-11-12h53m09s587](https://user-images.githubusercontent.com/37560890/173185759-9aa60928-54a3-4ed2-bfdb-4a35ea37b652.png)
+![vlcsnap-2022-06-11-12h53m14s879](https://user-images.githubusercontent.com/37560890/173185760-682f24e1-e388-43fa-b00c-5abe0ea7f950.png)
+![vlcsnap-2022-06-11-12h53m42s676](https://user-images.githubusercontent.com/106215989/173185780-4fa1bdcc-ab66-4719-8c7b-f1585c708739.png)
+![vlcsnap-2022-06-11-12h53m59s482](https://user-images.githubusercontent.com/106215989/173185782-1623cecc-daa6-4296-8f6f-573539e8e224.png)
+![vlcsnap-2022-06-11-12h54m50s920](https://user-images.githubusercontent.com/106215989/173185783-73dddfac-751b-47be-a3d5-94ec2e40cbac.png)
+![vlcsnap-2022-06-11-12h55m05s809](https://user-images.githubusercontent.com/106215989/173185784-9610ec11-24b9-4569-b1da-b26e2bf54961.png)
+![vlcsnap-2022-06-11-16h30m53s503](https://user-images.githubusercontent.com/106215989/173185785-d790f051-9da8-45d2-813c-48e27848ddea.png)
+![vlcsnap-2022-06-11-16h31m33s984](https://user-images.githubusercontent.com/106215989/173185786-d525b7e9-b4bb-4a7e-9f2f-f9941e38e155.png)
+![vlcsnap-2022-06-11-16h32m08s974](https://user-images.githubusercontent.com/106215989/173185787-0628d7b1-7c8a-4115-9be5-e776e112679f.png)
