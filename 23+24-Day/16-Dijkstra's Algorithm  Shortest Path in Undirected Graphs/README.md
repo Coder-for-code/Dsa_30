@@ -97,8 +97,8 @@ You don't need to read input or print anything. Your task is to complete the fun
 
 class Solution
 {
-	public:
-	//Function to find the shortest distance of all the vertices
+    public:
+    //Function to find the shortest distance of all the vertices
     //from the source vertex S.
     vector <int> dijkstra(int v, vector<vector<int>> adj[], int source)
     {
