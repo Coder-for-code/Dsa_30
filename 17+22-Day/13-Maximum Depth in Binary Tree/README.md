@@ -48,7 +48,7 @@
 ![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0115](https://user-images.githubusercontent.com/37560890/170275041-e600f590-07ae-4390-8da7-ec92b0ca679f.jpg)
 ![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0116](https://user-images.githubusercontent.com/37560890/170275062-6a0f16ac-7f40-4cb2-9a42-bf55d1887d6d.jpg)
 
-![Uploading image.png…]()
+
 
 
 ## Solution 1. Dfs
@@ -92,13 +92,16 @@ public:
 
 ## Solution 3. Bfs
 
-BFS
+```cpp
 Time Complexity: O (n)
 Space Complexity: O (n)
 
-int maxDepth(TreeNode* root) 
+class Solution 
 {
-    
+public:
+
+    int maxDepth(TreeNode* root) 
+    {
         if (root==NULL) return 0; 
         queue<TreeNode*> q;
         q.push(root);
@@ -108,6 +111,7 @@ int maxDepth(TreeNode* root)
         {
             ++depth;
             int s=q.size();
+        
             for (int i=0; i<s; i++) 
             {
                 TreeNode* front=q.front();
@@ -119,3 +123,6 @@ int maxDepth(TreeNode* root)
         }
     return depth;
     }
+};
+
+```
