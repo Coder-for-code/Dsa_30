@@ -89,6 +89,50 @@ For each node `n`, we also need to try to update the maximum path sum using `n->
 
 In sum, we can use post order traversal to compute `f(n)` and update maximum path sum along the process.
 
+## Solution 1. Dfs
+
+```cpp
+
+// OJ: https://leetcode.com/problems/binary-tree-maximum-path-sum/
+// Time: O(N)
+// Space: O(H)
+
+
+class Solution 
+{
+public:
+    
+    // Helper function
+    int maxPathDown(TreeNode *node, int &maxi)
+    {
+        // If the leaf node then return 0
+        if(node==NULL) return 0;
+        
+        // Compute the left and right height
+        int left= max(0,maxPathDown(node->left, maxi));
+        int right= max(0,maxPathDown(node->right, maxi));
+        
+        // Max path sum computation
+        maxi= max(maxi, left+right+node->val);
+        
+        // Return max height
+        return max(left,right) + node->val;
+    }
+    
+    
+    
+    int maxPathSum(TreeNode* root) 
+    {
+        int maxi= INT_MIN;
+        maxPathDown(root,maxi);
+        return maxi;
+    }
+    
+};
+```
+
+## Solution 2. Dfs
+
 ```cpp
 // OJ: https://leetcode.com/problems/binary-tree-maximum-path-sum/
 // Time: O(N)
