@@ -1,3 +1,8 @@
+
+
+
+## Video Notes
+
 ![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0110](https://user-images.githubusercontent.com/37560890/170274974-5915ed4d-9558-4104-b493-02948c37ae56.jpg)
 ![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0111](https://user-images.githubusercontent.com/37560890/170274995-11cd0bef-4752-4303-b9bf-e909bed9b954.jpg)
 ![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0112](https://user-images.githubusercontent.com/37560890/170275008-a91bbd83-8c96-4a23-bdd6-9f1e35214e39.jpg)
@@ -5,3 +10,4 @@
 ![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0114](https://user-images.githubusercontent.com/37560890/170275028-5128c98d-5814-4918-98e9-c6e9c06facf4.jpg)
 ![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0115](https://user-images.githubusercontent.com/37560890/170275041-e600f590-07ae-4390-8da7-ec92b0ca679f.jpg)
 ![1  Stiver video notes  1-53 -1-201_pages-to-jpg-0116](https://user-images.githubusercontent.com/37560890/170275062-6a0f16ac-7f40-4cb2-9a42-bf55d1887d6d.jpg)
+
