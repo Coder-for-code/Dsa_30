@@ -90,9 +90,13 @@ However, in the report "[1,5,6]", the node value of 5 comes first since 5 is sma
 ![img331](https://user-images.githubusercontent.com/37560890/170310671-0aa0e9a8-1998-4b8d-845a-be79be4ad74e.jpg)
 
 
-## Solution 2. Bfs
+## Solution 1. Bfs
 
 ```cpp
+
+// Time: O(n)logn
+// Spcae: O(n) + O(n) = O(n) 
+
 class Solution 
 {
 public:
