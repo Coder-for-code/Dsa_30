@@ -78,15 +78,94 @@ Concatenating everything results in [1] + [2] + [4,7,8,9,10] + [6,3] = [1,2,4,7,
 ![img239](https://user-images.githubusercontent.com/106215989/170280318-64c7fcaa-bbb9-478e-b746-ce82784157c3.jpg)
 ![img241](https://user-images.githubusercontent.com/106215989/170280321-e82b9ddb-a48d-4425-9f2d-ffac871419e1.jpg)
 
+## Solution 2. Dfs(Gfg Solution)
 
-## Solution 1. DFS
+```cpp
+
+// Expected Time Complexity: O(N). 
+// Expected Auxiliary Space: O(Height of the Tree).
+
+class Solution 
+{
+public:
+
+    void travel_left_boundary(Node *root, vector<int> &ans)
+    {
+        // Base case
+        if((root==NULL) or (root->left==NULL and root->right == NULL) ) return ;
+        ans.push_back(root->data);
+        
+        // If left exists then go to the left side
+        if(root->left)  travel_left_boundary(root->left,ans);
+    
+        // If right exists then go to the right side
+        else travel_left_boundary(root->right,ans);
+    }
+    
+    void travel_leaf(Node* root,vector<int>& ans)
+    {
+        // Base case check 
+        if(root == NULL) return;
+    
+        // If no left and right child
+        if(root->left == NULL && root->right == NULL)
+        {
+            ans.push_back(root->data);
+            return;
+        }
+        
+        // 2 Recursvie calls 
+        travel_leaf(root->left,ans);
+        travel_leaf(root->right,ans);
+        
+    }
+
+    void travel_right_boundary(Node *root, vector<int> &ans)
+    {
+        // Base case
+        if((root==NULL) or (root->left==NULL and root->right == NULL) ) return ;
+        
+        // If right exists then go to the right side
+        if(root->right)  travel_right_boundary(root->right,ans);
+    
+        // If left exists then go to the left side
+        else travel_right_boundary(root->left,ans);
+        
+        ans.push_back(root->data);
+    }
+    
+    vector <int> boundary(Node *root)
+    {
+        vector<int > ans;
+        if(root==NULL) return ans;
+        ans.push_back(root->data);
+        
+        // Step 1: Travel the left boundary
+        travel_left_boundary(root->left,ans);
+        
+        // Step 2: Travel the left and right subtree
+        travel_leaf(root->left, ans);
+        travel_leaf(root->right,ans);
+        
+        // Step 3 Travel the right boundary
+        travel_right_boundary(root->right,ans);
+        
+        // Finally return the ans
+        return ans;
+    }
+};
+
+```
+
+## Solution 2. DFS
 
 ```cpp
 // OJ: https://leetcode.com/problems/boundary-of-binary-tree/
-// Author: github.com/lzl124631x
 // Time: O(N)
 // Space: O(H)
-class Solution {
+
+class Solution 
+{
     vector<int> ans, right;
     void dfs(TreeNode *node, int state) { // 1 left boundary, 2 right boundary, 0 otherwise
         if (!node) return;
@@ -97,7 +176,8 @@ class Solution {
         dfs(node->right, state == 2 ? 2 : (state == 1 && !node->left ? 1 : 0));
     }
 public:
-    vector<int> boundaryOfBinaryTree(TreeNode* root) {
+    vector<int> boundaryOfBinaryTree(TreeNode* root) 
+    {
         ans.push_back(root->val);
         dfs(root->left, 1);
         dfs(root->right, 2);
