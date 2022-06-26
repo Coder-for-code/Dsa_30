@@ -1,3 +1,33 @@
+# [1008. Construct Binary Search Tree from Preorder Traversal (Medium)](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)
+
+<p>Return the root node of a binary <strong>search</strong> tree that matches the given <code>preorder</code> traversal.</p>
+
+<p><em>(Recall that a binary search tree&nbsp;is a binary tree where for every <font face="monospace">node</font>, any descendant of <code>node.left</code> has a value <code>&lt;</code>&nbsp;<code>node.val</code>, and any descendant of <code>node.right</code> has a value <code>&gt;</code>&nbsp;<code>node.val</code>.&nbsp; Also recall that a preorder traversal&nbsp;displays the value of the&nbsp;<code>node</code> first, then traverses <code>node.left</code>, then traverses <code>node.right</code>.)</em></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Example 1:</strong></p>
+
+<pre><strong>Input: </strong><span id="example-input-1-1">[8,5,1,7,10,12]</span>
+<strong>Output: </strong><span id="example-output-1">[8,5,10,1,7,null,12]
+<img alt="" src="https://assets.leetcode.com/uploads/2019/03/06/1266.png" style="height: 200px; width: 306px;"></span>
+</pre>
+
+<p>&nbsp;</p>
+
+<p><strong>Note:</strong>&nbsp;</p>
+
+<ol>
+	<li><code>1 &lt;= preorder.length &lt;= 100</code></li>
+	<li>The values of <code>preorder</code> are distinct.</li>
+</ol>
+
+
+**Related Topics**:  
+[Tree](https://leetcode.com/tag/tree/)
+
+## Video Notes
+
 ![img555](https://user-images.githubusercontent.com/106215989/170565121-41c102e5-f3b2-43f3-900d-6661cc23f36e.jpg)
 ![img557](https://user-images.githubusercontent.com/106215989/170565125-b894aca0-6f66-4f8c-a74c-2f547c66c91a.jpg)
 ![img559](https://user-images.githubusercontent.com/106215989/170565126-fef31f2a-01d2-4f37-b356-014b964e200d.jpg)
@@ -20,3 +50,45 @@
 ![img593](https://user-images.githubusercontent.com/106215989/170565169-0f06ebce-df96-4803-85f0-b41e97969339.jpg)
 ![img595](https://user-images.githubusercontent.com/106215989/170565171-87915cc8-f6f1-4590-a87d-b7742a1bb34e.jpg)
 ![img597](https://user-images.githubusercontent.com/106215989/170565174-c6512396-6b42-41b0-9c72-7c6f4671c61d.jpg)
+
+
+## Solution 1.
+
+```cpp
+
+// OJ: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
+// Time: O(N^2)
+// Space: O(H)
+
+class Solution 
+{
+public:
+    
+    TreeNode *build(vector<int> &preorder, int &i, int bound)
+    {
+        // If it's a out of bound and we don't have any elements to insert
+        if(i==preorder.size() or preorder[i]>bound) return NULL;
+        
+        // Make the node at ith index
+        TreeNode *root= new TreeNode(preorder[i++]);
+        
+        // Make the 2 recursive calls
+        root->left= build(preorder, i , root->val);
+        root->right= build(preorder, i, bound);
+        
+        // Return root
+        return root;
+    }
+    
+    TreeNode* bstFromPreorder(vector<int>& preorder) 
+    {
+        // Pointer i(th) for the iteration 
+        int i=0;
+        
+        // Return the build 
+        return build(preorder,i,INT_MAX);
+    }
+};
+
+```
+
