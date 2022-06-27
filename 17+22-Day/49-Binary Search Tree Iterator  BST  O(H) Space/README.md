@@ -70,6 +70,7 @@ iterator.hasNext(); // return false
 ![img144](https://user-images.githubusercontent.com/106215989/170564121-21a3edae-91c3-4870-9739-da7b69fdf634.jpg)
 ![img146](https://user-images.githubusercontent.com/106215989/170564125-afab7b6b-c3c4-4609-b04d-edd2c733be47.jpg)
 ![img148](https://user-images.githubusercontent.com/106215989/170564129-a614e2b1-d2f0-42f0-bbb4-15af1e28cb7a.jpg)
+![image](https://user-images.githubusercontent.com/37560890/175847835-3738e352-b09f-4fa2-8645-48ee8708555b.png)
 
 ## Solution 1. Stack
 
