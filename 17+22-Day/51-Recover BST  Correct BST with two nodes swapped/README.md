@@ -1,3 +1,61 @@
+# [99. Recover Binary Search Tree (Hard)](https://leetcode.com/problems/recover-binary-search-tree/)
+
+<p>Two elements of a binary search tree (BST) are swapped by mistake.</p>
+
+<p>Recover the tree without changing its structure.</p>
+
+<p><strong>Example 1:</strong></p>
+
+<pre><strong>Input:</strong> [1,3,null,null,2]
+
+&nbsp;  1
+&nbsp; /
+&nbsp;3
+&nbsp; \
+&nbsp;  2
+
+<strong>Output:</strong> [3,1,null,null,2]
+
+&nbsp;  3
+&nbsp; /
+&nbsp;1
+&nbsp; \
+&nbsp;  2
+</pre>
+
+<p><strong>Example 2:</strong></p>
+
+<pre><strong>Input:</strong> [3,1,4,null,null,2]
+
+  3
+ / \
+1   4
+&nbsp;  /
+&nbsp; 2
+
+<strong>Output:</strong> [2,1,4,null,null,3]
+
+  2
+ / \
+1   4
+&nbsp;  /
+ &nbsp;3
+</pre>
+
+<p><strong>Follow up:</strong></p>
+
+<ul>
+	<li>A solution using O(<em>n</em>) space is pretty straight forward.</li>
+	<li>Could you devise a constant space solution?</li>
+</ul>
+
+
+**Related Topics**:  
+[Tree](https://leetcode.com/tag/tree/), [Depth-first Search](https://leetcode.com/tag/depth-first-search/)
+
+
+## Video Notes
+
 ![img200](https://user-images.githubusercontent.com/37560890/170563650-ba8450ff-6412-4945-8c8e-03518c446dee.jpg)
 ![img202](https://user-images.githubusercontent.com/37560890/170563656-833dba12-66de-4a03-a221-51941ff2effd.jpg)
 ![img204](https://user-images.githubusercontent.com/37560890/170563660-9e3d26c5-6bbb-4a3b-a5d6-37657b806717.jpg)
@@ -27,3 +85,70 @@
 ![img252](https://user-images.githubusercontent.com/37560890/170563712-4536d0da-4fff-42b5-82d0-64593737c5f1.jpg)
 ![img254](https://user-images.githubusercontent.com/37560890/170563715-aa75865a-3f49-4708-8429-d08c684e6864.jpg)
 ![img256](https://user-images.githubusercontent.com/37560890/170563717-3d8e7c85-38cd-44bf-9898-82780189bd2d.jpg)
+
+
+## Solution 1. DFS
+
+
+```cpp
+// OJ: https://leetcode.com/problems/recover-binary-search-tree/
+// Time: O(N)
+// Space: O(H)
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution 
+{
+private: 
+    TreeNode* first;
+    TreeNode* prev;
+    TreeNode* middle;
+    TreeNode* last; 
+private: 
+    void inorder(TreeNode* root) 
+    {
+        if(root == NULL) return; 
+        
+        inorder(root->left);
+        
+        if (prev != NULL && (root->val < prev->val))
+        {
+           
+            // If this is first violation, mark these two nodes as
+            // 'first' and 'middle'
+            if ( first == NULL )
+            {
+                first = prev;
+                middle = root;
+            }
+ 
+            // If this is second violation, mark this node as last
+            else
+                last = root;
+        }
+ 
+        // Mark this node as previous
+        prev = root;
+        inorder(root->right); 
+    }
+public:
+    void recoverTree(TreeNode* root) 
+    {
+        first = middle = last = NULL; 
+        prev = new TreeNode(INT_MIN); 
+        inorder(root);
+        if(first && last) swap(first->val, last->val); 
+        else if(first && middle) swap(first->val, middle->val); 
+    }
+};
+
+```
