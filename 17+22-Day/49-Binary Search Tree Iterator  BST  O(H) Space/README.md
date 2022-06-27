@@ -1,3 +1,55 @@
+# [173. Binary Search Tree Iterator (Medium)](https://leetcode.com/problems/binary-search-tree-iterator/)
+
+<p>Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.</p>
+
+<p>Calling <code>next()</code> will return the next smallest number in the BST.</p>
+
+<p>&nbsp;</p>
+
+<ul>
+</ul>
+
+<p><strong>Example:</strong></p>
+
+<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2018/12/25/bst-tree.png" style="width: 189px; height: 178px;"></strong></p>
+
+<pre>BSTIterator iterator = new BSTIterator(root);
+iterator.next();    // return 3
+iterator.next();    // return 7
+iterator.hasNext(); // return true
+iterator.next();    // return 9
+iterator.hasNext(); // return true
+iterator.next();    // return 15
+iterator.hasNext(); // return true
+iterator.next();    // return 20
+iterator.hasNext(); // return false
+</pre>
+
+<p>&nbsp;</p>
+
+<p><b>Note:</b></p>
+
+<ul>
+	<li><code>next()</code> and <code>hasNext()</code> should run in average O(1) time and uses O(<i>h</i>) memory, where <i>h</i> is the height of the tree.</li>
+	<li>You may assume that&nbsp;<code>next()</code>&nbsp;call&nbsp;will always be valid, that is, there will be at least a next smallest number in the BST when <code>next()</code> is called.</li>
+</ul>
+
+
+**Companies**:  
+[Facebook](https://leetcode.com/company/facebook), [Amazon](https://leetcode.com/company/amazon), [Microsoft](https://leetcode.com/company/microsoft), [Oracle](https://leetcode.com/company/oracle), [Bloomberg](https://leetcode.com/company/bloomberg), [Qualtrics](https://leetcode.com/company/qualtrics), [Cloudera](https://leetcode.com/company/cloudera), [Uber](https://leetcode.com/company/uber), [Google](https://leetcode.com/company/google), [LinkedIn](https://leetcode.com/company/linkedin), [Cisco](https://leetcode.com/company/cisco)
+
+**Related Topics**:  
+[Stack](https://leetcode.com/tag/stack/), [Tree](https://leetcode.com/tag/tree/), [Design](https://leetcode.com/tag/design/)
+
+**Similar Questions**:
+* [Binary Tree Inorder Traversal (Medium)](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+* [Flatten 2D Vector (Medium)](https://leetcode.com/problems/flatten-2d-vector/)
+* [Zigzag Iterator (Medium)](https://leetcode.com/problems/zigzag-iterator/)
+* [Peeking Iterator (Medium)](https://leetcode.com/problems/peeking-iterator/)
+* [Inorder Successor in BST (Medium)](https://leetcode.com/problems/inorder-successor-in-bst/)
+
+## Video Notes
+
 ![img110](https://user-images.githubusercontent.com/37560890/170564027-79a0646b-4922-4bbe-8925-91956604f350.jpg)
 ![img112](https://user-images.githubusercontent.com/37560890/170564038-f3e25847-1180-416f-a561-ae2ab7ab8c4b.jpg)
 ![img114](https://user-images.githubusercontent.com/37560890/170564042-3af24a1d-e129-49d5-83af-4cacab319bde.jpg)
@@ -18,3 +70,90 @@
 ![img144](https://user-images.githubusercontent.com/106215989/170564121-21a3edae-91c3-4870-9739-da7b69fdf634.jpg)
 ![img146](https://user-images.githubusercontent.com/106215989/170564125-afab7b6b-c3c4-4609-b04d-edd2c733be47.jpg)
 ![img148](https://user-images.githubusercontent.com/106215989/170564129-a614e2b1-d2f0-42f0-bbb4-15af1e28cb7a.jpg)
+
+## Solution 1. Stack
+
+```cpp
+// OJ: https://leetcode.com/problems/binary-search-tree-iterator/
+// Time: O(1) amortized
+// Space: O(H)
+
+class BSTIterator
+{
+private:
+    stack<TreeNode*> s;
+    void pushNodes(TreeNode *node) 
+    {
+        while (node) 
+        {
+            s.push(node);
+            node = node->left;
+        }
+    }
+public:
+    BSTIterator(TreeNode* root) 
+    {
+        pushNodes(root);
+    }
+    
+    int next() 
+    {
+        auto node = s.top();
+        s.pop();
+        pushNodes(node->right);
+        return node->val;
+    }
+    
+    bool hasNext() 
+    {
+        return s.size();
+    }
+};
+```
+
+## Solution 2. 
+
+```cpp
+// OJ: https://leetcode.com/problems/binary-search-tree-iterator/
+// Time: O(1) amortized
+// Space: O(H)
+
+
+class BSTIterator 
+{
+    // Make a stack for pushing the element's
+    private: stack<TreeNode * > s;
+    
+    public:
+    // Bst iterator function
+    BSTIterator(TreeNode* root) 
+    {
+        // Calling the push all method
+        push_All(root);  
+    }
+    
+    // Return's the next smallest number
+    int next() 
+    {
+        TreeNode *temp= s.top();
+        s.pop();
+        push_All(temp->right);
+        return temp->val;
+    }
+    
+    // Has next just return whether the stack is empty or not
+    bool hasNext() 
+    {
+        return !s.empty();
+    }
+    
+    private:
+    // Push all the element's into the stack
+    // First push all the left then it's left of right if exist's
+    void push_All(TreeNode *node)
+    {
+        for(;node!=NULL;s.push(node),node= node->left);
+    }
+};
+
+```
