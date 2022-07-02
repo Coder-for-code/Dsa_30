@@ -80,6 +80,7 @@ F(N) = F(N - 1) + F(N - 2), for N &gt; 1.
 ![vlcsnap-2022-07-02-12h15m41s279](https://user-images.githubusercontent.com/37560890/176990363-fceb0783-9af2-4c8f-b076-720c50573e20.png)
 ![vlcsnap-2022-07-02-12h16m37s576](https://user-images.githubusercontent.com/37560890/176990365-4e6106b5-fe64-42a3-809d-ad509bfd10d8.png)
 ![vlcsnap-2022-07-02-12h16m56s729](https://user-images.githubusercontent.com/37560890/176990366-ef3b373b-1e96-47df-9a21-cd854f46f426.png)
+![image](https://user-images.githubusercontent.com/37560890/176991835-31948d41-ef00-4d83-a299-8606bafea0d1.png)
 
 
 ## Solution 1.
@@ -106,7 +107,7 @@ public:
     }
 };
 ```
-## Solution 1.
+## Solution 2.
 
 ```cpp
 // OJ: https://leetcode.com/problems/fibonacci-number/
