@@ -62,6 +62,7 @@
 ![vlcsnap-2022-07-02-13h43m29s545](https://user-images.githubusercontent.com/37560890/176992930-01c70e00-d074-43ef-b9e8-000e92fa7fde.png)
 ![vlcsnap-2022-07-02-13h43m35s683](https://user-images.githubusercontent.com/37560890/176992931-13de1dbb-ea5f-428f-999e-b2320e47395e.png)
 ![vlcsnap-2022-07-02-13h43m53s564](https://user-images.githubusercontent.com/37560890/176992932-cdd101ed-c469-4880-90da-2760fae7629d.png)
+![image](https://user-images.githubusercontent.com/37560890/176993083-b310e9d2-4a78-4c7b-b14e-23205b9e4c2b.png)
 
 ## Solution 1. DP
 
@@ -96,6 +97,31 @@ public:
     }
     
 };
+```
+
+or
+
+```cpp
+
+class Solution 
+{ 
+public:
+    int climbStairs(int n) 
+    {
+        if (n <= 1) return n;
+        int dp[3];
+        dp[1] = 1;
+        dp[2] = 2;
+        for (int i = 3; i <= n; i++) 
+	{
+            int sum = dp[1] + dp[2];
+            dp[1] = dp[2];
+            dp[2] = sum;
+	}
+        return dp[2];
+    }
+};
+
 ```
 
 ## Solution 2. DP
