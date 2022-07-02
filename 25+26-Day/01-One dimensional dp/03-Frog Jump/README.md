@@ -1,6 +1,6 @@
 ## 03. [Forg Jump](https://www.codingninjas.com/codestudio/problems/frog-jump_3621012?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTab=0)
 
-## Video Notes
+### Video Notes
 
 ![vlcsnap-2022-07-02-14h01m50s754](https://user-images.githubusercontent.com/37560890/176994771-7bae8737-b188-4a29-8f53-beb18540fb18.png)
 ![vlcsnap-2022-07-02-14h03m09s186](https://user-images.githubusercontent.com/37560890/176994773-608d3093-b695-4794-ba43-71ea9ab3cde4.png)
@@ -118,7 +118,7 @@ int frogJump(int n, vector<int> &heights)
 ```cpp
 
 Tc: O(n)
-Sc: O(n)
+Sc: O(1)
 
 #include<bits/stdc++.h>
 int frogJump(int n, vector<int> &heights)
