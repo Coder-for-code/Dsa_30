@@ -64,36 +64,25 @@
 
 Tc: O(n)
 Sc: O(n) + O(n)
+
 #include<bits/stdc++.h>
+int f(int index, vector<int> &heights, vector<int> &dp)
+{
+    if(index==0) return 0;
+    if(dp[index]!= -1) return dp[index];
+    int left= f(index-1,heights,dp) + abs(heights[index] -heights[index-1]);
+    int right= INT_MAX;
+    if(index>1) right= f(index-2,heights,dp) + abs(heights[index] -heights[index-2]);
+    
+    return dp[index] = min (left,right);
+    
+}
+
 int frogJump(int n, vector<int> &heights)
 {
     // Write your code here.
-    // Create the dp array
-    vector<int> dp(n,0);
-    
-    // Initialize the first ele with 0
-    int prev2= 0;
-    int  prev= 0;
-    
-    // Run a for loop till 1 to n
-    for(int i=1;i<n;i++)
-    {
-        // First jump
-        int first_step = prev + abs(heights[i] - heights[i-1]);
-        
-        // Second jump only if the i>1
-        int second_step= INT_MAX;
-        if(i>1) second_step= prev2 + abs(heights[i] - heights[i-2] );
-        
-        // Finally return the minimum of first step and second step
-        int current= min(first_step, second_step);
-       
-        prev2= prev;
-        prev= current;
-    }
-    
-    // Finally the ans will be stored into the second last index
-    return prev;
+    vector<int> dp(n+1,-1);
+    return f(n-1, heights,dp);
 }
 ```
 
@@ -102,6 +91,7 @@ int frogJump(int n, vector<int> &heights)
 
 Tc: O(n)
 Sc: O(n)
+
 #include<bits/stdc++.h>
 int f(int index, vector<int> &heights, vector<int> &dp)
 {
