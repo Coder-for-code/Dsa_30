@@ -1,6 +1,6 @@
 # 05. [Maximum sum of non-adjacent elements](https://www.codingninjas.com/codestudio/problems/maximum-sum-of-non-adjacent-elements_843261?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTab=1)
 
-## Video Notes.
+### Video Notes.
 
 ![vlcsnap-2022-07-03-09h15m49s135](https://user-images.githubusercontent.com/37560890/177031584-b89069ad-ba86-433e-8cdb-6636d35e7ac7.png)
 ![vlcsnap-2022-07-03-09h16m11s890](https://user-images.githubusercontent.com/37560890/177031586-3d9f229b-cf7a-4f4a-ba1e-cbd623f0d0b6.png)
