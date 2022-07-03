@@ -1,50 +1,38 @@
-3. https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1/?page=4&difficulty[]=-2&difficulty[]=-1&difficulty[]=0&category[]=Tree&sortBy=submissions
+
+## Solution 1. Recursion Code
 
 ```cpp
-vector<int> findSpiral(Node *root)
+Tc: O(2^n)
+Sc: O(n) + O(n)
+
+// Helper method
+int f(int index, vector<int> &nums)
 {
-    //Your code here
-    vector<int> v;
-    int level=0;
-    if(root==NULL)
-	{
-        return v;
-    }
-    queue<Node*> q;
-    q.push(root);
+    // If index==0 then return the nums[index]
+    if(index==0) return nums[index];
+
+    // If index < 0 then return 0
+    if(index<0) return 0;
     
-	while(!q.empty())
-	{
-        int size=q.size(); 
-        vector<int> temp;
-        for(int i=0;i<size;i++)
-		{
-            Node* r=q.front();
-            q.pop();
-            temp.push_back(r->data);
-            
-			if(r->left)
-			{
-                q.push(r->left);
-            }
-            
-			if(r->right)
-			{
-                q.push(r->right);
-            }
-        }
-        if(level%2==0)
-		{
-            reverse(temp.begin(),temp.end());
-        }
-        
-		for(int i=0;i<temp.size();i++)
-		{
-            v.push_back(temp[i]);
-        }
-        level++;
-    }
-    return v;
+    // pick and not pick logic
+    int p = nums[index] + f(index-2, nums);
+    int np = 0+ f(index-1,nums);
+    
+    // Finally return the max of pick and non pick
+    return max(p ,np);    
 }
+
+int maximumNonAdjacentSum(vector<int> &nums)
+{
+    // Compute the size of array
+    int n= nums.size();
+    
+    // Calling the helper method
+    return f(n-1, nums);
+    
+}
+```
+
+## Solution 2. Memoization
 
 ```
