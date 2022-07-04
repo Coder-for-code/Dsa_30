@@ -225,7 +225,8 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 37 | [Flatten a Binary Tree to Linked List 3 Approaches](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/37-Flatten%20a%20Binary%20Tree%20to%20Linked%20List%20%203%20Approaches) | Stack | Trees | 17 May 2022 | O(n) | O(1) | [Link](youtube.com/watch?v=sWf7k1x9XR4&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=39)
 
 B. Binary Search Trees
-
+S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
+------|---------------|------------|-------|------|------|-------|---------|
 38 | [Introduction to Binary Search Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/38-Introduction%20to%20Binary%20Search%20Tree) | Introduction | Trees | 17 May 2022 | O(logn) | O(n) | [Link](https://www.youtube.com/watch?v=p7-9UvDQZ3w&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=40)
 39 | [Search in a Binary Search Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/39-Search%20in%20a%20Binary%20Search%20Tree) | 2 recursive calls | Trees | 17 May 2022 | O(logn) | O(n) | [Link](https://www.youtube.com/watch?v=KcNt6v_56cc&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=41)
 40 | [Ceil in a Binary Search Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/40-Ceil%20in%20a%20Binary%20Search%20Tree) | Ceil | Trees | 17 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=xm_W1ub-K-w&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=43)
