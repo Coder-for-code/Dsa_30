@@ -183,6 +183,9 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 ### Day 17-22 - [Trees and Binary Trees]
 S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link |
 ------|---------------|------------|-------|------|------|-------|---------|
+
+A. Binary Trees
+
 1 | [Introduction](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/01-Introduction%20to%20Trees) | Simple introduction | Trees | 17 May  2022 | O(1) | O(1) | [Link](https://www.youtube.com/watch?v=_ANrF3FJm7I&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=2)  
 2 | [Binary tree representation in c++](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/02-Binary%20Tree%20Representation%20in%20C%2B%2B) | Simple explanation | Trees | 17 May 2022 | O(1) | O(1) | [Link](https://www.youtube.com/watch?v=ctCpP0RFDFc&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=3) 
 3 | [Binary Tree Traversals in Binary Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/03-Binary%20Tree%20Traversals%20in%20Binary%20Tree) | 3 std traversal techniques | Trees | 17 May 2022 | O(h) | O(1) | [Link](https://www.youtube.com/watch?v=jmy0LaGET1I&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=5) 
@@ -220,6 +223,9 @@ S.No. | Question Name | Logic Used | Topic | Date | Time | Space | Youtube Link 
 35 | [Serialize and De-serialize Binary Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/35-Serialize%20and%20De-serialize%20Binary%20Tree) | Bfs | Trees | 17 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=-YbXySKJsX8&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=37)
 36 | [Morris Traversal](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/36-Morris%20Traversal) | Morris traversal | Trees | 17 May 2022 | O(n) | O(1) |  [Link](https://www.youtube.com/watch?v=80Zug6D1_r4&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=38)
 37 | [Flatten a Binary Tree to Linked List 3 Approaches](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/37-Flatten%20a%20Binary%20Tree%20to%20Linked%20List%20%203%20Approaches) | Stack | Trees | 17 May 2022 | O(n) | O(1) | [Link](youtube.com/watch?v=sWf7k1x9XR4&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=39)
+
+B. Binary Search Trees
+
 38 | [Introduction to Binary Search Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/38-Introduction%20to%20Binary%20Search%20Tree) | Introduction | Trees | 17 May 2022 | O(logn) | O(n) | [Link](https://www.youtube.com/watch?v=p7-9UvDQZ3w&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=40)
 39 | [Search in a Binary Search Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/39-Search%20in%20a%20Binary%20Search%20Tree) | 2 recursive calls | Trees | 17 May 2022 | O(logn) | O(n) | [Link](https://www.youtube.com/watch?v=KcNt6v_56cc&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=41)
 40 | [Ceil in a Binary Search Tree](https://github.com/ajay-nikumbh/Dsa_30/tree/main/17%2B22-Day/40-Ceil%20in%20a%20Binary%20Search%20Tree) | Ceil | Trees | 17 May 2022 | O(n) | O(n) | [Link](https://www.youtube.com/watch?v=xm_W1ub-K-w&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=43)
