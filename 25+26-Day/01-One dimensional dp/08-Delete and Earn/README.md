@@ -62,6 +62,7 @@ You earn a total of 9 points.</pre>
 ![vlcsnap-2022-07-06-21h57m57s234](https://user-images.githubusercontent.com/37560890/177676367-bfb5cfd6-8744-4921-8916-5a7a185d5876.png)
 ![vlcsnap-2022-07-06-21h58m21s845](https://user-images.githubusercontent.com/37560890/177676369-12388e2d-f3ef-4bc9-8b24-3d187548b9bf.png)
 ![image](https://user-images.githubusercontent.com/37560890/177677241-e11c7da4-71ce-40d0-b3c8-df14f9e8e15f.png)
+![image](https://user-images.githubusercontent.com/37560890/177677608-0238ac24-e53b-4931-b7fc-f54be5221443.png)
 
 
 ## Solution 1. DP
