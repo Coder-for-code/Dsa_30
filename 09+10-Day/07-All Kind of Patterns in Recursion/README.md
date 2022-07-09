@@ -32,3 +32,147 @@
 ![vlcsnap-2022-07-09-14h18m42s630](https://user-images.githubusercontent.com/37560890/178105116-ef29e7ae-27b4-4a6c-b737-e42d82fbe500.png)
 ![vlcsnap-2022-07-09-14h19m07s397](https://user-images.githubusercontent.com/37560890/178105117-8b85aad0-6e2d-401d-b997-6c6a757e5df9.png)
 ![vlcsnap-2022-07-09-14h19m45s903](https://user-images.githubusercontent.com/37560890/178105118-03d10cad-5282-44f8-9b8b-dcc7e4d01364.png)
+
+#### 1. Print all the subsequence if it's equal to the given sum 
+
+```cpp
+#include <iostream>
+#include<vector>
+using namespace std;
+
+// Calling the printS method
+void printS(int index,vector<int> &ds, int s, int sum,int arr[],int n )
+{
+    // If index==n then make a check
+    if(index==n) 
+    {
+        // If current_sum == s then print the datastructure
+        if(s==sum)
+        {
+            for(auto it: ds)
+            {
+                std::cout << it <<" ";
+            }
+            cout<<endl;
+        }
+        
+        // Finally return from that
+        return ;
+    }
+    
+    // Push the current index element
+    ds.push_back(arr[index]);
+    
+    // Add sum to the current element of an array
+    s= s+ arr[index];
+    
+    // Pick the case
+    printS(index+1,ds,s,sum,arr,n);
+    
+    // Reduce the sum from that
+    s= s-arr[index];
+    
+    // Remove the element
+    ds.pop_back();
+    
+    // Not pick case
+    printS(index+1,ds,s,sum,arr,n);
+}
+
+
+int main()
+{
+    // Make the array
+    int a[]={1,2,1};
+    
+    // Size of the array
+    int n=3;
+    
+    // Required sum
+    int sum=2;
+    
+    // Create the datastructure
+    vector<int> ds;
+    
+    // Calling the method
+    printS(0,ds,0,sum,a,n);
+    
+    // Return 0 to os
+    return 0;
+}```
+
+
+#### 2. Print only the subsequence if it's equal to the given sum 
+
+```cpp
+
+#include <iostream>
+#include<vector>
+using namespace std;
+
+// Calling the printS method
+bool printS(int index,vector<int> &ds, int s, int sum,int arr[],int n )
+{
+    // If index==n then make a check
+    if(index==n) 
+    {
+        // If current_sum == s then print the datastructure
+        if(s==sum)
+        {
+            for(auto it: ds)
+            {
+                std::cout << it <<" ";
+            }
+            cout<<endl;
+            return true;
+        }
+        
+        // Finally return from that
+        return false;
+    }
+    
+    // Push the current index element
+    ds.push_back(arr[index]);
+    
+    // Add sum to the current element of an array
+    s= s+ arr[index];
+    
+    // Pick the case
+    if(printS(index+1,ds,s,sum,arr,n)== true) return true;
+    
+    // Reduce the sum from that
+    s= s-arr[index];
+    
+    // Remove the element
+    ds.pop_back();
+    
+    // Not pick case
+    if(printS(index+1,ds,s,sum,arr,n)) return true;
+    
+    // Return if none of the case matches
+    return false;
+}
+
+
+int main()
+{
+    // Make the array
+    int a[]={1,2,1};
+    
+    // Size of the array
+    int n=3;
+    
+    // Required sum
+    int sum=2;
+    
+    // Create the datastructure
+    vector<int> ds;
+    
+    // Calling the method
+    printS(0,ds,0,sum,a,n);
+    
+    // Return 0 to os
+    return 0;
+}
+
+```
