@@ -200,7 +200,7 @@ int main()
 
 #### 3. Count all the subsequences with equal to sum 
 
-```
+```cpp
 #include <iostream>
 #include<vector>
 using namespace std;
