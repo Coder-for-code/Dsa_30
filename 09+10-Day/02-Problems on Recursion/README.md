@@ -72,7 +72,6 @@ int main()
     return 0;
 }
 
-
 ```
 
 #### 2. Print the numbers from n to 1 using the recursion
