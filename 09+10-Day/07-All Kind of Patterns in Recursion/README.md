@@ -177,3 +177,62 @@ int main()
 }
 
 ```
+
+#### 3. Count all the subsequences with equal to sum 
+
+```
+#include <iostream>
+#include<vector>
+using namespace std;
+
+// Calling the printS method
+int printS(int index,int s, int sum,int arr[],int n )
+{
+    // If index==n then make a check
+    if(index==n) 
+    {
+        // If current_sum == s condition satisifed
+        if(s==sum) return 1;
+    
+        // Finally return from that if not conditon satisifed
+        else return 0;
+    }
+    
+    // Add sum to the current element of an array
+    s= s+ arr[index];
+    
+    // Pick the case
+    int left= printS(index+1,s,sum,arr,n);
+    
+    // Reduce the sum from that
+    s= s-arr[index];
+    
+    // Remove the element
+    
+    // Not pick case
+    int right= printS(index+1,s,sum,arr,n);
+    
+    // Return if none of the case matches
+    return left+right;
+}
+
+
+int main()
+{
+    // Make the array
+    int a[]={1,2,1};
+    
+    // Size of the array
+    int n=3;
+    
+    // Required sum
+    int sum=2;
+    
+    // Calling the method
+    cout<<printS(0,0,sum,a,n);
+    
+    // Return 0 to os
+    return 0;
+}
+
+```
