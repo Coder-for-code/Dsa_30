@@ -38,7 +38,6 @@
 ![vlcsnap-2022-07-09-09h54m49s453](https://user-images.githubusercontent.com/37560890/178091557-ccf70d69-6364-46c2-815f-e4cab1e6c160.png)
 ![vlcsnap-2022-07-09-09h55m11s616](https://user-images.githubusercontent.com/37560890/178091558-dc3be8bd-cb8a-43ec-87a7-58b838d69a69.png)
 
-
 #### 1. Print the name from 1 to n using the recursion
 ```cpp
 
