@@ -99,7 +99,8 @@ int main()
     
     // Return 0 to os
     return 0;
-}```
+}
+```
 
 
 #### 2. Print only the subsequence if it's equal to the given sum 
