@@ -1,3 +1,5 @@
+## Video Notes
+
 ![vlcsnap-2022-07-09-09h03m53s616](https://user-images.githubusercontent.com/37560890/178090550-689472f4-b1ef-4399-baa6-9f131c2ac120.png)
 ![vlcsnap-2022-07-09-09h04m30s455](https://user-images.githubusercontent.com/37560890/178090552-21a9e591-9edd-4fde-965d-77273a6d8b5d.png)
 ![vlcsnap-2022-07-09-09h05m19s670](https://user-images.githubusercontent.com/37560890/178090554-7f2fcd6b-068b-482b-87bf-fe4616bd29ee.png)
