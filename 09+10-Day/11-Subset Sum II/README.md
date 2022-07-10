@@ -46,6 +46,7 @@
 ![vlcsnap-2022-07-10-10h06m39s389](https://user-images.githubusercontent.com/37560890/178131665-2a84ba1a-5735-4f21-8553-6cb276c9504c.png)
 ![vlcsnap-2022-07-10-10h07m57s345](https://user-images.githubusercontent.com/37560890/178131666-684026a8-e2ae-4cfb-b7c4-b6faeac9ced4.png)
 ![vlcsnap-2022-07-10-10h08m32s443](https://user-images.githubusercontent.com/37560890/178131668-30894234-3e2b-4e10-80f1-86632ae6fba0.png)
+![image](https://user-images.githubusercontent.com/37560890/178131808-f8cab6e1-6785-4036-a994-c8a4804b833c.png)
 
 ## Solution 1. Brute Force
 
