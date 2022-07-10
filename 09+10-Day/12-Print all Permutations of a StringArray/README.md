@@ -39,6 +39,8 @@
 ![vlcsnap-2022-07-10-10h45m50s438](https://user-images.githubusercontent.com/106215989/178134737-574af54c-9364-45d6-9a78-033cb5f2185d.png)
 ![vlcsnap-2022-07-10-10h46m11s993](https://user-images.githubusercontent.com/106215989/178134739-7d327993-255b-4be3-8ef3-9839d9797dbe.png)
 ![vlcsnap-2022-07-10-10h46m22s768](https://user-images.githubusercontent.com/106215989/178134740-825fdb88-4f85-413a-9638-d4e1303b0ee1.png)
+![image](https://user-images.githubusercontent.com/37560890/178135049-b366fcc3-5d60-4cae-9c4f-bf5ec579d5e8.png)
+![image](https://user-images.githubusercontent.com/37560890/178135059-359d28d9-e185-4f1a-af82-d63961e7abd7.png)
 
 ## Solution 1. Backtracking
 
