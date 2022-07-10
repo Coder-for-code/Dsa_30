@@ -41,6 +41,11 @@
 ![vlcsnap-2022-07-10-10h46m22s768](https://user-images.githubusercontent.com/106215989/178134740-825fdb88-4f85-413a-9638-d4e1303b0ee1.png)
 ![image](https://user-images.githubusercontent.com/37560890/178135049-b366fcc3-5d60-4cae-9c4f-bf5ec579d5e8.png)
 ![image](https://user-images.githubusercontent.com/37560890/178135059-359d28d9-e185-4f1a-af82-d63961e7abd7.png)
+![vlcsnap-2022-07-10-12h48m28s558](https://user-images.githubusercontent.com/37560890/178135966-ce8e1adc-52e5-49b1-933b-6043b98e7614.png)
+![vlcsnap-2022-07-10-12h56m23s263](https://user-images.githubusercontent.com/37560890/178135974-f47339f2-fef3-4e9a-94c2-48ebab0755f2.png)
+![vlcsnap-2022-07-10-12h58m41s777](https://user-images.githubusercontent.com/37560890/178135976-269745f7-7bb9-4873-b8d6-4c03d7d4b381.png)
+![vlcsnap-2022-07-10-12h59m38s468](https://user-images.githubusercontent.com/37560890/178135985-d1d9a62a-7161-4560-a1a3-5c3962f5cd14.png)
+![vlcsnap-2022-07-10-13h00m42s147](https://user-images.githubusercontent.com/37560890/178135992-f963c14e-b153-4e92-ab08-8c08d4b643b8.png)
 
 ## Solution 1. Backtracking with extra datastructure
 
