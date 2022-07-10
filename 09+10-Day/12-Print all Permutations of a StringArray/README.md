@@ -42,12 +42,12 @@
 ![image](https://user-images.githubusercontent.com/37560890/178135049-b366fcc3-5d60-4cae-9c4f-bf5ec579d5e8.png)
 ![image](https://user-images.githubusercontent.com/37560890/178135059-359d28d9-e185-4f1a-af82-d63961e7abd7.png)
 
-## Solution 1. Backtracking
+## Solution 1. Backtracking with extra datastructure
 
 ```cpp
 // OJ: https://leetcode.com/problems/permutations/
 // Time: O(N!)
-// Space: O(N)
+// Space: O(N) + O(N)
 
 class Solution 
 {
@@ -102,6 +102,50 @@ public:
         
         // Return the ans finally
         return ans;
+    }
+};
+```
+
+## Solution 1. Backtracking w/o extra datastructure
+
+```cpp
+// OJ: https://leetcode.com/problems/permutations/
+// Time: O(N!)
+// Space: O(N)
+class Solution 
+{
+private:
+    // Recursive function 
+    void recurPermute(int index, vector<int> &nums, vector<vector<int>> &ans) 
+    {
+        // Base case
+        if(index == nums.size()) 
+        {
+            ans.push_back(nums); 
+            return; 
+        }
+        
+        // Travel from current index till last index
+        for(int i = index;i<nums.size();i++) 
+        {
+            // Swapping logic
+            swap(nums[index], nums[i]); 
+            recurPermute(index+1, nums, ans); 
+            swap(nums[index], nums[i]); 
+        }
+        
+    }
+public:
+    vector<vector<int>> permute(vector<int>& nums)
+    {
+        // Creating the ans vector
+        vector<vector<int>> ans; 
+        
+        // Calling the recursive method
+        recurPermute(0, nums, ans); 
+        
+        // Finally return the ans
+        return ans; 
     }
 };
 ```
