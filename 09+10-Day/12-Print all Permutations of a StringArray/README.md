@@ -106,7 +106,7 @@ public:
 };
 ```
 
-## Solution 1. Backtracking w/o extra datastructure
+## Solution 2. Backtracking w/o extra datastructure
 
 ```cpp
 // OJ: https://leetcode.com/problems/permutations/
