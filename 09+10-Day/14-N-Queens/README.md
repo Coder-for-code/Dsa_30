@@ -56,6 +56,11 @@
 ![vlcsnap-2022-07-10-19h10m53s980](https://user-images.githubusercontent.com/37560890/178147804-d5dc17c2-7c4a-4697-b981-fa6ad784db11.png)
 ![vlcsnap-2022-07-10-19h11m25s556](https://user-images.githubusercontent.com/37560890/178147807-f2fa7df2-d931-4fb4-8a40-6d7aef89f076.png)
 ![image](https://user-images.githubusercontent.com/37560890/178147982-6a8c4de0-c97c-428a-8a57-b6a61d38ed21.png)
+![vlcsnap-2022-07-10-19h30m23s898](https://user-images.githubusercontent.com/37560890/178148774-253848cb-d57c-43ae-b2fe-f2088b27bae0.png)
+![vlcsnap-2022-07-10-19h31m59s701](https://user-images.githubusercontent.com/37560890/178148778-6a1dec4e-00f9-42a9-acc7-a42d4503c535.png)
+![vlcsnap-2022-07-10-19h32m57s194](https://user-images.githubusercontent.com/37560890/178148780-59ddc59e-63e7-4d8f-97f7-a05f2ff463ff.png)
+![vlcsnap-2022-07-10-19h35m29s576](https://user-images.githubusercontent.com/37560890/178148782-8618eade-9870-4f1c-885f-038ea44a251b.png)
+![vlcsnap-2022-07-10-19h36m38s373](https://user-images.githubusercontent.com/37560890/178148783-dcf01bef-9055-4c02-b69e-9aac850a2a52.png)
 
 
 ## Solution 1. Backtracking
@@ -218,5 +223,88 @@ public:
 };
 
 ```
+
+## Solution 3. Backtracking with optimzation using hash and some formula's
+
+```cpp
+// OJ: https://leetcode.com/problems/n-queens/
+// Time: O(N!)
+// Space: O(N^2)
+
+class Solution 
+{
+  public:
+    void solve(int col, vector < string > & board, vector < vector < string >> & ans, vector < int > & leftrow, vector < int > & upperDiagonal, vector < int > & lowerDiagonal, int n)
+    {
+      
+        // Edge case
+        if (col == n) 
+        {
+            ans.push_back(board);
+            return;
+        }
+      
+        // Place the queen in every row and check if it's safe or not
+        for (int row = 0; row < n; row++) 
+        {
+            // 3 states checking
+            if (leftrow[row] == 0 && lowerDiagonal[row + col] == 0 && upperDiagonal[n - 1 + col - row] == 0) 
+            {
+                // If safe then place the queen  
+                board[row][col] = 'Q';
+                
+                // Mark the leftrow 
+                leftrow[row] = 1;
+                
+                // Mark the left diagonal
+                lowerDiagonal[row + col] = 1;
+                
+                // Mark the upper diagonal  
+                upperDiagonal[n - 1 + col - row] = 1;
+                  
+                // Calling the for next row using recursion
+                solve(col + 1, board, ans, leftrow, upperDiagonal, lowerDiagonal, n);
+                  
+                // Backtracking step most imp step
+                board[row][col] = '.';
+                
+                // After backtracking check out mark
+                leftrow[row] = 0;
+                lowerDiagonal[row + col] = 0;
+                upperDiagonal[n - 1 + col - row] = 0;
+            }
+        }
+    }
+
+  public:
+    vector < vector < string >> solveNQueens(int n)
+    {
+        // Make the ans vector
+        vector < vector < string >> ans;
+        
+        // Make the board array
+        vector < string > board(n);
+        
+        // Fill the board with empty string
+        string s(n, '.');
+    
+        // Fill then
+        for (int i = 0; i < n; i++) 
+        {
+            board[i] = s;
+        }
+        
+        // Make the checking vectors for safe states using formulas
+        vector < int > leftrow(n, 0), upperDiagonal(2 * n - 1, 0), lowerDiagonal(2 * n - 1, 0);
+        
+        // Calling the recursive function
+        solve(0, board, ans, leftrow, upperDiagonal, lowerDiagonal, n);
+        
+        // Finally return the ans
+        return ans;
+    }
+};
+```
+
 
 
